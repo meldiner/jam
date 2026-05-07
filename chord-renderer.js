@@ -42,6 +42,7 @@
     'C#':      { frets: ['x', 4, 6, 6, 6, 4], barre: { fret: 4, from: 1, to: 5 } },
     'C#m':     { frets: ['x', 4, 6, 6, 5, 4], barre: { fret: 4, from: 1, to: 5 } },
     'C#m7':    { frets: ['x', 4, 6, 4, 5, 4], barre: { fret: 4, from: 1, to: 5 } },
+    'C#7':     { frets: ['x', 4, 3, 4, 2, 4], barre: { fret: 2, from: 1, to: 5 } },
     'Db':      { frets: ['x', 4, 6, 6, 6, 4], barre: { fret: 4, from: 1, to: 5 } },
     'Dbm':     { frets: ['x', 4, 6, 6, 5, 4], barre: { fret: 4, from: 1, to: 5 } },
     'Dbmaj7':  { frets: ['x', 4, 6, 5, 6, 4], barre: { fret: 4, from: 1, to: 5 } },
@@ -110,6 +111,7 @@
     'G/E':     { frets: [0, 'x', 0, 0, 0, 3] },
     'B/F#':    { frets: [2, 2, 4, 4, 4, 2], barre: { fret: 2, from: 0, to: 5 } },
     'A/E':     { frets: [0, 0, 2, 2, 2, 0] },
+    'D/E':     { frets: [0, 'x', 0, 2, 3, 2] },
   };
 
   function getShape(name) {

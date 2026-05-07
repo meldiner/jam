@@ -617,6 +617,40 @@ CHARTS = {
         ],
     },
 
+    "spontaneous": {
+        "chartChords": ["A", "E", "F#m", "D", "D7", "C#7", "A/E", "D/E", "C#m"],
+        "chartSections": [
+            {"name": "Intro", "reps": "4 bars",
+             "lines": [["A", "E", "F#m", "D"]]},
+            {"name": "Verse", "reps": "8 bars",
+             "lines": [["A", "E", "F#m", "D"],
+                       ["A", "E", "F#m", "D7"]]},
+            {"name": "Pre-Chorus", "reps": "8 bars",
+             "lines": [["A", "F#m", "D", "E"],
+                       ["A", "C#7", "D", "A/E E"]]},
+            {"name": "Chorus", "reps": "8 bars",
+             "lines": [["A", "E", "F#m", "D E"],
+                       ["A", "E", "D", "D7"]]},
+            {"name": "Bridge", "reps": "16 bars",
+             "lines": [["A", "E", "F#m", "D D/E"],
+                       ["A", "E", "F#m", "D D/E"],
+                       ["A", "E", "F#m", "D D/E"],
+                       ["A", "C#m", "D", "E"]]},
+        ],
+        "formSteps": [
+            "Intro (4 bars)",
+            "Verse 1",
+            "Pre-Chorus 1",
+            "Chorus 1",
+            "Intro (return)",
+            "Verse 2",
+            "Pre-Chorus 2",
+            "Chorus 2",
+            "Bridge",
+            "Chorus (final, repeat)",
+        ],
+    },
+
     "lama-lo-amart-li": {
         "chartChords": ["Em", "Bm7", "A7", "C", "Ebm", "Bbm7", "Ab7", "B", "Dm", "Am7", "G7", "Bb"],
         "chartSections": [

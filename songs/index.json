@@ -397,6 +397,14 @@
       "key": "Cm",
       "bpm": null,
       "timeSig": "4/4"
+    },
+    {
+      "slug": "spontaneous",
+      "title": "Spontaneous",
+      "artist": "Netta Balter / Omree Gal-Oz",
+      "key": "A major",
+      "bpm": null,
+      "timeSig": "4/4"
     }
   ]
 }

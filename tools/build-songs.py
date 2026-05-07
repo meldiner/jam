@@ -495,6 +495,11 @@ SONGS = [
     {"slug": "haperach-begani", "title": "הפרח בגני", "artist": "זהר ארגוב",
      "slides": [], "dir": "rtl", "key": "Cm", "skipParse": True,
      "opening": "Intro: G – Cm"},
+
+    {"slug": "spontaneous", "title": "Spontaneous", "artist": "Netta Balter / Omree Gal-Oz",
+     "slides": [], "skipParse": True,
+     "key": "A major", "timeSig": "4/4",
+     "opening": "Intro: A – E – F#m – D (4 bars), pickup into V"},
 ]
 
 # vampire is a hand-curated chart that pre-existed; we keep its existing JSON.
