@@ -1,0 +1,110 @@
+{
+  "title": "Take Me Out",
+  "artist": "Franz Ferdinand",
+  "key": "Em",
+  "bpm": 105,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "E",
+    "Am",
+    "D",
+    "G",
+    "Bm",
+    "Em",
+    "A",
+    "F",
+    "C"
+  ],
+  "sections": [
+    {
+      "name": "Verse (slow)",
+      "lines": [
+        [
+          "E Am",
+          "D"
+        ],
+        [
+          "G Bm",
+          "Em"
+        ],
+        [
+          "Am",
+          "D"
+        ],
+        [
+          "G Bm",
+          "Em"
+        ]
+      ]
+    },
+    {
+      "name": "Transition",
+      "lines": [
+        [
+          "G A",
+          "Em"
+        ],
+        [
+          "G D",
+          "F C Em"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "reps": "Em / Am Bm",
+      "lines": [
+        [
+          "Em"
+        ],
+        [
+          "Em"
+        ],
+        [
+          "Am",
+          "Bm"
+        ]
+      ]
+    },
+    {
+      "name": "Bridge",
+      "lines": [
+        [
+          "Am",
+          "C",
+          "D"
+        ],
+        [
+          "Am",
+          "C",
+          "D"
+        ],
+        [
+          "Am",
+          "C",
+          "D"
+        ],
+        [
+          "Am",
+          "C",
+          "D"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Verse (slow)",
+    "Transition",
+    "Chorus",
+    "Bridge",
+    "Chorus",
+    "Instrumental",
+    "Bridge",
+    "Outro"
+  ]
+}

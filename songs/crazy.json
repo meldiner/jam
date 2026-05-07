@@ -1,0 +1,34 @@
+{
+  "title": "Crazy",
+  "artist": "Gnarls Barkley",
+  "key": "Cm",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "Dm - F - Bb - A",
+  "dir": "ltr",
+  "chords": [
+    "Dm",
+    "F",
+    "Bb",
+    "A"
+  ],
+  "sections": [
+    {
+      "name": "Verse / Chorus",
+      "lines": [
+        [
+          "Dm",
+          "F",
+          "Bb",
+          "A"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "(loop on Dm – F – Bb – A throughout)"
+  ]
+}

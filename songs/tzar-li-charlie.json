@@ -1,0 +1,66 @@
+{
+  "title": "צר לי צ'רלי",
+  "artist": "כרולינה",
+  "key": "Dm",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "12-bar blues in Dm",
+  "ending": "",
+  "form": "",
+  "dir": "rtl",
+  "chords": [
+    "Dm",
+    "Gm",
+    "A7"
+  ],
+  "sections": [
+    {
+      "name": "פתיחה (build-up)",
+      "reps": "all on Dm",
+      "lines": [
+        [
+          "Dm",
+          "Dm",
+          "Dm",
+          "Dm"
+        ]
+      ]
+    },
+    {
+      "name": "12-bar blues (Dm)",
+      "lines": [
+        [
+          "Dm",
+          "Dm",
+          "Dm",
+          "Dm"
+        ],
+        [
+          "Gm",
+          "Gm",
+          "Dm",
+          "Dm"
+        ],
+        [
+          "A7",
+          "Gm",
+          "Dm",
+          "A7"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "show": 1,
+  "formSteps": [
+    "בס + תופים + גיטרה — 4 בארים (Dm)",
+    "+ פסנתר — 4 בארים",
+    "Break",
+    "+ חצוצרה — 4 בארים",
+    "Break",
+    "נכנסת השירה — ראש (head)",
+    "סולו × N",
+    "ראש (חזרה)",
+    "סיום על Dm"
+  ]
+}

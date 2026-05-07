@@ -1,0 +1,108 @@
+{
+  "title": "Under The Bridge",
+  "artist": "Red Hot Chili Peppers",
+  "key": "E major",
+  "bpm": 86,
+  "timeSig": "4/4",
+  "opening": "Guitar lick: D / F# (×4)",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "D",
+    "F#",
+    "E",
+    "B",
+    "C#m",
+    "G#m",
+    "A",
+    "Emaj7",
+    "F#m",
+    "B/F#",
+    "Am7",
+    "G6",
+    "Fmaj7",
+    "Am",
+    "E7",
+    "Gmaj7"
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "reps": "×4",
+      "lines": [
+        [
+          "D",
+          "F#"
+        ]
+      ]
+    },
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "E",
+          "B"
+        ],
+        [
+          "C#m G#m",
+          "A"
+        ],
+        [
+          "E",
+          "B"
+        ],
+        [
+          "C#m A",
+          "Emaj7"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "F#m",
+          "E"
+        ],
+        [
+          "B/F#",
+          "F#m"
+        ],
+        [
+          "E"
+        ],
+        [
+          "B/F#",
+          "F#m"
+        ]
+      ]
+    },
+    {
+      "name": "Interlude / Coda",
+      "reps": "“under the bridge…”",
+      "lines": [
+        [
+          "A Am7",
+          "G6 Fmaj7"
+        ],
+        [
+          "A Am7",
+          "G6 Fmaj7"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Intro",
+    "Verse 1",
+    "Verse 2",
+    "Chorus",
+    "Interlude",
+    "Verse 3",
+    "Chorus",
+    "Interlude (one time)",
+    "Coda"
+  ]
+}

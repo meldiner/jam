@@ -1,0 +1,101 @@
+{
+  "title": "Ziggy Stardust",
+  "artist": "David Bowie",
+  "key": "G major",
+  "bpm": 138,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "G",
+    "D",
+    "Cadd9",
+    "G/B",
+    "G/A",
+    "Bm",
+    "C",
+    "B",
+    "Em",
+    "A",
+    "Am",
+    "F",
+    "Dsus2",
+    "E"
+  ],
+  "sections": [
+    {
+      "name": "Intro / Interlude",
+      "reps": "×4 (×2 between verses)",
+      "lines": [
+        [
+          "G D",
+          "Cadd9 G/B G/A"
+        ]
+      ]
+    },
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "G"
+        ],
+        [
+          "Bm",
+          "C"
+        ],
+        [
+          "B C D"
+        ],
+        [
+          "G"
+        ],
+        [
+          "Em"
+        ],
+        [
+          "A"
+        ],
+        [
+          "C"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "Am G",
+          "F G Am"
+        ],
+        [
+          "G",
+          "F G Am"
+        ],
+        [
+          "G",
+          "F"
+        ],
+        [
+          "D Dsus2"
+        ],
+        [
+          "D E"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Intro",
+    "Verse 1",
+    "Verse 2",
+    "Chorus",
+    "Interlude",
+    "Verse 3",
+    "Chorus 2",
+    "Interlude",
+    "Outro"
+  ]
+}

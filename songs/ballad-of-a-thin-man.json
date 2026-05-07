@@ -1,0 +1,115 @@
+{
+  "title": "Ballad of a Thin Man",
+  "artist": "Bob Dylan",
+  "key": "Am",
+  "bpm": 100,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "Am",
+    "Abaug",
+    "C/G",
+    "D9",
+    "F",
+    "Dm",
+    "C",
+    "Em",
+    "G"
+  ],
+  "sections": [
+    {
+      "name": "Intro / Interlude",
+      "reps": "| Am | %",
+      "lines": [
+        [
+          "Am"
+        ]
+      ]
+    },
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "Am"
+        ],
+        [
+          "Abaug"
+        ],
+        [
+          "C/G",
+          "D9"
+        ],
+        [
+          "F",
+          "Dm"
+        ],
+        [
+          "C Em",
+          "Am"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "C",
+          "Em"
+        ],
+        [
+          "Am",
+          "C/G"
+        ],
+        [
+          "F",
+          "Am"
+        ]
+      ]
+    },
+    {
+      "name": "Middle 8",
+      "lines": [
+        [
+          "Am",
+          "C",
+          "F"
+        ],
+        [
+          "Am"
+        ],
+        [
+          "Am",
+          "C"
+        ],
+        [
+          "F",
+          "Dm G G7"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Intro",
+    "Verse 1",
+    "Chorus",
+    "Interlude",
+    "Verse 2",
+    "Chorus",
+    "Verse 3",
+    "Chorus",
+    "Middle 8",
+    "Verse 4",
+    "Chorus",
+    "Verse 5",
+    "Chorus",
+    "Verse 6",
+    "Chorus",
+    "Verse 7",
+    "Chorus",
+    "Outro (fade)"
+  ]
+}

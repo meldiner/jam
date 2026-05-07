@@ -1,0 +1,125 @@
+{
+  "title": "Something",
+  "artist": "The Beatles",
+  "key": "C major",
+  "bpm": 66,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "F",
+    "Eb",
+    "G/D",
+    "C",
+    "Cmaj7",
+    "C7",
+    "Am",
+    "Am7",
+    "D7",
+    "G",
+    "D9",
+    "A",
+    "C#m",
+    "F#m7",
+    "A/E"
+  ],
+  "sections": [
+    {
+      "name": "Intro / Lick",
+      "reps": "Lick 1",
+      "lines": [
+        [
+          "F",
+          "Eb G/D"
+        ]
+      ]
+    },
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "C",
+          "Cmaj7"
+        ],
+        [
+          "C7",
+          "F"
+        ],
+        [
+          "D7",
+          "G G/A G7/B"
+        ],
+        [
+          "Am",
+          "Am(maj7)"
+        ],
+        [
+          "Am7",
+          "D9"
+        ]
+      ]
+    },
+    {
+      "name": "Middle 8",
+      "lines": [
+        [
+          "A",
+          "C#m/G#"
+        ],
+        [
+          "F#m7",
+          "A/E"
+        ],
+        [
+          "D",
+          "G",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "Solo",
+      "lines": [
+        [
+          "C",
+          "Cmaj7",
+          "C7",
+          "F"
+        ],
+        [
+          "D7",
+          "G G/A G7/B"
+        ],
+        [
+          "Am Am(maj7)",
+          "Am7 D9"
+        ]
+      ]
+    },
+    {
+      "name": "Outro",
+      "lines": [
+        [
+          "F Eb G/D",
+          "A"
+        ],
+        [
+          "F Eb G/D",
+          "C"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Intro (Lick 1)",
+    "Verse 1",
+    "Verse 2",
+    "Middle 8",
+    "Solo",
+    "Verse 4",
+    "Outro (Lick 2 / Lick 1)"
+  ]
+}

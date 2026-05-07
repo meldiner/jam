@@ -1,0 +1,83 @@
+{
+  "title": "After Midnight",
+  "artist": "JJ Cale / Eric Clapton",
+  "key": "D major",
+  "bpm": 124,
+  "timeSig": "4/4",
+  "opening": "D - G/D - D (×4)",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "D",
+    "F",
+    "G",
+    "A",
+    "G/D"
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "reps": "×4",
+      "lines": [
+        [
+          "D",
+          "G/D",
+          "D"
+        ]
+      ]
+    },
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "D",
+          "F",
+          "G",
+          "D G/D D G/D D"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "D"
+        ],
+        [
+          "F"
+        ],
+        [
+          "G",
+          "A"
+        ],
+        [
+          "D",
+          "F",
+          "G",
+          "D G/D D G/D D"
+        ]
+      ]
+    },
+    {
+      "name": "Solo",
+      "reps": "×2",
+      "lines": [
+        [
+          "D F",
+          "G D G/D D G/D D"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Intro",
+    "Verse 1",
+    "Chorus",
+    "Verse 2",
+    "Chorus",
+    "Solo",
+    "Outro / Chorus (fade)"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Seven Nation Army",
+  "artist": "The White Stripes",
+  "key": "Em",
+  "bpm": 124,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "Verse 1 → Inst. Chorus → Interlude → Verse 2 → Solo → Interlude → Verse 3 → Inst. Chorus",
+  "dir": "ltr",
+  "chords": [
+    "Em",
+    "G",
+    "C",
+    "B",
+    "A"
+  ],
+  "sections": [
+    {
+      "name": "Verse / Chorus",
+      "lines": [
+        [
+          "Em",
+          "G C B"
+        ],
+        [
+          "Em",
+          "G C B"
+        ],
+        [
+          "Em",
+          "G C B"
+        ],
+        [
+          "Em",
+          "G C B"
+        ]
+      ]
+    },
+    {
+      "name": "Lift",
+      "lines": [
+        [
+          "G",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "Instrumental Chorus",
+      "lines": [
+        [
+          "Em",
+          "G",
+          "C",
+          "B"
+        ],
+        [
+          "Em",
+          "G",
+          "C",
+          "B"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Verse 1",
+    "Inst. Chorus (×4)",
+    "Interlude (×4)",
+    "Verse 2",
+    "Solo (×8)",
+    "Interlude (×4)",
+    "Verse 3",
+    "Inst. Chorus",
+    "Outro on Em"
+  ]
+}

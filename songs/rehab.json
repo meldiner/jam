@@ -1,0 +1,71 @@
+{
+  "title": "Rehab",
+  "artist": "Amy Winehouse",
+  "key": "C major",
+  "bpm": 71,
+  "timeSig": "4/4",
+  "opening": "Drums + bass riff",
+  "ending": "End on C",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "C",
+    "G",
+    "F",
+    "Em",
+    "Am",
+    "Ab"
+  ],
+  "sections": [
+    {
+      "name": "Chorus",
+      "reps": "8 bars",
+      "lines": [
+        [
+          "C",
+          "C",
+          "G",
+          "F"
+        ],
+        [
+          "C",
+          "F",
+          "C",
+          "C"
+        ]
+      ]
+    },
+    {
+      "name": "Verse",
+      "reps": "×3",
+      "lines": [
+        [
+          "Em",
+          "Am",
+          "F",
+          "Ab"
+        ],
+        [
+          "Em",
+          "Am",
+          "F",
+          "Ab"
+        ],
+        [
+          "G",
+          "F"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Chorus",
+    "Verse 1",
+    "Chorus",
+    "Verse 2",
+    "Chorus",
+    "Verse 3",
+    "Chorus"
+  ]
+}

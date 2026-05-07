@@ -1,0 +1,62 @@
+{
+  "title": "Feeling Good",
+  "artist": "Nina Simone",
+  "key": "Gm",
+  "bpm": 76,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "Gm",
+    "Gm7/F",
+    "D#7",
+    "D7",
+    "C",
+    "D"
+  ],
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "Gm",
+          "Gm7/F",
+          "D#7",
+          "D7"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "Gm",
+          "Gm7/F"
+        ],
+        [
+          "D#7",
+          "D7 C D"
+        ],
+        [
+          "Gm",
+          "Gm7/F",
+          "D#7",
+          "D7"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Verse 1",
+    "Chorus",
+    "Verse 2",
+    "Chorus",
+    "Verse 3 (dragonfly)",
+    "Chorus",
+    "Verse (stars)",
+    "Chorus"
+  ]
+}

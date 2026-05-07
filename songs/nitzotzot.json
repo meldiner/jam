@@ -1,0 +1,156 @@
+{
+  "title": "ניצוצות",
+  "artist": "ברי סחרוף ורמי פורטיס",
+  "key": "Am",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "Intro: Am – C – Fmaj7 – Dadd9 (×4)",
+  "ending": "Outro on C – G/B – D",
+  "form": "",
+  "dir": "rtl",
+  "chords": [
+    "Am",
+    "C",
+    "Fmaj7",
+    "Dadd9",
+    "G",
+    "F",
+    "Bm",
+    "A",
+    "Dm",
+    "B",
+    "Em",
+    "D",
+    "G/B"
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "reps": "×4",
+      "lines": [
+        [
+          "Am",
+          "C",
+          "Fmaj7",
+          "Dadd9"
+        ]
+      ]
+    },
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "Fmaj7",
+          "C",
+          "Am"
+        ],
+        [
+          "Am",
+          "Dadd9",
+          "Fmaj7"
+        ],
+        [
+          "Fmaj7",
+          "C",
+          "Am"
+        ],
+        [
+          "C",
+          "Dadd9",
+          "Fmaj7"
+        ]
+      ]
+    },
+    {
+      "name": "Pre-Chorus",
+      "lines": [
+        [
+          "Am",
+          "G",
+          "C"
+        ],
+        [
+          "C",
+          "Fmaj7"
+        ],
+        [
+          "Am",
+          "G"
+        ],
+        [
+          "G",
+          "F"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "Bm",
+          "F"
+        ],
+        [
+          "A",
+          "Dm"
+        ],
+        [
+          "B",
+          "Em"
+        ],
+        [
+          "G",
+          "C",
+          "D"
+        ]
+      ]
+    },
+    {
+      "name": "Bridge",
+      "lines": [
+        [
+          "D",
+          "G/B",
+          "C"
+        ],
+        [
+          "D",
+          "G/B",
+          "C"
+        ],
+        [
+          "Am D",
+          "G/B C"
+        ],
+        [
+          "Am D",
+          "G/B C"
+        ]
+      ]
+    },
+    {
+      "name": "Outro",
+      "reps": "×4",
+      "lines": [
+        [
+          "C",
+          "G/B",
+          "D"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "show": 12,
+  "formSteps": [
+    "אינטרו (×4)",
+    "בית 1",
+    "פרה-פזמון",
+    "פזמון",
+    "מעבר (Bridge)",
+    "בית 2",
+    "פרה-פזמון",
+    "פזמון",
+    "סיום (Outro)"
+  ]
+}

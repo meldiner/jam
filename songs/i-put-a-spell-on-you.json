@@ -1,0 +1,91 @@
+{
+  "title": "I Put a Spell on You",
+  "artist": "Nina Simone",
+  "key": "Dm",
+  "bpm": 70,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "Dm",
+    "Gm",
+    "D",
+    "A",
+    "Bb"
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "reps": "Dm",
+      "lines": [
+        [
+          "Dm"
+        ]
+      ]
+    },
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "Dm",
+          "Gm"
+        ],
+        [
+          "Dm",
+          "D"
+        ],
+        [
+          "Gm"
+        ],
+        [
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "Bridge",
+      "reps": "< Bass",
+      "lines": [
+        [
+          "Dm"
+        ],
+        [
+          "D"
+        ],
+        [
+          "Gm"
+        ],
+        [
+          "Bb"
+        ]
+      ]
+    },
+    {
+      "name": "Solo",
+      "lines": [
+        [
+          "Dm Gm",
+          "Dm D"
+        ],
+        [
+          "Gm",
+          "A"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Intro",
+    "Verse 1",
+    "Bridge",
+    "Verse 2",
+    "Solo",
+    "Verse 3 (long)",
+    "Bridge",
+    "Verse 4",
+    "Outro"
+  ]
+}

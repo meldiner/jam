@@ -1,0 +1,101 @@
+{
+  "title": "Give it Away",
+  "artist": "Red Hot Chili Peppers",
+  "key": "Am",
+  "bpm": 102,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "Am7",
+    "Am",
+    "C",
+    "Em",
+    "G",
+    "D",
+    "C#"
+  ],
+  "sections": [
+    {
+      "name": "Intro / Verse",
+      "lines": [
+        [
+          "Am",
+          "C"
+        ],
+        [
+          "Am",
+          "C"
+        ],
+        [
+          "Am",
+          "C"
+        ],
+        [
+          "Am",
+          "C"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "Am"
+        ],
+        [
+          "Am"
+        ],
+        [
+          "Am"
+        ],
+        [
+          "Am"
+        ]
+      ]
+    },
+    {
+      "name": "Solo",
+      "lines": [
+        [
+          "Em",
+          "G",
+          "Em",
+          "G",
+          "Em",
+          "G"
+        ]
+      ]
+    },
+    {
+      "name": "Outro",
+      "lines": [
+        [
+          "Am C",
+          "Am C"
+        ],
+        [
+          "Am D C# C",
+          "Am D C# C"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Intro (Am7)",
+    "Verse 1",
+    "Chorus",
+    "Verse 2",
+    "Chorus",
+    "Solo",
+    "Verse 3",
+    "Chorus",
+    "Solo",
+    "Verse 4",
+    "Chorus",
+    "Outro"
+  ]
+}

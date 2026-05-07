@@ -1,0 +1,82 @@
+{
+  "title": "Don't Speak",
+  "artist": "No Doubt",
+  "key": "Bm",
+  "bpm": 76,
+  "timeSig": "4/4",
+  "opening": "Guitar intro on Bm (×4 bars)",
+  "ending": "End on Bm",
+  "form": "Intro → Long Verse → Chorus → Short Verse → Chorus → Bridge+Solo → Bridge (gtr+vox) → Chorus → Solo+Outro",
+  "dir": "ltr",
+  "chords": [
+    "Bm",
+    "F#m",
+    "Em",
+    "A"
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "reps": "guitar, ×4 bars on Bm",
+      "lines": [
+        [
+          "Bm"
+        ]
+      ]
+    },
+    {
+      "name": "Verse",
+      "reps": "×2",
+      "lines": [
+        [
+          "Bm",
+          "F#m",
+          "Em",
+          "A"
+        ],
+        [
+          "Bm"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "Bm",
+          "F#m",
+          "Em",
+          "A"
+        ],
+        [
+          "F#m",
+          "Bm",
+          "Em"
+        ]
+      ]
+    },
+    {
+      "name": "Bridge / Solo",
+      "lines": [
+        [
+          "Bm",
+          "F#m",
+          "Em",
+          "A"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Intro (gtr)",
+    "Long Verse",
+    "Chorus",
+    "Short Verse",
+    "Chorus",
+    "Bridge + Solo",
+    "Bridge (gtr+vox)",
+    "Chorus",
+    "Solo (outro)"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Valerie",
+  "artist": "Mark Ronson ft. Amy Winehouse",
+  "key": "Db major",
+  "bpm": 102,
+  "timeSig": "4/4",
+  "opening": "Drums + bass groove on Db",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "Db",
+    "Eb",
+    "Ebm7",
+    "Gb",
+    "Fm",
+    "Ab",
+    "Dbmaj7"
+  ],
+  "sections": [
+    {
+      "name": "Intro / Groove",
+      "reps": "2 bars",
+      "lines": [
+        [
+          "Db"
+        ]
+      ]
+    },
+    {
+      "name": "Verse",
+      "reps": "8 bars",
+      "lines": [
+        [
+          "Db",
+          "Db",
+          "Eb",
+          "Eb"
+        ],
+        [
+          "Db",
+          "Db",
+          "Ebm7",
+          "Ebm7"
+        ]
+      ]
+    },
+    {
+      "name": "Pre-Chorus",
+      "reps": "8 bars",
+      "lines": [
+        [
+          "Gb",
+          "Fm",
+          "Gb",
+          "Fm"
+        ],
+        [
+          "Gb",
+          "Fm",
+          "Ab",
+          "Ab"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "reps": "4 bars",
+      "lines": [
+        [
+          "Dbmaj7",
+          "Dbmaj7",
+          "Ebm7",
+          "Ebm7"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "show": 3,
+  "formSteps": [
+    "Intro (groove)",
+    "Verse 1",
+    "Pre-Chorus",
+    "Chorus",
+    "Verse 2",
+    "Pre-Chorus",
+    "Chorus",
+    "Bridge / Solo",
+    "Chorus",
+    "Outro (fade on Db)"
+  ]
+}

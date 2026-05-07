@@ -1,0 +1,45 @@
+{
+  "title": "אהבה חדשה",
+  "artist": "אסף אמדורסקי",
+  "key": "",
+  "bpm": null,
+  "timeSig": "",
+  "opening": "Bass: D & E | E & G | A & B | A & C   /   Guitar: F# & G | A & B | C & B & F# & E",
+  "ending": "",
+  "form": "",
+  "dir": "rtl",
+  "chords": [],
+  "sections": [
+    {
+      "name": "Opening — Bass",
+      "lines": [
+        [
+          "D & E",
+          "E & G"
+        ],
+        [
+          "A & B",
+          "A & C"
+        ]
+      ]
+    },
+    {
+      "name": "Opening — Guitar",
+      "lines": [
+        [
+          "F# & G",
+          "A & B"
+        ],
+        [
+          "C & B & F# & E"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "show": 2,
+  "formSteps": [
+    "Opening (bass + guitar)",
+    "(rest of structure not in slide — fill in during practice)"
+  ]
+}

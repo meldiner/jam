@@ -1,0 +1,147 @@
+{
+  "title": "הפרח בגני",
+  "artist": "זהר ארגוב",
+  "key": "Cm",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "Intro: G – Cm",
+  "ending": "",
+  "form": "",
+  "dir": "rtl",
+  "chords": [
+    "G",
+    "Cm",
+    "G7",
+    "Ab",
+    "Cm/Bb",
+    "Fm",
+    "Cm/G",
+    "Eb",
+    "Dm7b5",
+    "Bb"
+  ],
+  "sections": [
+    {
+      "name": "אינטרו (Intro)",
+      "lines": [
+        [
+          "G",
+          "Cm"
+        ]
+      ]
+    },
+    {
+      "name": "בית (Verse)",
+      "lines": [
+        [
+          "G7",
+          "Ab",
+          "Cm/Bb",
+          "Cm"
+        ],
+        [
+          "G7",
+          "Ab",
+          "Cm/Bb",
+          "Cm"
+        ],
+        [
+          "G7",
+          "Fm",
+          "Ab",
+          "Cm"
+        ]
+      ]
+    },
+    {
+      "name": "פזמון (Chorus)",
+      "lines": [
+        [
+          "Cm/G",
+          "Ab",
+          "Cm/Bb",
+          "Cm"
+        ],
+        [
+          "G",
+          "Ab",
+          "Cm/Bb",
+          "Cm"
+        ],
+        [
+          "Ab",
+          "G",
+          "Fm",
+          "Eb"
+        ],
+        [
+          "G",
+          "Dm7b5",
+          "Fm"
+        ]
+      ]
+    },
+    {
+      "name": "מעבר (Bridge)",
+      "lines": [
+        [
+          "G",
+          "Ab",
+          "Cm/Bb",
+          "Cm"
+        ],
+        [
+          "G",
+          "Fm",
+          "Ab",
+          "Cm"
+        ],
+        [
+          "G",
+          "Ab",
+          "Fm",
+          "Eb"
+        ],
+        [
+          "G",
+          "Ab",
+          "Fm",
+          "Cm"
+        ]
+      ]
+    },
+    {
+      "name": "סיום (Outro)",
+      "lines": [
+        [
+          "G",
+          "Bb",
+          "G",
+          "Cm"
+        ],
+        [
+          "Cm",
+          "C#",
+          "Cm/Ab",
+          "Cm/Bb"
+        ],
+        [
+          "Cm",
+          "Bb",
+          "Ab"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "אינטרו",
+    "בית 1",
+    "פזמון",
+    "בית 2",
+    "פזמון",
+    "מעבר",
+    "פזמון",
+    "סיום"
+  ]
+}

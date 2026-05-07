@@ -1,0 +1,57 @@
+{
+  "title": "What's Up",
+  "artist": "4 Non Blondes",
+  "key": "G major",
+  "bpm": 130,
+  "timeSig": "4/4",
+  "opening": "G - Am - C - Gsus2 (×2)",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "G",
+    "Am",
+    "C",
+    "Gsus2",
+    "Gsus"
+  ],
+  "sections": [
+    {
+      "name": "Intro / Verse / Pre-Chorus",
+      "lines": [
+        [
+          "G",
+          "Am",
+          "C",
+          "Gsus2"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "G",
+          "Am"
+        ],
+        [
+          "C",
+          "Gsus"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Intro (×2)",
+    "Verse 1",
+    "Pre-Chorus",
+    "Chorus",
+    "Interlude",
+    "Verse 2",
+    "Interlude",
+    "Verse 3",
+    "Pre-Chorus",
+    "Chorus (×2)"
+  ]
+}

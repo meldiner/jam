@@ -1,0 +1,121 @@
+{
+  "title": "למה לא אמרת לי",
+  "artist": "",
+  "key": "Em",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "כולם נכנסים בשיר",
+  "ending": "",
+  "form": "",
+  "dir": "rtl",
+  "chords": [
+    "Em",
+    "Bm7",
+    "A7",
+    "C",
+    "Ebm",
+    "Bbm7",
+    "Ab7",
+    "B",
+    "Dm",
+    "Am7",
+    "G7",
+    "Bb"
+  ],
+  "sections": [
+    {
+      "name": "בית (No modulation)",
+      "lines": [
+        [
+          "Em",
+          "Bm7",
+          "Em"
+        ],
+        [
+          "Em",
+          "Bm7",
+          "Em"
+        ],
+        [
+          "A7",
+          "Bm7",
+          "Em"
+        ],
+        [
+          "C",
+          "A7"
+        ]
+      ]
+    },
+    {
+      "name": "סולו גיטרה",
+      "lines": [
+        [
+          "Em",
+          "Bm7"
+        ]
+      ]
+    },
+    {
+      "name": "בית (1st modulation)",
+      "lines": [
+        [
+          "Ebm",
+          "Bbm7",
+          "Ebm"
+        ],
+        [
+          "Ebm",
+          "Bbm7",
+          "Ebm"
+        ],
+        [
+          "Ab7",
+          "Bbm7",
+          "Ebm"
+        ],
+        [
+          "B",
+          "Ab7"
+        ]
+      ]
+    },
+    {
+      "name": "בית (2nd modulation)",
+      "lines": [
+        [
+          "Dm",
+          "Am7",
+          "Dm"
+        ],
+        [
+          "Dm",
+          "Am7",
+          "Dm"
+        ],
+        [
+          "G7",
+          "Am7",
+          "Dm"
+        ],
+        [
+          "Bb",
+          "G7"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "בית 1 (Em)",
+    "בית 2 (Em)",
+    "סולו גיטרה קצר",
+    "בית 3 (Em)",
+    "סולו גיטרה ארוך",
+    "סיום — מודולציה ל-Ebm",
+    "בית (Ebm)",
+    "מודולציה ל-Dm",
+    "בית (Dm)",
+    "בית (Dm)"
+  ]
+}

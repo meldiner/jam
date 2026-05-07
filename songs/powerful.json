@@ -1,0 +1,105 @@
+{
+  "title": "Powerful",
+  "artist": "",
+  "key": "Bm",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "Bm",
+    "D",
+    "A",
+    "Em",
+    "E",
+    "E5"
+  ],
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "Bm"
+        ],
+        [
+          "D",
+          "A"
+        ],
+        [
+          "Bm"
+        ],
+        [
+          "D",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "Pre-Chorus",
+      "lines": [
+        [
+          "Em",
+          "Bm"
+        ],
+        [
+          "D",
+          "A"
+        ],
+        [
+          "E Em",
+          "Bm"
+        ],
+        [
+          "D",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "reps": "×2",
+      "lines": [
+        [
+          "Em",
+          "Bm"
+        ],
+        [
+          "D",
+          "A"
+        ],
+        [
+          "Em",
+          "Bm"
+        ],
+        [
+          "D",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "Bridge",
+      "reps": "tab riff",
+      "lines": [
+        [
+          "—"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Verse 1",
+    "Pre-Chorus",
+    "Chorus ×2",
+    "Bridge",
+    "Verse 2",
+    "Chorus",
+    "Bridge",
+    "Pre-Chorus",
+    "Chorus ×2",
+    "Bridge (×2)"
+  ]
+}

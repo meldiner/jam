@@ -1,0 +1,91 @@
+{
+  "title": "Oh Darling",
+  "artist": "The Beatles",
+  "key": "A major",
+  "bpm": 88,
+  "timeSig": "12/8",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "G",
+    "D",
+    "Em",
+    "C",
+    "Am7",
+    "D7",
+    "G7",
+    "D7#5",
+    "D#7",
+    "A7"
+  ],
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "D7#5",
+          "G",
+          "D"
+        ],
+        [
+          "Em",
+          "C"
+        ],
+        [
+          "Am7",
+          "D7"
+        ],
+        [
+          "Am7 D7",
+          "G C",
+          "G",
+          "D"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "C",
+          "D#7"
+        ],
+        [
+          "G"
+        ],
+        [
+          "A7"
+        ],
+        [
+          "D7",
+          "D#7",
+          "D7",
+          "D7#5"
+        ]
+      ]
+    },
+    {
+      "name": "Outro",
+      "lines": [
+        [
+          "Am7 D7",
+          "G",
+          "C",
+          "G",
+          "Ab7 G7"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Verse 1",
+    "Verse 2",
+    "Chorus",
+    "Verse 3",
+    "Chorus",
+    "Verse 4 / Outro"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "title": "Purple Rain",
+  "artist": "Prince",
+  "key": "Bb major",
+  "bpm": 60,
+  "timeSig": "4/4",
+  "opening": "Bbadd9/D - Gm7add11 - F - Eb",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "Bbsus2",
+    "Gm7",
+    "F",
+    "Eb",
+    "Bb",
+    "Gm",
+    "Bbadd9/D",
+    "Gm7add11"
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "lines": [
+        [
+          "Bbadd9/D",
+          "Gm7add11",
+          "F",
+          "Eb"
+        ]
+      ]
+    },
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "Bbsus2",
+          "Gm7"
+        ],
+        [
+          "F",
+          "Eb"
+        ],
+        [
+          "Bbsus2",
+          "Gm7"
+        ],
+        [
+          "F",
+          "Bbsus2"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "Eb"
+        ],
+        [
+          "Eb",
+          "Bbsus2"
+        ],
+        [
+          "Gm7",
+          "F"
+        ],
+        [
+          "F",
+          "Bbsus2"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Intro",
+    "Verse 1",
+    "Chorus",
+    "Verse 2",
+    "Chorus",
+    "Verse 3",
+    "Chorus (outro)"
+  ]
+}

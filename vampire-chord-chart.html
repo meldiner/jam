@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>vampire — chord chart</title>
+<style>
+  :root{
+    --bg:#fafaf7;--surface:#ffffff;--surface-2:#f1efe8;
+    --text:#2c2c2a;--text-2:#5f5e5a;--text-3:#888780;
+    --border:rgba(0,0,0,0.12);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{--bg:#1c1c1b;--surface:#262624;--surface-2:#2c2c2a;
+      --text:#f1efe8;--text-2:#b4b2a9;--text-3:#888780;--border:rgba(255,255,255,0.15);}
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    padding:1.5vh 2vw;display:flex;flex-direction:column;gap:1.5vh;
+  }
+  .head{
+    display:flex;justify-content:space-between;align-items:baseline;
+    padding-bottom:1vh;border-bottom:1px solid var(--border);
+  }
+  .title{font-size:clamp(22px,3.2vw,40px);font-weight:500}
+  .title .artist{color:var(--text-3);font-weight:400;margin-left:0.5em}
+  .meta{font-size:clamp(13px,1.4vw,18px);color:var(--text-2)}
+  .chords-row{
+    display:grid;grid-template-columns:repeat(8,1fr);gap:1vw;
+    padding:1.5vh 1vw;background:var(--surface-2);border-radius:10px;
+    justify-items:center;
+  }
+  .chords-row svg{width:100%;height:auto;max-height:14vh}
+  .sections{
+    display:grid;grid-template-columns:1fr 1fr;gap:1.2vw;
+    flex:1;min-height:0;
+  }
+  .sec{
+    background:var(--surface);border:1px solid var(--border);
+    border-radius:10px;padding:1.5vh 1.5vw;
+    display:flex;flex-direction:column;gap:0.6vh;
+  }
+  .tag{
+    display:flex;justify-content:space-between;align-items:baseline;
+    font-size:clamp(13px,1.3vw,18px);color:var(--text-2);
+    font-weight:500;letter-spacing:0.02em;
+  }
+  .tag .reps{color:var(--text-3);font-weight:400}
+  .bars{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:clamp(18px,2.4vw,32px);line-height:1.5;
+    letter-spacing:0.02em;
+  }
+  .bars .sep{color:var(--text-3);margin:0 0.15em;font-weight:300}
+  .bars .ch{color:var(--text);font-weight:500}
+  .form{
+    padding:1.2vh 1.5vw;background:var(--surface-2);border-radius:10px;
+    display:flex;align-items:center;gap:1vw;flex-wrap:wrap;
+  }
+  .form .lbl{
+    font-size:clamp(11px,1.1vw,14px);color:var(--text-2);
+    font-weight:500;letter-spacing:0.06em;text-transform:uppercase;
+  }
+  .form .seq{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:clamp(14px,1.4vw,20px);color:var(--text);
+  }
+  @media (max-width:700px){
+    .chords-row{grid-template-columns:repeat(4,1fr)}
+    .sections{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+  <div class="head">
+    <div class="title">vampire<span class="artist">— Olivia Rodrigo</span></div>
+    <div class="meta">Key: F major · BPM 69 · 4/4</div>
+  </div>
+
+  <div class="chords-row" id="chordsRow"></div>
+
+  <div class="sections">
+    <div class="sec">
+      <div class="tag"><span>Intro</span><span class="reps">4 bars</span></div>
+      <div class="bars"><span class="sep">|</span> <span class="ch">F</span> <span class="sep">|</span> <span class="ch">A</span> <span class="sep">|</span> <span class="ch">Bb</span> <span class="sep">|</span> <span class="ch">Bm</span> <span class="sep">|</span></div>
+    </div>
+    <div class="sec">
+      <div class="tag"><span>Verse</span><span class="reps">×2</span></div>
+      <div class="bars"><span class="sep">|</span> <span class="ch">F</span> <span class="sep">|</span> <span class="ch">A</span> <span class="sep">|</span> <span class="ch">Bb</span> <span class="sep">|</span> <span class="ch">Bm</span> <span class="sep">|</span></div>
+    </div>
+    <div class="sec">
+      <div class="tag"><span>Chorus</span><span class="reps">10 bars</span></div>
+      <div class="bars"><span class="sep">|</span> <span class="ch">Gm</span> <span class="sep">|</span> <span class="ch">C7</span> <span class="sep">|</span> <span class="ch">F</span> <span class="sep">|</span> <span class="ch">A</span> <span class="sep">|</span></div>
+      <div class="bars"><span class="sep">|</span> <span class="ch">Bb</span> <span class="sep">|</span> <span class="ch">Bm</span> <span class="sep">|</span> <span class="ch">F</span> <span class="sep">|</span> <span class="ch">A</span> <span class="sep">|</span></div>
+      <div class="bars"><span class="sep">|</span> <span class="ch">Bb</span> <span class="sep">|</span> <span class="ch">Bbm</span> <span class="sep">|</span> <span class="ch">F</span> <span class="sep">|</span></div>
+    </div>
+    <div class="sec">
+      <div class="tag"><span>Bridge</span><span class="reps">12 bars</span></div>
+      <div class="bars"><span class="sep">|</span> <span class="ch">Bb</span> <span class="sep">|</span> <span class="ch">Bbm</span> <span class="sep">|</span> <span class="ch">F</span> <span class="sep">|</span> <span class="ch">C</span> <span class="sep">|</span></div>
+      <div class="bars"><span class="sep">|</span> <span class="ch">Bb</span> <span class="sep">|</span> <span class="ch">Bbm</span> <span class="sep">|</span> <span class="ch">F</span> <span class="sep">|</span> <span class="ch">C</span> <span class="sep">|</span></div>
+      <div class="bars"><span class="sep">|</span> <span class="ch">Bb</span> <span class="sep">|</span> <span class="ch">Bbm</span> <span class="sep">|</span> <span class="ch">F</span> <span class="sep">|</span> <span class="ch">C</span> <span class="sep">|</span></div>
+    </div>
+  </div>
+
+  <div class="form">
+    <span class="lbl">Form</span>
+    <span class="seq">Intro → Verse → Chorus → Verse → Chorus → Bridge → Chorus → end on F</span>
+  </div>
+
+<script>
+const chordData = {
+  F:   { frets: [1,3,3,2,1,1], barre: { fret: 1, from: 0, to: 5 } },
+  A:   { frets: ['x',0,2,2,2,0] },
+  Bb:  { frets: ['x',1,3,3,3,1], barre: { fret: 1, from: 1, to: 5 } },
+  Bm:  { frets: ['x',2,4,4,3,2], barre: { fret: 2, from: 1, to: 5 } },
+  Gm:  { frets: [3,5,5,3,3,3], barre: { fret: 3, from: 0, to: 5 } },
+  C7:  { frets: ['x',3,2,3,1,0] },
+  Bbm: { frets: ['x',1,3,3,2,1], barre: { fret: 1, from: 1, to: 5 } },
+  C:   { frets: ['x',3,2,0,1,0] }
+};
+function renderChord(name, data) {
+  const SW=70, SH=92, xL=12, xR=58, yT=22, yB=70;
+  const stringX = i => xL + (xR - xL) * i / 5;
+  const played = data.frets.filter(f => typeof f === 'number' && f > 0);
+  const hasOpens = data.frets.some(f => f === 0);
+  const lowFret = played.length ? Math.min(...played) : 1;
+  const showNut = hasOpens || lowFret <= 1;
+  const shift = showNut ? 0 : lowFret - 1;
+  const diagFret = f => f - shift;
+  const fretY = f => yT + (yB - yT) * (diagFret(f) - 0.5) / 4;
+  let s = `<svg viewBox="0 0 ${SW} ${SH}" preserveAspectRatio="xMidYMid meet">`;
+  s += `<text x="${SW/2}" y="14" font-size="14" font-weight="500" text-anchor="middle" fill="var(--text)">${name}</text>`;
+  if (showNut) {
+    s += `<rect x="${xL}" y="${yT - 1.5}" width="${xR - xL}" height="3" fill="var(--text)"/>`;
+  } else {
+    s += `<line x1="${xL}" y1="${yT}" x2="${xR}" y2="${yT}" stroke="var(--border)" stroke-width="0.6"/>`;
+    s += `<text x="${xL - 1}" y="${yT + 6}" font-size="8" text-anchor="end" fill="var(--text-2)">${shift + 1}fr</text>`;
+  }
+  for (let f = 1; f <= 4; f++) {
+    const y = yT + (yB - yT) * f / 4;
+    s += `<line x1="${xL}" y1="${y}" x2="${xR}" y2="${y}" stroke="var(--border)" stroke-width="0.6"/>`;
+  }
+  for (let i = 0; i < 6; i++) {
+    const x = stringX(i);
+    s += `<line x1="${x}" y1="${yT}" x2="${x}" y2="${yB}" stroke="var(--border)" stroke-width="0.6"/>`;
+  }
+  if (data.barre) {
+    const b = data.barre;
+    const x1 = stringX(b.from), x2 = stringX(b.to), y = fretY(b.fret);
+    s += `<rect x="${x1 - 3.5}" y="${y - 3.5}" width="${x2 - x1 + 7}" height="7" rx="3.5" fill="var(--text)"/>`;
+  }
+  data.frets.forEach((f, i) => {
+    const x = stringX(i);
+    if (f === 'x') {
+      s += `<text x="${x}" y="19" font-size="10" text-anchor="middle" fill="var(--text-2)">×</text>`;
+    } else if (f === 0) {
+      s += `<circle cx="${x}" cy="17" r="2.5" fill="none" stroke="var(--text-2)" stroke-width="1"/>`;
+    } else {
+      if (data.barre && data.barre.fret === f && i >= data.barre.from && i <= data.barre.to) return;
+      s += `<circle cx="${x}" cy="${fretY(f)}" r="3.5" fill="var(--text)"/>`;
+    }
+  });
+  s += '</svg>';
+  return s;
+}
+const row = document.getElementById('chordsRow');
+Object.entries(chordData).forEach(([name, data]) => {
+  const div = document.createElement('div');
+  div.style.cssText = 'width:100%;display:flex;justify-content:center';
+  div.innerHTML = renderChord(name, data);
+  row.appendChild(div);
+});
+</script>
+</body>
+</html>

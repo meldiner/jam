@@ -1,0 +1,88 @@
+{
+  "title": "True Colors",
+  "artist": "Cyndi Lauper",
+  "key": "C major",
+  "bpm": 120,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "Am",
+    "G",
+    "G/B",
+    "C",
+    "F",
+    "E",
+    "Gsus4"
+  ],
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "Am G/B",
+          "C F"
+        ],
+        [
+          "Am",
+          "G",
+          "C",
+          "F"
+        ],
+        [
+          "Am G",
+          "F C"
+        ]
+      ]
+    },
+    {
+      "name": "Pre-Chorus",
+      "reps": "Am G C F",
+      "lines": [
+        [
+          "Am",
+          "G",
+          "C",
+          "F"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "F C",
+          "G"
+        ],
+        [
+          "F C",
+          "F G"
+        ],
+        [
+          "F C",
+          "E Am"
+        ],
+        [
+          "F C",
+          "Gsus4 G"
+        ],
+        [
+          "Am G",
+          "C F"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Verse 1",
+    "Pre-Chorus",
+    "Chorus",
+    "Verse 2",
+    "Pre-Chorus",
+    "Chorus",
+    "Outro (Am G C F)"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Dreams",
+  "artist": "The Cranberries",
+  "key": "E major",
+  "bpm": 138,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "Intro → Verse 1 → Bridge → Verse 2 → Outro",
+  "dir": "ltr",
+  "chords": [
+    "E",
+    "A",
+    "B",
+    "G"
+  ],
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "E"
+        ],
+        [
+          "A"
+        ],
+        [
+          "B"
+        ],
+        [
+          "E"
+        ]
+      ]
+    },
+    {
+      "name": "Bridge",
+      "lines": [
+        [
+          "G"
+        ],
+        [
+          "G"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Verse 1",
+    "Bridge",
+    "Verse 2",
+    "Bridge",
+    "Verse 3 (outro)"
+  ]
+}

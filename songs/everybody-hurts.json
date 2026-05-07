@@ -1,0 +1,103 @@
+{
+  "title": "Everybody Hurts",
+  "artist": "R.E.M.",
+  "key": "D major",
+  "bpm": 70,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "D",
+    "G",
+    "Em",
+    "A",
+    "F#",
+    "Bm",
+    "C",
+    "C/B",
+    "Am",
+    "D/A"
+  ],
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "D",
+          "G",
+          "D",
+          "G"
+        ],
+        [
+          "D",
+          "G",
+          "D",
+          "G"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "Em",
+          "A",
+          "Em",
+          "A"
+        ],
+        [
+          "Em",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "Bridge",
+      "lines": [
+        [
+          "F#",
+          "Bm",
+          "F#",
+          "Bm"
+        ],
+        [
+          "F#",
+          "Bm"
+        ],
+        [
+          "C",
+          "G",
+          "C",
+          "C/B Am"
+        ]
+      ]
+    },
+    {
+      "name": "Outro",
+      "lines": [
+        [
+          "D",
+          "G",
+          "D/A",
+          "G"
+        ],
+        [
+          "D"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Verse 1",
+    "Chorus",
+    "Verse 2",
+    "Chorus",
+    "Bridge",
+    "Verse 3",
+    "Chorus",
+    "Verse 4 / Outro (fade)"
+  ]
+}

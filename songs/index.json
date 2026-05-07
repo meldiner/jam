@@ -1,0 +1,402 @@
+{
+  "setlist": "Show 5/29/26",
+  "songs": [
+    {
+      "slug": "vampire",
+      "title": "vampire",
+      "artist": "Olivia Rodrigo",
+      "key": "F major",
+      "bpm": 69,
+      "timeSig": "4/4",
+      "show": 8
+    },
+    {
+      "slug": "one-way-or-another",
+      "title": "One Way Or Another",
+      "artist": "Blondie",
+      "key": "E",
+      "bpm": 164,
+      "timeSig": "4/4",
+      "show": 9
+    },
+    {
+      "slug": "smooth",
+      "title": "Smooth",
+      "artist": "Santana feat. Rob Thomas",
+      "key": "Am",
+      "bpm": 116,
+      "timeSig": "4/4",
+      "show": 11
+    },
+    {
+      "slug": "dont-speak",
+      "title": "Don't Speak",
+      "artist": "No Doubt",
+      "key": "Bm",
+      "bpm": 76,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "rehab",
+      "title": "Rehab",
+      "artist": "Amy Winehouse",
+      "key": "C major",
+      "bpm": 71,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "blues-cnaani",
+      "title": "בלוז כנעני",
+      "artist": "אהוד בנאי",
+      "key": "Am",
+      "bpm": null,
+      "timeSig": "4/4",
+      "show": 13
+    },
+    {
+      "slug": "ah-ah-ah",
+      "title": "אה אה אה",
+      "artist": "אפרת גוש",
+      "key": "C",
+      "bpm": null,
+      "timeSig": "4/4",
+      "show": 4
+    },
+    {
+      "slug": "kerach-9",
+      "title": "איתו לנצח",
+      "artist": "קרח 9",
+      "key": "Bb",
+      "bpm": 160,
+      "timeSig": "4/4",
+      "show": 7
+    },
+    {
+      "slug": "yehudim-kah-oti",
+      "title": "קח אותי",
+      "artist": "היהודים",
+      "key": "",
+      "bpm": null,
+      "timeSig": ""
+    },
+    {
+      "slug": "ahava-hadasha",
+      "title": "אהבה חדשה",
+      "artist": "אסף אמדורסקי",
+      "key": "",
+      "bpm": null,
+      "timeSig": "",
+      "show": 2
+    },
+    {
+      "slug": "everybody-hurts",
+      "title": "Everybody Hurts",
+      "artist": "R.E.M.",
+      "key": "D major",
+      "bpm": 70,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "something",
+      "title": "Something",
+      "artist": "The Beatles",
+      "key": "C major",
+      "bpm": 66,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "oh-darling",
+      "title": "Oh Darling",
+      "artist": "The Beatles",
+      "key": "A major",
+      "bpm": 88,
+      "timeSig": "12/8"
+    },
+    {
+      "slug": "ksheze-amok",
+      "title": "כשזה עמוק",
+      "artist": "",
+      "key": "",
+      "bpm": null,
+      "timeSig": ""
+    },
+    {
+      "slug": "under-the-bridge",
+      "title": "Under The Bridge",
+      "artist": "Red Hot Chili Peppers",
+      "key": "E major",
+      "bpm": 86,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "whats-up",
+      "title": "What's Up",
+      "artist": "4 Non Blondes",
+      "key": "G major",
+      "bpm": 130,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "feeling-good",
+      "title": "Feeling Good",
+      "artist": "Nina Simone",
+      "key": "Gm",
+      "bpm": 76,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "ani-taluy",
+      "title": "אני תלוי על הצלב",
+      "artist": "",
+      "key": "",
+      "bpm": null,
+      "timeSig": ""
+    },
+    {
+      "slug": "parperei-titua",
+      "title": "פרפרי תעתוע",
+      "artist": "כרמלה גרוס וגנר / ערן צור",
+      "key": "",
+      "bpm": null,
+      "timeSig": "",
+      "show": 5
+    },
+    {
+      "slug": "pahei-show",
+      "title": "פחי שואו",
+      "artist": "",
+      "key": "",
+      "bpm": null,
+      "timeSig": ""
+    },
+    {
+      "slug": "true-colors",
+      "title": "True Colors",
+      "artist": "Cyndi Lauper",
+      "key": "C major",
+      "bpm": 120,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "son-of-a-preacher-man",
+      "title": "Son of a Preacher Man",
+      "artist": "Dusty Springfield",
+      "key": "E major",
+      "bpm": 124,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "dreams",
+      "title": "Dreams",
+      "artist": "The Cranberries",
+      "key": "E major",
+      "bpm": 138,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "powerful",
+      "title": "Powerful",
+      "artist": "",
+      "key": "Bm",
+      "bpm": null,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "purple-rain",
+      "title": "Purple Rain",
+      "artist": "Prince",
+      "key": "Bb major",
+      "bpm": 60,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "ziggy-stardust",
+      "title": "Ziggy Stardust",
+      "artist": "David Bowie",
+      "key": "G major",
+      "bpm": 138,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "take-me-out",
+      "title": "Take Me Out",
+      "artist": "Franz Ferdinand",
+      "key": "Em",
+      "bpm": 105,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "easy",
+      "title": "Easy",
+      "artist": "Commodores",
+      "key": "",
+      "bpm": null,
+      "timeSig": ""
+    },
+    {
+      "slug": "give-it-away",
+      "title": "Give it Away",
+      "artist": "Red Hot Chili Peppers",
+      "key": "Am",
+      "bpm": 102,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "shir-hamakolet",
+      "title": "שיר המכולת",
+      "artist": "כוורת",
+      "key": "",
+      "bpm": null,
+      "timeSig": "",
+      "show": 6
+    },
+    {
+      "slug": "yeled-mizdaken",
+      "title": "ילד מזדקן",
+      "artist": "",
+      "key": "",
+      "bpm": null,
+      "timeSig": ""
+    },
+    {
+      "slug": "ballad-of-a-thin-man",
+      "title": "Ballad of a Thin Man",
+      "artist": "Bob Dylan",
+      "key": "Am",
+      "bpm": 100,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "mishehu",
+      "title": "מישהו פעם",
+      "artist": "עברי לידר",
+      "key": "",
+      "bpm": null,
+      "timeSig": "",
+      "show": 10
+    },
+    {
+      "slug": "nitzotzot",
+      "title": "ניצוצות",
+      "artist": "ברי סחרוף ורמי פורטיס",
+      "key": "Am",
+      "bpm": null,
+      "timeSig": "4/4",
+      "show": 12
+    },
+    {
+      "slug": "after-midnight",
+      "title": "After Midnight",
+      "artist": "JJ Cale / Eric Clapton",
+      "key": "D major",
+      "bpm": 124,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "seven-nation-army",
+      "title": "Seven Nation Army",
+      "artist": "The White Stripes",
+      "key": "Em",
+      "bpm": 124,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "hakaas",
+      "title": "הכעס",
+      "artist": "",
+      "key": "",
+      "bpm": null,
+      "timeSig": ""
+    },
+    {
+      "slug": "hamimut-holefet",
+      "title": "חמימות חולפת",
+      "artist": "",
+      "key": "",
+      "bpm": null,
+      "timeSig": ""
+    },
+    {
+      "slug": "crazy",
+      "title": "Crazy",
+      "artist": "Gnarls Barkley",
+      "key": "Cm",
+      "bpm": null,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "hacheder-haintimi",
+      "title": "החדר האינטימי",
+      "artist": "",
+      "key": "",
+      "bpm": null,
+      "timeSig": ""
+    },
+    {
+      "slug": "echake-bashadot",
+      "title": "אחכה לך בשדות",
+      "artist": "",
+      "key": "",
+      "bpm": null,
+      "timeSig": ""
+    },
+    {
+      "slug": "i-put-a-spell-on-you",
+      "title": "I Put a Spell on You",
+      "artist": "Nina Simone",
+      "key": "Dm",
+      "bpm": 70,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "or-hayareach",
+      "title": "אור הירח",
+      "artist": "",
+      "key": "",
+      "bpm": null,
+      "timeSig": ""
+    },
+    {
+      "slug": "mehapes-tshuva",
+      "title": "מחפש תשובה",
+      "artist": "",
+      "key": "",
+      "bpm": null,
+      "timeSig": ""
+    },
+    {
+      "slug": "lama-lo-amart-li",
+      "title": "למה לא אמרת לי",
+      "artist": "",
+      "key": "Em",
+      "bpm": null,
+      "timeSig": "4/4"
+    },
+    {
+      "slug": "tzar-li-charlie",
+      "title": "צר לי צ'רלי",
+      "artist": "כרולינה",
+      "key": "Dm",
+      "bpm": null,
+      "timeSig": "4/4",
+      "show": 1
+    },
+    {
+      "slug": "valerie",
+      "title": "Valerie",
+      "artist": "Mark Ronson ft. Amy Winehouse",
+      "key": "Db major",
+      "bpm": 102,
+      "timeSig": "4/4",
+      "show": 3
+    },
+    {
+      "slug": "haperach-begani",
+      "title": "הפרח בגני",
+      "artist": "זהר ארגוב",
+      "key": "Cm",
+      "bpm": null,
+      "timeSig": "4/4"
+    }
+  ]
+}

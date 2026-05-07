@@ -1,0 +1,104 @@
+{
+  "title": "Son of a Preacher Man",
+  "artist": "Dusty Springfield",
+  "key": "E major",
+  "bpm": 124,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "E",
+    "A",
+    "B7",
+    "B",
+    "D",
+    "E7",
+    "D7"
+  ],
+  "sections": [
+    {
+      "name": "Verse",
+      "lines": [
+        [
+          "E",
+          "A E"
+        ],
+        [
+          "E",
+          "B7"
+        ],
+        [
+          "A",
+          "E"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "reps": "key of E",
+      "lines": [
+        [
+          "E",
+          "A E"
+        ],
+        [
+          "E",
+          "A E"
+        ],
+        [
+          "E",
+          "B",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "Bridge",
+      "reps": "↑ key of A",
+      "lines": [
+        [
+          "D",
+          "A"
+        ],
+        [
+          "B7"
+        ],
+        [
+          "E7"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus 2",
+      "reps": "key of A",
+      "lines": [
+        [
+          "A",
+          "D A"
+        ],
+        [
+          "A",
+          "D A"
+        ],
+        [
+          "A",
+          "E",
+          "D7"
+        ]
+      ]
+    }
+  ],
+  "lyrics": null,
+  "formSteps": [
+    "Verse 1",
+    "Chorus",
+    "Instrumental",
+    "Verse 2",
+    "Chorus",
+    "Bridge",
+    "Chorus 2 (in A)",
+    "Coda (A E D A)"
+  ]
+}
