@@ -8,8 +8,88 @@
   "ending": "",
   "form": "",
   "dir": "ltr",
-  "chords": [],
-  "sections": [],
+  "chords": [
+    "Am",
+    "F",
+    "E",
+    "Dm",
+    "G",
+    "C"
+  ],
+  "sections": [
+    {
+      "name": "Intro / Verse",
+      "reps": "Am – F – E loop",
+      "lines": [
+        [
+          "Am",
+          "F",
+          "E",
+          "Am"
+        ]
+      ]
+    },
+    {
+      "name": "Pre-Chorus",
+      "reps": "build on iv → V",
+      "lines": [
+        [
+          "Dm",
+          "G"
+        ],
+        [
+          "F",
+          "E"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "Am",
+          "F"
+        ],
+        [
+          "E",
+          "Am"
+        ],
+        [
+          "Am",
+          "F"
+        ],
+        [
+          "E",
+          "Am"
+        ]
+      ]
+    },
+    {
+      "name": "Solo / Outro",
+      "reps": "Am – F – E loop",
+      "lines": [
+        [
+          "Am",
+          "F",
+          "E",
+          "Am"
+        ]
+      ]
+    }
+  ],
   "lyrics": null,
-  "show": 11
+  "show": 11,
+  "formSteps": [
+    "Intro (Am – F – E ×4)",
+    "Verse 1",
+    "Pre-Chorus",
+    "Chorus",
+    "Verse 2",
+    "Pre-Chorus",
+    "Chorus",
+    "Guitar Solo",
+    "Pre-Chorus",
+    "Chorus",
+    "Outro (Am – F – E fade)"
+  ]
 }

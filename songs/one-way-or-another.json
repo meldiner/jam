@@ -8,8 +8,88 @@
   "ending": "",
   "form": "",
   "dir": "ltr",
-  "chords": [],
-  "sections": [],
+  "chords": [
+    "E",
+    "E5",
+    "B",
+    "A",
+    "G",
+    "D",
+    "F#",
+    "B5",
+    "A5"
+  ],
+  "sections": [
+    {
+      "name": "Intro / Verse",
+      "reps": "E5 riff",
+      "lines": [
+        [
+          "E"
+        ]
+      ]
+    },
+    {
+      "name": "Pre-Chorus",
+      "reps": "“gonna get-cha…” — verify",
+      "lines": [
+        [
+          "B",
+          "A"
+        ],
+        [
+          "B",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "reps": "“one way or another” — verify",
+      "lines": [
+        [
+          "E",
+          "E"
+        ],
+        [
+          "E",
+          "E"
+        ]
+      ]
+    },
+    {
+      "name": "Bridge",
+      "reps": "“and if the lights are all out…” — verify",
+      "lines": [
+        [
+          "G",
+          "D"
+        ],
+        [
+          "G",
+          "D"
+        ],
+        [
+          "F#",
+          "B"
+        ]
+      ]
+    }
+  ],
   "lyrics": null,
-  "show": 9
+  "show": 9,
+  "formSteps": [
+    "Intro (E riff)",
+    "Verse 1",
+    "Pre-Chorus",
+    "Chorus",
+    "Verse 2",
+    "Pre-Chorus",
+    "Chorus",
+    "Bridge",
+    "Solo over verse riff",
+    "Pre-Chorus",
+    "Chorus (×2 to fade)",
+    "(skeleton — verify exact voicings at practice)"
+  ]
 }

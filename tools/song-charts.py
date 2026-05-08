@@ -411,24 +411,46 @@ CHARTS = {
     },
 
     "kerach-9": {
-        "chartChords": ["Bb", "F", "Eb", "D", "Ab", "Gm", "Eb/E", "A", "E"],
+        # קרח 9 — איתו לנצח. From slide 8 / images 12 + 13 + 17.
+        # Key: Bb. BPM: 160.
+        "chartChords": ["Bb", "F", "Eb", "Eb/E", "Gm", "D", "Ab", "Bb7", "A", "E"],
         "chartSections": [
-            {"name": "פתיחה / סיום", "reps": "×2 each",
-             "lines": [["Bb", "F"], ["Bb", "F"]]},
+            {"name": "פתיחה (Intro)", "reps": "×2",
+             "lines": [["Bb F", "Bb F"]]},
             {"name": "בית (Verse)",
-             "lines": [["Eb", "D"], ["Ab", "Gm"], ["Eb", "Eb/E"]]},
+             "lines": [
+                 ["F", "Bb", "F", "Bb"],
+                 ["Bb F", "Bb", "Eb/E", "Eb"],
+                 ["F", "Bb", "F", "Bb"],
+                 ["Eb F", "Bb", "Eb/E", "Eb"],
+             ]},
             {"name": "פזמון (Chorus)",
-             "lines": [["Eb", "D"], ["Ab", "Gm"], ["Eb", "F"], ["Bb"]]},
-            {"name": "מעבר (Interlude)",
-             "lines": [["Bb", "F"], ["Bb", "F"]]},
-            {"name": "Outro",
-             "lines": [["Bb", "F"], ["A", "E"], ["A", "E"]]},
+             "lines": [
+                 ["Gm", "D", "Eb"],
+                 ["Eb", "Ab"],
+                 ["Eb Bb7 Bb", "Eb/E"],
+                 ["Gm", "D", "Eb"],
+                 ["Eb", "Ab"],
+                 ["Bb", "F"],
+             ]},
+            {"name": "מעבר (Bridge)",
+             "lines": [["Bb F", "Bb F", "Bb"]]},
+            {"name": "סיום (Outro)", "reps": "modulation up",
+             "lines": [["Bb F"], ["A E", "A E"]]},
         ],
         "formSteps": [
-            "פתיחה", "בית", "פזמון",
-            "פתיחה", "בית", "פזמון",
-            "מעבר", "בית", "פזמון",
-            "מעבר", "Outro", "פזמון*"
+            "פתיחה (×2)",
+            "בית 1",
+            "פזמון",
+            "פתיחה",
+            "בית 2",
+            "פזמון",
+            "מעבר",
+            "בית 3",
+            "פזמון",
+            "מעבר",
+            "Outro (modulation A E)",
+            "פזמון* (last chorus)",
         ],
     },
 
@@ -859,6 +881,70 @@ CHARTS = {
             "בית 3 (Em)", "סולו גיטרה ארוך",
             "סיום — מודולציה ל-Ebm", "בית (Ebm)",
             "מודולציה ל-Dm", "בית (Dm)", "בית (Dm)"
+        ],
+    },
+
+    # ---------------------------------------------------------------------
+    # New show songs not in the pptx — best-shot charts from common
+    # knowledge. Sections marked "(verify)" need confirmation at practice.
+    # ---------------------------------------------------------------------
+
+    "smooth": {
+        # Santana feat. Rob Thomas. Key: Am. The whole song loops on Am – F – E.
+        "chartChords": ["Am", "F", "E", "Dm", "G", "C"],
+        "chartSections": [
+            {"name": "Intro / Verse", "reps": "Am – F – E loop",
+             "lines": [["Am", "F", "E", "Am"]]},
+            {"name": "Pre-Chorus", "reps": "build on iv → V",
+             "lines": [["Dm", "G"], ["F", "E"]]},
+            {"name": "Chorus",
+             "lines": [["Am", "F"], ["E", "Am"], ["Am", "F"], ["E", "Am"]]},
+            {"name": "Solo / Outro", "reps": "Am – F – E loop",
+             "lines": [["Am", "F", "E", "Am"]]},
+        ],
+        "formSteps": [
+            "Intro (Am – F – E ×4)",
+            "Verse 1",
+            "Pre-Chorus",
+            "Chorus",
+            "Verse 2",
+            "Pre-Chorus",
+            "Chorus",
+            "Guitar Solo",
+            "Pre-Chorus",
+            "Chorus",
+            "Outro (Am – F – E fade)",
+        ],
+    },
+
+    "one-way-or-another": {
+        # Blondie. Key: E (mixolydian feel, single-tonic verse riff).
+        # Verse riff sits on E5; pre-chorus alternates B–A; bridge moves
+        # through G–B–D before resolving back to E. Verify chorus voicings.
+        "chartChords": ["E", "E5", "B", "A", "G", "D", "F#", "B5", "A5"],
+        "chartSections": [
+            {"name": "Intro / Verse", "reps": "E5 riff",
+             "lines": [["E"]]},
+            {"name": "Pre-Chorus", "reps": "“gonna get-cha…” — verify",
+             "lines": [["B", "A"], ["B", "A"]]},
+            {"name": "Chorus", "reps": "“one way or another” — verify",
+             "lines": [["E", "E"], ["E", "E"]]},
+            {"name": "Bridge", "reps": "“and if the lights are all out…” — verify",
+             "lines": [["G", "D"], ["G", "D"], ["F#", "B"]]},
+        ],
+        "formSteps": [
+            "Intro (E riff)",
+            "Verse 1",
+            "Pre-Chorus",
+            "Chorus",
+            "Verse 2",
+            "Pre-Chorus",
+            "Chorus",
+            "Bridge",
+            "Solo over verse riff",
+            "Pre-Chorus",
+            "Chorus (×2 to fade)",
+            "(skeleton — verify exact voicings at practice)",
         ],
     },
 }

@@ -12,25 +12,22 @@
     "Bb",
     "F",
     "Eb",
+    "Eb/E",
+    "Gm",
     "D",
     "Ab",
-    "Gm",
-    "Eb/E",
+    "Bb7",
     "A",
     "E"
   ],
   "sections": [
     {
-      "name": "פתיחה / סיום",
-      "reps": "×2 each",
+      "name": "פתיחה (Intro)",
+      "reps": "×2",
       "lines": [
         [
-          "Bb",
-          "F"
-        ],
-        [
-          "Bb",
-          "F"
+          "Bb F",
+          "Bb F"
         ]
       ]
     },
@@ -38,16 +35,28 @@
       "name": "בית (Verse)",
       "lines": [
         [
-          "Eb",
-          "D"
+          "F",
+          "Bb",
+          "F",
+          "Bb"
         ],
         [
-          "Ab",
-          "Gm"
+          "Bb F",
+          "Bb",
+          "Eb/E",
+          "Eb"
         ],
         [
-          "Eb",
-          "Eb/E"
+          "F",
+          "Bb",
+          "F",
+          "Bb"
+        ],
+        [
+          "Eb F",
+          "Bb",
+          "Eb/E",
+          "Eb"
         ]
       ]
     },
@@ -55,49 +64,53 @@
       "name": "פזמון (Chorus)",
       "lines": [
         [
-          "Eb",
-          "D"
-        ],
-        [
-          "Ab",
-          "Gm"
+          "Gm",
+          "D",
+          "Eb"
         ],
         [
           "Eb",
+          "Ab"
+        ],
+        [
+          "Eb Bb7 Bb",
+          "Eb/E"
+        ],
+        [
+          "Gm",
+          "D",
+          "Eb"
+        ],
+        [
+          "Eb",
+          "Ab"
+        ],
+        [
+          "Bb",
           "F"
-        ],
+        ]
+      ]
+    },
+    {
+      "name": "מעבר (Bridge)",
+      "lines": [
         [
+          "Bb F",
+          "Bb F",
           "Bb"
         ]
       ]
     },
     {
-      "name": "מעבר (Interlude)",
+      "name": "סיום (Outro)",
+      "reps": "modulation up",
       "lines": [
         [
-          "Bb",
-          "F"
+          "Bb F"
         ],
         [
-          "Bb",
-          "F"
-        ]
-      ]
-    },
-    {
-      "name": "Outro",
-      "lines": [
-        [
-          "Bb",
-          "F"
-        ],
-        [
-          "A",
-          "E"
-        ],
-        [
-          "A",
-          "E"
+          "A E",
+          "A E"
         ]
       ]
     }
@@ -285,17 +298,17 @@
   ],
   "show": 7,
   "formSteps": [
-    "פתיחה",
-    "בית",
+    "פתיחה (×2)",
+    "בית 1",
     "פזמון",
     "פתיחה",
-    "בית",
+    "בית 2",
     "פזמון",
     "מעבר",
-    "בית",
+    "בית 3",
     "פזמון",
     "מעבר",
-    "Outro",
-    "פזמון*"
+    "Outro (modulation A E)",
+    "פזמון* (last chorus)"
   ]
 }
