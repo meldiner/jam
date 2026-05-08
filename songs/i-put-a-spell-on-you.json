@@ -76,7 +76,90 @@
       ]
     }
   ],
-  "lyrics": null,
+  "lyrics": [
+    {
+      "section": "Intro",
+      "lines": [
+        {
+          "chords": [
+            "Dm"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Verse 1",
+      "lines": [
+        " I put a sp[Dm]ell on you  [Gm]",
+        " 'Cause you're m[Dm]ine  [D]",
+        "[Gm] You better stop the things you do",
+        " I t[A]ell you, I ain't lyin', I ain't lyin'",
+        "[Bridge] < Bass",
+        "[Dm] You know I can't stand it",
+        "[D] You're runnin' around, you know better daddy",
+        "[Gm] I can't stand it cause you put me down",
+        "[Bb] Oh no"
+      ]
+    },
+    {
+      "section": "Verse 2",
+      "lines": [
+        " I put a sp[Dm]ell on you  [A]",
+        " Because you're m[Dm]ine  [A]"
+      ]
+    },
+    {
+      "section": "Solo",
+      "lines": [
+        {
+          "chords": [
+            "Dm",
+            "Gm",
+            "Dm",
+            "D"
+          ]
+        },
+        {
+          "chords": [
+            "Gm",
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Verse 3",
+      "lines": [
+        "[Dm] You know I love you, [D]I love you",
+        " I love you, I love you anyhow",
+        "[Gm] And I don't care if you don't want me",
+        "[Bb] I'm yours right now",
+        " I put a sp[Dm]ell on you  [A]",
+        " Because you're m[Dm]ine  [A]",
+        "Dm < piano only",
+        "[Dm] You know I can't stand it",
+        " You're runnin' ar[D]ound, you know better daddy",
+        "[Gm] I can't stand it cause you put me down",
+        "[Bb] Oh oh"
+      ]
+    },
+    {
+      "section": "Verse 4",
+      "lines": [
+        " I put a sp[Dm]ell on you  [A]",
+        " Because you're m[Dm]ine  [A]"
+      ]
+    },
+    {
+      "section": "Outro",
+      "lines": [
+        " Because you're m[Dm]ine  [A]",
+        " Because you're mine....",
+        "[Gm] Oooh y[Dm]eah",
+        "[191] I put a spell on you"
+      ]
+    }
+  ],
   "formSteps": [
     "Intro",
     "Verse 1",

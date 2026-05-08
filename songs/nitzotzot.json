@@ -13,20 +13,16 @@
     "C",
     "Fmaj7",
     "Dadd9",
-    "G",
     "F",
-    "Bm",
-    "A",
-    "Dm",
-    "B",
+    "G",
     "Em",
-    "D",
-    "G/B"
+    "G/B",
+    "D"
   ],
   "sections": [
     {
       "name": "Intro",
-      "reps": "×4",
+      "reps": "×4 (arpeggio)",
       "lines": [
         [
           "Am",
@@ -37,100 +33,52 @@
       ]
     },
     {
-      "name": "Verse",
+      "name": "בית (Verse)",
       "lines": [
         [
-          "Fmaj7",
+          "Am",
           "C",
-          "Am"
+          "Fmaj7",
+          "Dadd9"
         ],
         [
           "Am",
-          "Dadd9",
-          "Fmaj7"
-        ],
-        [
+          "C",
           "Fmaj7",
-          "C",
-          "Am"
-        ],
-        [
-          "C",
-          "Dadd9",
-          "Fmaj7"
+          "Dadd9"
         ]
       ]
     },
     {
-      "name": "Pre-Chorus",
+      "name": "פזמון (Chorus) — verify",
       "lines": [
         [
-          "Am",
+          "F",
+          "G",
+          "Am"
+        ],
+        [
+          "F",
           "G",
           "C"
+        ]
+      ]
+    },
+    {
+      "name": "מעבר / Bridge — verify",
+      "lines": [
+        [
+          "Em",
+          "Am"
         ],
         [
-          "C",
-          "Fmaj7"
-        ],
-        [
-          "Am",
+          "F",
           "G"
-        ],
-        [
-          "G",
-          "F"
         ]
       ]
     },
     {
-      "name": "Chorus",
-      "lines": [
-        [
-          "Bm",
-          "F"
-        ],
-        [
-          "A",
-          "Dm"
-        ],
-        [
-          "B",
-          "Em"
-        ],
-        [
-          "G",
-          "C",
-          "D"
-        ]
-      ]
-    },
-    {
-      "name": "Bridge",
-      "lines": [
-        [
-          "D",
-          "G/B",
-          "C"
-        ],
-        [
-          "D",
-          "G/B",
-          "C"
-        ],
-        [
-          "Am D",
-          "G/B C"
-        ],
-        [
-          "Am D",
-          "G/B C"
-        ]
-      ]
-    },
-    {
-      "name": "Outro",
-      "reps": "×4",
+      "name": "סיום (Outro)",
       "lines": [
         [
           "C",
@@ -143,14 +91,13 @@
   "lyrics": null,
   "show": 12,
   "formSteps": [
-    "אינטרו (×4)",
+    "Intro (×4)",
     "בית 1",
-    "פרה-פזמון",
     "פזמון",
-    "מעבר (Bridge)",
     "בית 2",
-    "פרה-פזמון",
     "פזמון",
-    "סיום (Outro)"
+    "מעבר / סולו",
+    "פזמון",
+    "סיום (C – G/B – D)"
   ]
 }

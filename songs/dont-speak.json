@@ -67,7 +67,35 @@
       ]
     }
   ],
-  "lyrics": null,
+  "lyrics": [
+    {
+      "section": "",
+      "lines": [
+        "Intro Guitar Bm x measures",
+        "אינטרו גיטרה",
+        "בית ארוך",
+        "פזמון",
+        "בית קצר",
+        "פזמון",
+        "מעבר + סולו",
+        "מעבר (גיטרה ושירה)",
+        "פזמון:",
+        "מעבר וסולו:",
+        "Bm F#m  Em  A Bm  X2",
+        {
+          "chords": [
+            "Bm",
+            "F#m",
+            "Em",
+            "A",
+            "F#m",
+            "Bm",
+            "Em"
+          ]
+        }
+      ]
+    }
+  ],
   "formSteps": [
     "Intro (gtr)",
     "Long Verse",

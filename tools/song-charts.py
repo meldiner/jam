@@ -617,6 +617,159 @@ CHARTS = {
         ],
     },
 
+    # ---------------------------------------------------------------------
+    # Best-shot drafts for show songs that had only a title slide in pptx.
+    # Section blocks marked "(verify)" need confirmation at practice.
+    # ---------------------------------------------------------------------
+
+    "nitzotzot": {
+        # Fortisakharof. User pre-populated: key=Am, opening Am–C–Fmaj7–Dadd9 ×4,
+        # outro C–G/B–D. Building on that.
+        "chartChords": ["Am", "C", "Fmaj7", "Dadd9", "F", "G", "Em", "G/B", "D"],
+        "chartSections": [
+            {"name": "Intro", "reps": "×4 (arpeggio)",
+             "lines": [["Am", "C", "Fmaj7", "Dadd9"]]},
+            {"name": "בית (Verse)",
+             "lines": [["Am", "C", "Fmaj7", "Dadd9"],
+                       ["Am", "C", "Fmaj7", "Dadd9"]]},
+            {"name": "פזמון (Chorus) — verify",
+             "lines": [["F", "G", "Am"],
+                       ["F", "G", "C"]]},
+            {"name": "מעבר / Bridge — verify",
+             "lines": [["Em", "Am"], ["F", "G"]]},
+            {"name": "סיום (Outro)",
+             "lines": [["C", "G/B", "D"]]},
+        ],
+        "formSteps": [
+            "Intro (×4)",
+            "בית 1",
+            "פזמון",
+            "בית 2",
+            "פזמון",
+            "מעבר / סולו",
+            "פזמון",
+            "סיום (C – G/B – D)",
+        ],
+    },
+
+    "shir-hamakolet": {
+        # Kaveret (1973), from "סיפורי פוגי". DRAFT — confirm the key first
+        # at practice; the song is commonly played in D or G. Below is a
+        # skeleton in D that I'm low confidence on.
+        "chartChords": ["D", "G", "A", "Bm", "F#m", "Em"],
+        "chartSections": [
+            {"name": "Intro — verify",
+             "lines": [["D", "A", "G", "D"]]},
+            {"name": "בית (Verse) — verify",
+             "lines": [["D", "F#m", "G", "A"],
+                       ["D", "F#m", "Em", "A"]]},
+            {"name": "פזמון (Chorus) — verify",
+             "lines": [["G", "A", "D", "Bm"],
+                       ["G", "A", "D"]]},
+            {"name": "סיום — verify",
+             "lines": [["D"]]},
+        ],
+        "formSteps": [
+            "Intro",
+            "בית 1",
+            "פזמון",
+            "בית 2",
+            "פזמון",
+            "מעבר",
+            "פזמון",
+            "סיום",
+            "(skeleton — verify the key + progressions at practice)",
+        ],
+    },
+
+    "mishehu": {
+        # Ivri Lider — "מישהו פעם" (2003). DRAFT in Em (typical for the song).
+        # Probably needs verification of pre-chorus + bridge.
+        "chartChords": ["Em", "C", "G", "D", "Am", "Bm"],
+        "chartSections": [
+            {"name": "Intro — verify",
+             "lines": [["Em", "C", "G", "D"]]},
+            {"name": "בית (Verse) — verify",
+             "lines": [["Em", "C"], ["G", "D"],
+                       ["Em", "C"], ["G", "D"]]},
+            {"name": "פזמון (Chorus) — verify",
+             "lines": [["C", "G", "D", "Em"],
+                       ["C", "G", "D"]]},
+            {"name": "מעבר / Bridge — verify",
+             "lines": [["Am", "Bm", "C", "D"]]},
+        ],
+        "formSteps": [
+            "Intro",
+            "בית 1",
+            "פזמון",
+            "בית 2",
+            "פזמון",
+            "מעבר / Bridge",
+            "פזמון (×2)",
+            "סיום",
+            "(skeleton — verify at practice)",
+        ],
+    },
+
+    "parperei-titua": {
+        # Carmella Gross-Wagner / Eran Tzur. Low-confidence skeleton.
+        # Likely minor key (Em or Am). Below is Em-skeleton.
+        "chartChords": ["Em", "C", "G", "D", "Am", "B7"],
+        "chartSections": [
+            {"name": "Intro — verify",
+             "lines": [["Em", "Am"], ["Em", "B7"]]},
+            {"name": "בית (Verse) — verify",
+             "lines": [["Em", "Am", "G", "D"],
+                       ["Em", "Am", "B7", "Em"]]},
+            {"name": "פזמון (Chorus) — verify",
+             "lines": [["C", "G", "D", "Em"],
+                       ["C", "G", "B7", "Em"]]},
+            {"name": "סיום — verify",
+             "lines": [["Em"]]},
+        ],
+        "formSteps": [
+            "Intro",
+            "בית 1",
+            "פזמון",
+            "בית 2",
+            "פזמון",
+            "מעבר",
+            "פזמון",
+            "סיום",
+            "(skeleton — low confidence; verify at practice)",
+        ],
+    },
+
+    "ahava-hadasha": {
+        # Assaf Amdursky. Slide 12 has the bass + guitar opening pattern.
+        # The chord-quality of the body is jazz-influenced (sevenths). Below
+        # is a low-confidence interpretation of what the bass intervals imply.
+        "chartChords": ["D", "E", "A", "C", "F#m", "Bm", "G", "Em7"],
+        "chartSections": [
+            {"name": "Opening — bass walk",
+             "lines": [["D & E", "E & G"], ["A & B", "A & C"]]},
+            {"name": "Opening — guitar",
+             "lines": [["F# & G", "A & B"], ["C & B & F# & E"]]},
+            {"name": "בית (Verse) — verify",
+             "lines": [["D", "E"], ["A", "C"],
+                       ["F#m", "Bm"], ["G", "A"]]},
+            {"name": "פזמון (Chorus) — verify",
+             "lines": [["G", "A", "D"],
+                       ["G", "A", "Em7", "A"]]},
+        ],
+        "formSteps": [
+            "Opening (bass + guitar pattern)",
+            "בית 1",
+            "פזמון",
+            "בית 2",
+            "פזמון",
+            "מעבר / סולו",
+            "פזמון",
+            "סיום",
+            "(verse/chorus chord progression is a draft — verify at practice)",
+        ],
+    },
+
     "spontaneous": {
         "chartChords": ["A", "E", "F#m", "D", "D7", "C#7", "A/E", "D/E", "C#m"],
         "chartSections": [

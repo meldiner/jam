@@ -83,7 +83,190 @@
       ]
     }
   ],
-  "lyrics": null,
+  "lyrics": [
+    {
+      "section": "",
+      "lines": [
+        "Give it away"
+      ]
+    },
+    {
+      "section": "Intro",
+      "lines": [
+        {
+          "chords": [
+            "Am7"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Verse",
+      "lines": [
+        "[Am]  What I've got you've [C]got to give it to your mama",
+        "[Am]  What I've got you've [C]got to give it to your pappa",
+        "[Am]  What I've got you've [C]got to give it to your daughter",
+        "You [Am]do a little dance and [C]then you drink a little water",
+        "[Am]  What I've got you've [C]got to get it put it in you",
+        "[Am]  What I've got you've [C]got to get it put it in you",
+        "[Am]  What I've got you've [C]got to get it put it in you",
+        "[Am]Reeling with the feeling [C]don't stop continue",
+        "[Am]  Realize [C]I don't want to be a miser",
+        "[Am]  Confide [C]with sly you'll be the wiser",
+        "[Am]  Young blood [C]is the lovin' upriser",
+        "[Am]How come everybody [C]want to keep it like the kaiser"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "[Am]  Give it away give it away give it away now",
+        "[Am]  Give it away give it away give it away now",
+        "[Am]  Give it away give it away give it away now",
+        "[Am]I can't tell if I'm a kingpin or a pauper"
+      ]
+    },
+    {
+      "section": "Verse",
+      "lines": [
+        "[Am]Greedy little people [C]in a sea of distress",
+        "[Am]Keep your more [C]to receive your less",
+        "[Am]  Unimpressed [C]by material excess",
+        "[Am]Love is free [C]love me say hell yes",
+        "[Am]  Low brow [C]but I rock a little know how",
+        "[Am]  No time [C]for the piggies or the hoosegow",
+        "[Am]  Get smart [C]get down with the pow wow",
+        "[Am]Never been a better [C]time than right now",
+        "[Am]  Bob Mar[C]ley poet and a prophet",
+        "[Am]  Bob Mar[C]ley taught me how to off it",
+        "[Am]  Bob Mar[C]ley walkin' like he talk it",
+        "[Am]Goodness me [C]can't you see I'm gonna cough it"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "[Am]  Give it away give it away give it away now",
+        "[Am]  Give it away give it away give it away now",
+        "[Am]  Give it away give it away give it away now",
+        "[Am]Oh, oh yeah"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "[N.C]  Give it away give it away give it away now",
+        "[N.C]  Give it away give it away give it away now",
+        "[N.C]  Give it away give it away give it away now",
+        "[N.C]I can't tell if I'm a kingpin or a pauper"
+      ]
+    },
+    {
+      "section": "Solo",
+      "lines": [
+        {
+          "chords": [
+            "Em",
+            "G",
+            "Em",
+            "G",
+            "Em",
+            "G"
+          ]
+        },
+        {
+          "chords": [
+            "Em",
+            "G",
+            "Em",
+            "G",
+            "Em",
+            "G"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Verse",
+      "lines": [
+        "Lucky [Am]me swimmin' in [C]my ability",
+        "Dancin' [Am]down on life [C]with agility",
+        "Come and [Am]drink it up from [C]my fertility",
+        "[Am]Blessed with a bucket [C]of lucky mobility",
+        "[Am]  My mom [C]I love her 'cause she love me",
+        "[Am]  Long gone [C]are the times when she scrub me",
+        "[Am]  Feelin' good [C]my brother gonna hug me",
+        "[Am]Drink my juice [C]young love chug-a-lug me",
+        "[Am]  There's a river [C]born to be a giver",
+        "[Am]  Keep you warm [C]won't let you shiver",
+        "[Am]  His heart [C]is never gonna wither",
+        "[Am]Come on everybody [C]time to deliver"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "[N.C]  Give it away give it away give it away now",
+        "[N.C]  Give it away give it away give it away now",
+        "[N.C]  Give it away give it away give it away now",
+        "[N.C]I can't tell if I'm a kingpin or a pauper"
+      ]
+    },
+    {
+      "section": "Solo",
+      "lines": [
+        {
+          "chords": [
+            "Em",
+            "G",
+            "Em",
+            "G",
+            "Em",
+            "G"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Verse",
+      "lines": [
+        "[Am]  What I've got you've [C]got to give it to your mama",
+        "[Am]  What I've got you've [C]got to give it to your pappa",
+        "[Am]  What I've got you've [C]got to give it to your daughter",
+        "You [Am]do a little dance and [C]then you drink a little water",
+        "[Am]  What I've got you've [C]got to get it put it in you",
+        "[Am]  What I've got you've [C]got to get it put it in you",
+        "[Am]  What I've got you've [C]got to get it put it in you",
+        "[Am]Reeling with the feeling [C]don't stop continue",
+        "[Am]  Realize [C]I don't want to be a miser",
+        "[Am]  Confide [C]with sly you'll be the wiser",
+        "[Am]  Young blood [C]is the lovin' upriser",
+        "[Am]How come everybody [C]want to keep it like the kaiser"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "[Am]  Give it away give it away give it away now",
+        "[Am]  Give it away give it away give it away now",
+        "[Am]  Give it away give it away give it away now",
+        "[Am]  Give it away give it away give it away now"
+      ]
+    },
+    {
+      "section": "Outro",
+      "lines": [
+        "[Am]   [C]  Give it away now[Am],  [C] Give it away now",
+        "[Am]   [C]  Give it away now[Am],  [C] Give it away now",
+        "[Am]      [D]  [C#]   [C] Give it away now,[Am]      [D]  [C#]   [C] Give it away now",
+        "[Am]      [D]  [C#]   [C] Give it away now,[Am]      [D]  [C#]   [C] Give it away now",
+        "[Am]      [D]  [C#]   [C] Give it away now,[Am]      [D]  [C#]   [C] Give it away now",
+        "[Am]      [D]  [C#]   [C] Give it away now,[Am]      [D]  [C#]   [C] Give it away now",
+        "[Am]      ...now.",
+        "Bass"
+      ]
+    }
+  ],
   "formSteps": [
     "Intro (Am7)",
     "Verse 1",

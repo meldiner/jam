@@ -8,8 +8,79 @@
   "ending": "",
   "form": "",
   "dir": "rtl",
-  "chords": [],
-  "sections": [],
+  "chords": [
+    "D",
+    "G",
+    "A",
+    "Bm",
+    "F#m",
+    "Em"
+  ],
+  "sections": [
+    {
+      "name": "Intro — verify",
+      "lines": [
+        [
+          "D",
+          "A",
+          "G",
+          "D"
+        ]
+      ]
+    },
+    {
+      "name": "בית (Verse) — verify",
+      "lines": [
+        [
+          "D",
+          "F#m",
+          "G",
+          "A"
+        ],
+        [
+          "D",
+          "F#m",
+          "Em",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "פזמון (Chorus) — verify",
+      "lines": [
+        [
+          "G",
+          "A",
+          "D",
+          "Bm"
+        ],
+        [
+          "G",
+          "A",
+          "D"
+        ]
+      ]
+    },
+    {
+      "name": "סיום — verify",
+      "lines": [
+        [
+          "D"
+        ]
+      ]
+    }
+  ],
   "lyrics": null,
-  "show": 6
+  "show": 6,
+  "formSteps": [
+    "Intro",
+    "בית 1",
+    "פזמון",
+    "בית 2",
+    "פזמון",
+    "מעבר",
+    "פזמון",
+    "סיום",
+    "(skeleton — verify the key + progressions at practice)"
+  ]
 }

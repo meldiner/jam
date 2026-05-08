@@ -89,7 +89,100 @@
       ]
     }
   ],
-  "lyrics": null,
+  "lyrics": [
+    {
+      "section": "Verse 1",
+      "lines": [
+        "[Bm]Oh my my my what you done to me",
+        "Like lighting when I'm swimming in the sea",
+        "From the [D]very first time we loved",
+        "From the first time we touched A",
+        "[Bm]Walking on wires and power lines",
+        "You put your body on top of mine",
+        "Every [D]time that you lift me up",
+        "To the heavens and stars above A"
+      ]
+    },
+    {
+      "section": "Pre-Chorus",
+      "lines": [
+        "[Em]Oh Lord have mercy, I'm [Bm]begging you, please",
+        "[D]I'm feeling drained, I need [A]love",
+        "[E]You charge me [Em]up like [Bm]electricity",
+        "[D]Jump-start my heart with your [A]love"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "There's an [Em]energy",
+        "When you [Bm]hold me",
+        "When you [D]touch me",
+        "It's so [A]powerful",
+        "I can [Em]feel it",
+        "When you [Bm]hold me",
+        "When you [D]touch me",
+        "It's so [A]powerful"
+      ]
+    },
+    {
+      "section": "Verse 2",
+      "lines": [
+        "[Bm]I couldn't leave even if I wanted to",
+        "'Cause something keeps pulling me back to you",
+        "From the [D]very first time we loved",
+        "From the very first time we touched[A]",
+        "[Bm]The stroke of your fingers",
+        "The scent of your lingers",
+        "My mind running wild",
+        "With thoughts of your smile",
+        "[D]Oh, you gotta give me some",
+        "[Bm]Or you can give it all but it's never enough"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "There's an [E5]energy",
+        "When you [Bm]hold me",
+        "When you [D]touch me",
+        "It's so [A]powerful",
+        "I can [E]feel it",
+        "When you [Bm]hold me",
+        "When you [D]touch me",
+        "It's so [A]powerful"
+      ]
+    },
+    {
+      "section": "Pre-Chorus",
+      "lines": [
+        "[Em]Oh Lord have mercy, I'm [Bm]begging you, please",
+        "[D]I'm feeling drained, [A]I need love",
+        "[E]You charge me [Em]up like [Bm]electricity",
+        "[D]Jump-start my heart with [A]your love"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "There's an [E5]energy",
+        "When you [Bm]hold me",
+        "When you [D]touch me",
+        "It's so [A]powerful",
+        "I can [E]feel it",
+        "When you [Bm]hold me",
+        "When you [D]touch me",
+        "It's so [A]powerful"
+      ]
+    },
+    {
+      "section": "Bridge",
+      "lines": [
+        "It's so Powerful",
+        "It's so powerful"
+      ]
+    }
+  ],
   "formSteps": [
     "Verse 1",
     "Pre-Chorus",

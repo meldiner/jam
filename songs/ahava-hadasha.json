@@ -8,10 +8,19 @@
   "ending": "",
   "form": "",
   "dir": "rtl",
-  "chords": [],
+  "chords": [
+    "D",
+    "E",
+    "A",
+    "C",
+    "F#m",
+    "Bm",
+    "G",
+    "Em7"
+  ],
   "sections": [
     {
-      "name": "Opening — Bass",
+      "name": "Opening — bass walk",
       "lines": [
         [
           "D & E",
@@ -24,7 +33,7 @@
       ]
     },
     {
-      "name": "Opening — Guitar",
+      "name": "Opening — guitar",
       "lines": [
         [
           "F# & G",
@@ -34,12 +43,65 @@
           "C & B & F# & E"
         ]
       ]
+    },
+    {
+      "name": "בית (Verse) — verify",
+      "lines": [
+        [
+          "D",
+          "E"
+        ],
+        [
+          "A",
+          "C"
+        ],
+        [
+          "F#m",
+          "Bm"
+        ],
+        [
+          "G",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "פזמון (Chorus) — verify",
+      "lines": [
+        [
+          "G",
+          "A",
+          "D"
+        ],
+        [
+          "G",
+          "A",
+          "Em7",
+          "A"
+        ]
+      ]
     }
   ],
-  "lyrics": null,
+  "lyrics": [
+    {
+      "section": "",
+      "lines": [
+        "Opening",
+        "Bass: D & E | E & G | A & B | A & C",
+        "Guitar: F# & G | A & B | C & B & F# & E"
+      ]
+    }
+  ],
   "show": 2,
   "formSteps": [
-    "Opening (bass + guitar)",
-    "(rest of structure not in slide — fill in during practice)"
+    "Opening (bass + guitar pattern)",
+    "בית 1",
+    "פזמון",
+    "בית 2",
+    "פזמון",
+    "מעבר / סולו",
+    "פזמון",
+    "סיום",
+    "(verse/chorus chord progression is a draft — verify at practice)"
   ]
 }

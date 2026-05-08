@@ -75,7 +75,63 @@
       ]
     }
   ],
-  "lyrics": null,
+  "lyrics": [
+    {
+      "section": "Verse 1",
+      "lines": [
+        "You with the [Am]sad [G/B]eyes",
+        "[C]Don't be [F]discouraged",
+        "Oh[Am], I realize[G]",
+        "It's [C]hard to take [F]courage",
+        "In a [Am]world full of pe[G]ople",
+        "[C]You can lose sight [F]of it all",
+        "The [Am]darkness in[G]side you",
+        "Can make you [F]feel so [C]small",
+        {
+          "chords": [
+            "Am",
+            "G",
+            "C",
+            "F"
+          ]
+        },
+        "I see your true[F] colo[C]rs",
+        "[G]Shining through",
+        "I see your [F]true [C]colors",
+        "And t[F]hat's why I lo[G]ve you",
+        "So [F]don't be afr[C]aid to [E]let them s[Am]how",
+        "Your [F]true [C]colors",
+        "[F]True [C]colors are b[Gsus4]eautiful [G]",
+        "Like a [Am]rainbow [G]  [C]  [F]",
+        "Ooohh.... like a [Am]rainb[G]ow  [C]  [F]       [Am]   [G]  [C]"
+      ]
+    },
+    {
+      "section": "Verse 2",
+      "lines": [
+        "Show me a [Am]smile then [G/B]",
+        "[C]Don't be unh[F]appy, can't re[Am]member",
+        "W[G]hen I l[C]ast saw you lau[F]ghing",
+        "If this w[Am]orld makes you [G]crazy",
+        "And you've t[C]aken all you [F]can bear",
+        "J[Am]ust call me u[G]p",
+        "'Cause I will [F]always be [C]there"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "And I see your [F]true [C]colors",
+        "[G]Shining through",
+        "I see your [F]true [C]colors",
+        "And t[F]hat's why I lo[G]ve you",
+        "So [F]don't be afr[C]aid to [E]let them s[Am]how",
+        "Your [F]true [C]colors",
+        "[F]True [C]colors are b[Gsus4]eautiful [G]",
+        "True Colors"
+      ]
+    }
+  ],
   "formSteps": [
     "Verse 1",
     "Pre-Chorus",

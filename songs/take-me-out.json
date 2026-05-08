@@ -96,7 +96,123 @@
       ]
     }
   ],
-  "lyrics": null,
+  "lyrics": [
+    {
+      "section": "Verse",
+      "lines": [
+        "[E]       So if you're [Am]lonely     [D]",
+        "you know I'm [G]here [Bm]waiting for [Em]you",
+        "I'm just a [Am]crosshair   [D]",
+        "I'm just a [G]shot [Bm]away from [Em]you",
+        "and if you [Am]leave here   [D]",
+        "you leave me [G]broken and [Bm]shattered a[Em]live",
+        "I'm just a [Am]crosshair   [D]",
+        "I'm just a [G]shot [Bm]then we can [Em]die",
+        "[G]Ahhh-[A]ahhh-[Em]ahhh   [G]   [A]   [Em]",
+        "[G]I know [D]I won't be [F]leaving here[C] with [Em]you",
+        "Em (slow down)",
+        "Em  Em  Am  Bm  x2"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "[Em]I say don't you know",
+        "[Em]you say you don't know",
+        "[Am]I say..[Bm]. take me out",
+        "[Em]I say you don't show",
+        "[Em]don't move time is slow",
+        "[Am]I say..[Bm]. take me out",
+        {
+          "chords": [
+            "Em",
+            "Em",
+            "Am",
+            "Bm"
+          ]
+        },
+        "[Em]I say you don't know",
+        "[Em]you say you don't know",
+        "[Am]I say..[Bm]. take me out",
+        "[Em]If I move this could die",
+        "[Em]eyes move this can die",
+        "[Am]I want you[Bm] to take me out",
+        {
+          "chords": [
+            "Em",
+            "Em"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Bridge",
+      "lines": [
+        "[Am]I know I won't be [C]leaving here[D]",
+        "[Am]I know I won't be [C]leaving here[D]",
+        "[Am]I know I won't be [C]leaving here[D]",
+        "[Am]I know I won't be [C]leaving here[D] with you",
+        {
+          "chords": [
+            "Em",
+            "Em",
+            "Am",
+            "Bm"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "[Em]I say don't you know",
+        "[Em]you say you don't know",
+        "[Am]I say..[Bm]. take me out",
+        "[Em]I wane this could die",
+        "[Em]I wait this could die",
+        "[Am]I want you[Bm] to take me out",
+        "[Em]If I move this could die",
+        "[Em]eyes move this can die",
+        "[Am]c'mon.[Bm].. [N.C]     take me out"
+      ]
+    },
+    {
+      "section": "Instrumental",
+      "lines": [
+        {
+          "chords": [
+            "Em",
+            "Em",
+            "Am",
+            "Bm"
+          ]
+        },
+        {
+          "chords": [
+            "Em",
+            "Em"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Bridge",
+      "lines": [
+        "[Am]I know I won't be [C]leaving here[D]",
+        "[Am]I know I won't be [C]leaving here[D]",
+        "[Am]I know I won't be [C]leaving here[D]",
+        "[Am]I know I won't be [C]leaving here[D] with you",
+        {
+          "chords": [
+            "Em",
+            "Em",
+            "Em",
+            "Em"
+          ]
+        }
+      ]
+    }
+  ],
   "formSteps": [
     "Verse (slow)",
     "Transition",

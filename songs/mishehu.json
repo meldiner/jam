@@ -8,8 +8,86 @@
   "ending": "",
   "form": "",
   "dir": "rtl",
-  "chords": [],
-  "sections": [],
+  "chords": [
+    "Em",
+    "C",
+    "G",
+    "D",
+    "Am",
+    "Bm"
+  ],
+  "sections": [
+    {
+      "name": "Intro — verify",
+      "lines": [
+        [
+          "Em",
+          "C",
+          "G",
+          "D"
+        ]
+      ]
+    },
+    {
+      "name": "בית (Verse) — verify",
+      "lines": [
+        [
+          "Em",
+          "C"
+        ],
+        [
+          "G",
+          "D"
+        ],
+        [
+          "Em",
+          "C"
+        ],
+        [
+          "G",
+          "D"
+        ]
+      ]
+    },
+    {
+      "name": "פזמון (Chorus) — verify",
+      "lines": [
+        [
+          "C",
+          "G",
+          "D",
+          "Em"
+        ],
+        [
+          "C",
+          "G",
+          "D"
+        ]
+      ]
+    },
+    {
+      "name": "מעבר / Bridge — verify",
+      "lines": [
+        [
+          "Am",
+          "Bm",
+          "C",
+          "D"
+        ]
+      ]
+    }
+  ],
   "lyrics": null,
-  "show": 10
+  "show": 10,
+  "formSteps": [
+    "Intro",
+    "בית 1",
+    "פזמון",
+    "בית 2",
+    "פזמון",
+    "מעבר / Bridge",
+    "פזמון (×2)",
+    "סיום",
+    "(skeleton — verify at practice)"
+  ]
 }

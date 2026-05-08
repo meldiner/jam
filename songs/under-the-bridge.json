@@ -93,7 +93,131 @@
       ]
     }
   ],
-  "lyrics": null,
+  "lyrics": [
+    {
+      "section": "Intro",
+      "lines": [
+        "D   F#   x4"
+      ]
+    },
+    {
+      "section": "Verse 1",
+      "lines": [
+        "[E]Sometimes I feel[B] like",
+        "[C#m]I don't h[G#m]ave a par[A]tner",
+        "[E]Sometimes I feel[B] like",
+        "[C#m]My only frie[A]nd",
+        "[E]Is the city I l[B]ive in",
+        "[C#m]The city[G#m] of ange[A]ls?",
+        "[E]Lonely as I am[B]",
+        "[C#m]Together [A]we cr[Emaj7]y"
+      ]
+    },
+    {
+      "section": "Verse 2",
+      "lines": [
+        "[E]I drive on h[B]er streets 'cause",
+        "[C#m]She's my com[G#m]panion    [A]",
+        "[E]I walk through [B]her hills 'cause",
+        "[C#m]She knows who [A]I am",
+        "[E]She sees my [B]good deeds and",
+        "[C#m]She kisses m[G#m]e windy   [A]",
+        "[E]I never worry, [B]",
+        "[C#m]Now that [A]is a li[Emaj7]e"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "[F#m]I don't ever w[E]ant to feel",
+        "[B/F#]Like I did tha[F#m]t day",
+        "Take me to the place I l[E]ove",
+        "[B/F#]Take me all th[F#m]e way",
+        "[F#m]I don't ever w[E]ant to feel",
+        "[B/F#]Like I did tha[F#m]t day",
+        "Take me to the place I l[E]ove",
+        "[B/F#]Take me all th[F#m]e way"
+      ]
+    },
+    {
+      "section": "Interlude",
+      "lines": [
+        {
+          "chords": [
+            "E",
+            "B"
+          ]
+        },
+        {
+          "chords": [
+            "C#m",
+            "G#m",
+            "A"
+          ]
+        },
+        {
+          "chords": [
+            "E",
+            "B"
+          ]
+        },
+        {
+          "chords": [
+            "C#m",
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Verse 3",
+      "lines": [
+        "[E]It's hard to[B] believe that",
+        "[C#m]There's nobo[G#m]dy out the[A]re",
+        "[E]It's hard to bel[B]ieve that",
+        "[C#m]I'm all a[A]lone",
+        "[E]At least I ha[B]ve her love",
+        "[C#m]The city,[G#m] she loves[A] me",
+        "[E]Lonely as [B]I am",
+        "[C#m]Together [A]we cr[Emaj7]y"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "[F#m]I don't ever want [E]to feel",
+        "[B/F#]Like I did tha[F#m]t day",
+        "Take me to the place I l[E]ove",
+        "[B/F#]Take me all th[F#m]e way",
+        "[F#m]I don't ever want [E]to feel",
+        "[B/F#]Like I did tha[F#m]t day",
+        "Take me to the place I l[E]ove",
+        "[B/F#]Take me all th[F#m]e way"
+      ]
+    },
+    {
+      "section": "Interlude",
+      "lines": [
+        "-[A]ay, [Am7]yeah   [G6]Yeah, [Fmaj7]yeah",
+        "[A]Oh [Am7]no, no, no   [G6]Yeah, [Fmaj7]yeah",
+        "[A]Love [Am7]me, I say   [G6]Yeah, [Fmaj7]yeah",
+        "[Fmaj7]        One time[E7]      [Gmaj7]"
+      ]
+    },
+    {
+      "section": "Coda",
+      "lines": [
+        "[A]Under the bridge [Am]downtown",
+        "[G6]   Is where [Fmaj7]I drew some blood",
+        "[A]Under the bridge [Am]downtown",
+        "[G6]   I could n[Fmaj7]ot get enough",
+        "[A]Under the bridge [Am]downtown",
+        "[G6]   Forgot ab[Fmaj7]out my love",
+        "[A]Under the bridge [Am]downtown",
+        "[G6]   Gave my l[Fmaj7]ife away"
+      ]
+    }
+  ],
   "formSteps": [
     "Intro",
     "Verse 1",

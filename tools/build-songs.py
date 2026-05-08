@@ -318,7 +318,7 @@ def build_chart_sections(sections):
 
 # -------------------- Song specs --------------------
 
-SHOW_NAME = "Show 5/29/26"
+SHOW_NAME = "5/29/26"
 
 SONGS = [
     # ---- New songs not in the pptx (added for the show) ----

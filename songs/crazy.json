@@ -27,7 +27,14 @@
       ]
     }
   ],
-  "lyrics": null,
+  "lyrics": [
+    {
+      "section": "",
+      "lines": [
+        "DM - F - Bb - A"
+      ]
+    }
+  ],
   "formSteps": [
     "(loop on Dm – F – Bb – A throughout)"
   ]

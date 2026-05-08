@@ -64,7 +64,109 @@
       ]
     }
   ],
-  "lyrics": null,
+  "lyrics": [
+    {
+      "section": "Verse 1",
+      "lines": [
+        "I'm gonna [Em]fight 'em off [G]   [C]   [B]",
+        "A seven nation [Em]army couldn't [G]hold me [C]back [B]",
+        "They're gonna [Em]rip it off [G]   [C]   [B]",
+        "Taking their [Em]time right be[G]hind my [C]back [B]",
+        "And I'm [Em]talking to my[G]self at [C]night",
+        "Because I [B]can't for[Em]get [G]   [C]   [B]",
+        "[Em]Back and forth [G]through my [C]mind",
+        "Behind a [B]ciga[Em]rette [G]   [C]   [B]",
+        "And a [G]message coming from my [A]eyes says leave it alone"
+      ]
+    },
+    {
+      "section": "Instrumental Chorus",
+      "lines": [
+        "Em G C B x4",
+        {
+          "chords": [
+            "G",
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Interlude",
+      "lines": [
+        "Em G C B x4"
+      ]
+    },
+    {
+      "section": "Verse 2",
+      "lines": [
+        "Don't wanna [Em]hear about it [G]   [C]   [B]",
+        "Every single on[Em]e's got a stor[G]y to tel[C]l    [B]",
+        "Everyone k[Em]nows about it [G]   [C]   [B]",
+        "From the Queen [Em]of England to [G]the houn[C]ds of[B] Hell",
+        "And if I c[Em]atch it coming[G] ba[C]ck [B]my way",
+        "I'm gonna serve[Em] it to you    [G]        [C]     [B]",
+        "And that a[Em]in't what you [G]wan[C]t t[B]o hear",
+        "But that's what[Em] I'll do      [G]        [C]     [B]",
+        "And a [G]feeling coming from my [A]bones says find a home"
+      ]
+    },
+    {
+      "section": "Solo",
+      "lines": [
+        "Em G C B x8",
+        {
+          "chords": [
+            "G",
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Interlude",
+      "lines": [
+        "Em G C B x4"
+      ]
+    },
+    {
+      "section": "Verse 3",
+      "lines": [
+        "I'm goin' to [Em]Wichita [G]   [C]   [B]",
+        "Far from this o[Em]pera, forever [G]more    [C]     [B]",
+        "I'm gonna [Em]work the straw [G]   [C]   [B]",
+        "Make the sweat [Em]drip out of ev[G]ery pore[C]     [B]",
+        "And I'm bl[Em]eeding and I'm[G] bl[C]eed[B]ing and I'm bleeding",
+        "Right before th[Em]e Lord        [G]        [C]     [B]",
+        "All the [Em]words are gonna [G]bleed from me[C]",
+        "And I will [B]think no m[Em]ore  [G]   [C]   [B]",
+        "And the [G]stains coming from my [A]blood tell me go back home"
+      ]
+    },
+    {
+      "section": "Instrumental Chorus",
+      "lines": [
+        "Em G C B x4",
+        "[Em][185] Seven Nation Army",
+        "פתיחה (גיטרה > בס > תופים)",
+        "בית",
+        "פזמון",
+        "מעבר (קצר)",
+        "בית",
+        "פזמון",
+        "סולו (E > G#m > A > B)",
+        "פזמון",
+        "פזמון",
+        "סולו (סיום)",
+        "[186] הכעס",
+        {
+          "chords": [
+            "C"
+          ]
+        }
+      ]
+    }
+  ],
   "formSteps": [
     "Verse 1",
     "Inst. Chorus (×4)",

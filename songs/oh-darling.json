@@ -79,7 +79,63 @@
       ]
     }
   ],
-  "lyrics": null,
+  "lyrics": [
+    {
+      "section": "Verse 1",
+      "lines": [
+        "[D7#5]       Oh [G]darling, please be[D]lieve me",
+        "[Em]I'll never do you no[C] harm",
+        "Be[Am7]lieve me when I [D7]tell you",
+        "[Am7]I'll never [D7]do you no [G]harm [C]     [G]     [D]"
+      ]
+    },
+    {
+      "section": "Verse 2",
+      "lines": [
+        "Oh [G]darling, if you [D]leave me",
+        "[Em]I'll never make it [C]alone",
+        "Be[Am7]lieve me when I [D7]beg you, oooo!",
+        "[Am7]Don't ever [D7]leave me a[G]lone   [C]     [G]    [G7]"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "When you [C]told me you didn't [D#7]need me anymore",
+        "Well, you [G]know I nearly broke down and cried",
+        "When you [A7]told me you didn't need me anymore",
+        "Well, you [D7]know I nearly [D#7]fell down and [D7]die -ie -ie-ie-[D7#5]ied"
+      ]
+    },
+    {
+      "section": "Verse 3",
+      "lines": [
+        "Oh [G]darling, if you [D]leave me",
+        "[Em]I'll never make it [C]alone",
+        "Be[Am7]lieve me when I [D7]tell you",
+        "[Am7]I'll never [D7]do you no [G]harm  [C]     [G]  believe me darlin'[G7]"
+      ]
+    },
+    {
+      "section": "Chorus",
+      "lines": [
+        "When you [C]told me you didn't [D#7]need me anymore",
+        "Well, you [G]know I nearly broke down and cried",
+        "When you [A7]told me you didn't need me anymore",
+        "Well, you [D7]know I nearly [D#7]fell down and [D7]die -ie -ie-ie-[D7#5]ied"
+      ]
+    },
+    {
+      "section": "Verse 4",
+      "lines": [
+        "Oh [G]darling, please be[D]lieve me",
+        "[Em]I'll never let you[C] down",
+        "(spoken) Oh, believe me, darling",
+        "Be[Am7]lieve me when I [D7]tell you, oooooo!",
+        "[Am7]I'll never [D7]do you no [G]ha-a-a-arm  [C]      [G]           [Ab7]      [G7]"
+      ]
+    }
+  ],
   "formSteps": [
     "Verse 1",
     "Verse 2",
