@@ -9,66 +9,118 @@
   "form": "",
   "dir": "rtl",
   "chords": [
-    "Em",
     "C",
-    "G",
-    "D",
+    "Cmaj7",
+    "F",
+    "A",
+    "Fm",
+    "Dm",
     "Am",
-    "B7"
+    "E",
+    "C/B",
+    "Em",
+    "B"
   ],
   "sections": [
     {
-      "name": "Intro — verify",
+      "name": "פתיחה (Intro)",
+      "reps": "Cmaj7-loop, 4 bars",
       "lines": [
+        [
+          "C Cmaj7",
+          "C Cmaj7"
+        ],
+        [
+          "C Cmaj7",
+          "C Cmaj7"
+        ]
+      ]
+    },
+    {
+      "name": "בית (Verse)",
+      "lines": [
+        [
+          "Cmaj7 C",
+          "Cmaj7 C"
+        ],
+        [
+          "F",
+          "Cmaj7 C"
+        ],
+        [
+          "A",
+          "C",
+          "Fm"
+        ],
+        [
+          "Dm"
+        ],
+        [
+          "Am",
+          "E"
+        ]
+      ]
+    },
+    {
+      "name": "פזמון (Chorus) — “פרפרי תעתוע”",
+      "lines": [
+        [
+          "Am C/B",
+          "C",
+          "Fm F",
+          "Em"
+        ],
         [
           "Em",
           "Am"
         ],
         [
-          "Em",
-          "B7"
+          "C",
+          "Fm F"
         ]
       ]
     },
     {
-      "name": "בית (Verse) — verify",
+      "name": "פזמון מורחב (Extended chorus)",
       "lines": [
         [
-          "Em",
-          "Am",
-          "G",
-          "D"
+          "Am C/B",
+          "C",
+          "Fm F",
+          "Em"
         ],
         [
           "Em",
-          "Am",
-          "B7",
-          "Em"
-        ]
-      ]
-    },
-    {
-      "name": "פזמון (Chorus) — verify",
-      "lines": [
-        [
-          "C",
-          "G",
-          "D",
-          "Em"
+          "Am Em B",
+          "C"
         ],
         [
-          "C",
-          "G",
-          "B7",
+          "Fm F",
           "Em"
         ]
       ]
     },
     {
-      "name": "סיום — verify",
+      "name": "מעבר (Bridge)",
       "lines": [
         [
-          "Em"
+          "Em F Fm",
+          "C C/B Am"
+        ],
+        [
+          "Em F Fm",
+          "C C/B Am"
+        ]
+      ]
+    },
+    {
+      "name": "סיום (Outro)",
+      "lines": [
+        [
+          "C Cmaj7",
+          "F",
+          "A",
+          "(×2)"
         ]
       ]
     }
@@ -76,14 +128,13 @@
   "lyrics": null,
   "show": 5,
   "formSteps": [
-    "Intro",
+    "פתיחה",
     "בית 1",
     "פזמון",
     "בית 2",
     "פזמון",
     "מעבר",
-    "פזמון",
-    "סיום",
-    "(skeleton — low confidence; verify at practice)"
+    "פזמון מורחב",
+    "סיום (C Cmaj7 F A ×2)"
   ]
 }

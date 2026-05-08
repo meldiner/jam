@@ -9,70 +9,150 @@
   "form": "",
   "dir": "rtl",
   "chords": [
-    "Em",
+    "Bb",
+    "Bbmaj7",
+    "F",
+    "Fmaj7",
     "C",
+    "C6",
+    "Csus4",
+    "Gm",
+    "Cmaj7",
     "G",
     "D",
+    "D6",
     "Am",
-    "Bm"
+    "Dmaj7",
+    "A",
+    "E",
+    "Esus4",
+    "Bm",
+    "Emaj7",
+    "B",
+    "F#",
+    "F#sus4",
+    "C#m",
+    "B/Bb",
+    "A/Ab"
   ],
   "sections": [
     {
-      "name": "Intro — verify",
+      "name": "פתיחה / מעבר (Intro / Bridge)",
+      "reps": "×2",
       "lines": [
         [
-          "Em",
-          "C",
-          "G",
-          "D"
+          "B B/Bb",
+          "A A/Ab"
         ]
       ]
     },
     {
-      "name": "בית (Verse) — verify",
+      "name": "בית 1 — Bb",
       "lines": [
         [
-          "Em",
-          "C"
+          "Bbmaj7",
+          "F"
         ],
         [
-          "G",
-          "D"
+          "C C6",
+          "Gm"
         ],
         [
-          "Em",
-          "C"
+          "Bbmaj7",
+          "F"
         ],
         [
-          "G",
-          "D"
+          "C C6",
+          "Gm"
         ]
       ]
     },
     {
-      "name": "פזמון (Chorus) — verify",
+      "name": "בית 2 — C (mod up)",
       "lines": [
         [
-          "C",
-          "G",
-          "D",
-          "Em"
+          "Cmaj7",
+          "G"
         ],
         [
-          "C",
-          "G",
-          "D"
+          "D D6",
+          "Am"
+        ],
+        [
+          "Cmaj7",
+          "G"
+        ],
+        [
+          "D D6",
+          "Am"
         ]
       ]
     },
     {
-      "name": "מעבר / Bridge — verify",
+      "name": "בית 3 — D (mod up)",
       "lines": [
         [
-          "Am",
-          "Bm",
-          "C",
-          "D"
+          "Dmaj7",
+          "A"
+        ],
+        [
+          "E Esus4",
+          "Bm"
+        ],
+        [
+          "Dmaj7",
+          "A"
+        ],
+        [
+          "E Esus4",
+          "Bm"
+        ]
+      ]
+    },
+    {
+      "name": "בית 4 — E (mod up)",
+      "lines": [
+        [
+          "Emaj7",
+          "B"
+        ],
+        [
+          "F# F#sus4",
+          "C#m"
+        ],
+        [
+          "Emaj7",
+          "B"
+        ],
+        [
+          "F# F#sus4",
+          "C#m"
+        ]
+      ]
+    },
+    {
+      "name": "סיום — חזרה ל-Bb (Outro)",
+      "lines": [
+        [
+          "Bbmaj7",
+          "F"
+        ],
+        [
+          "C Csus4",
+          "Gm"
+        ],
+        [
+          "Bbmaj7",
+          "F"
+        ],
+        [
+          "Fmaj7 C",
+          "Csus4 Gm"
+        ],
+        [
+          "B Bbmaj7",
+          "C Bbmaj7",
+          "(×2)"
         ]
       ]
     }
@@ -80,14 +160,15 @@
   "lyrics": null,
   "show": 10,
   "formSteps": [
-    "Intro",
-    "בית 1",
-    "פזמון",
-    "בית 2",
-    "פזמון",
-    "מעבר / Bridge",
-    "פזמון (×2)",
-    "סיום",
-    "(skeleton — verify at practice)"
+    "פתיחה (B B/Bb A A/Ab ×2)",
+    "בית 1 (Bb)",
+    "מעבר",
+    "בית 2 (C)",
+    "מעבר",
+    "בית 3 (D)",
+    "מעבר",
+    "בית 4 (E)",
+    "מעבר",
+    "סיום (חזרה ל-Bb → קדנציה על Bbmaj7)"
   ]
 }

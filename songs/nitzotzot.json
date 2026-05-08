@@ -12,23 +12,38 @@
     "Am",
     "C",
     "Fmaj7",
-    "Dadd9",
-    "F",
+    "D9",
     "G",
-    "Em",
-    "G/B",
-    "D"
+    "F",
+    "Bm",
+    "A",
+    "D",
+    "B",
+    "Em"
   ],
   "sections": [
     {
-      "name": "Intro",
-      "reps": "×4 (arpeggio)",
+      "name": "פתיחה (Intro)",
+      "reps": "fingerpicked walk",
       "lines": [
         [
-          "Am",
-          "C",
-          "Fmaj7",
-          "Dadd9"
+          "(arpeggio: e-3-2-0 / B-3-1-0 / G-2-0 / D-4-2-0 / A-0-2-3)"
+        ]
+      ]
+    },
+    {
+      "name": "פתיחה ווקאלית (Intro vocals)",
+      "reps": "×4",
+      "lines": [
+        [
+          "D",
+          "G",
+          "C"
+        ],
+        [
+          "D",
+          "G",
+          "C"
         ]
       ]
     },
@@ -36,54 +51,76 @@
       "name": "בית (Verse)",
       "lines": [
         [
-          "Am",
-          "C",
           "Fmaj7",
-          "Dadd9"
+          "C",
+          "Am"
         ],
         [
           "Am",
-          "C",
+          "D9",
+          "Fmaj7"
+        ],
+        [
           "Fmaj7",
-          "Dadd9"
+          "C",
+          "Am"
+        ],
+        [
+          "C",
+          "D9",
+          "Fmaj7"
         ]
       ]
     },
     {
-      "name": "פזמון (Chorus) — verify",
+      "name": "פזמון (Chorus)",
       "lines": [
         [
-          "F",
-          "G",
-          "Am"
-        ],
-        [
-          "F",
+          "Am",
           "G",
           "C"
-        ]
-      ]
-    },
-    {
-      "name": "מעבר / Bridge — verify",
-      "lines": [
-        [
-          "Em",
-          "Am"
         ],
         [
-          "F",
+          "C",
+          "Fmaj7"
+        ],
+        [
+          "Am",
           "G"
+        ],
+        [
+          "G",
+          "F"
+        ],
+        [
+          "Bm"
+        ],
+        [
+          "A",
+          "D"
+        ],
+        [
+          "B",
+          "Em"
+        ],
+        [
+          "G",
+          "C"
+        ],
+        [
+          "D"
         ]
       ]
     },
     {
       "name": "סיום (Outro)",
+      "reps": "×4",
       "lines": [
         [
-          "C",
-          "G/B",
-          "D"
+          "Am",
+          "Fmaj7",
+          "Fmaj7",
+          "Am"
         ]
       ]
     }
@@ -91,13 +128,12 @@
   "lyrics": null,
   "show": 12,
   "formSteps": [
-    "Intro (×4)",
+    "פתיחה (אריבג׳יו)",
+    "פתיחה ווקאלית — D G C ×4",
     "בית 1",
     "פזמון",
     "בית 2",
     "פזמון",
-    "מעבר / סולו",
-    "פזמון",
-    "סיום (C – G/B – D)"
+    "סיום — Am Fmaj7 Fmaj7 Am ×4"
   ]
 }

@@ -22,11 +22,19 @@
   ],
   "sections": [
     {
-      "name": "בית — תבנית (Verse pattern)",
+      "name": "פתיחה (Intro)",
+      "reps": "לפני הבית",
       "lines": [
         [
           "C",
-          "C",
+          "C"
+        ]
+      ]
+    },
+    {
+      "name": "בית — תבנית (Verse pattern)",
+      "lines": [
+        [
           "C",
           "F"
         ],

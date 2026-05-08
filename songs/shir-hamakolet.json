@@ -9,63 +9,79 @@
   "form": "",
   "dir": "rtl",
   "chords": [
+    "Em",
     "D",
-    "G",
-    "A",
-    "Bm",
-    "F#m",
-    "Em"
+    "Am",
+    "Cadd9",
+    "F",
+    "Bb",
+    "Cmaj7",
+    "B",
+    "Esus4"
   ],
   "sections": [
     {
-      "name": "Intro — verify",
+      "name": "אינטרו (Intro)",
+      "reps": "Am bass riff",
       "lines": [
         [
-          "D",
-          "A",
-          "G",
-          "D"
+          "Am"
         ]
       ]
     },
     {
-      "name": "בית (Verse) — verify",
+      "name": "בית (Verse)",
+      "reps": "8 bars",
       "lines": [
         [
-          "D",
-          "F#m",
-          "G",
-          "A"
+          "Em D",
+          "Am"
+        ],
+        [
+          "Em D"
+        ],
+        [
+          "Em D",
+          "Cadd9"
+        ],
+        [
+          "Em D",
+          "Cadd9"
+        ]
+      ]
+    },
+    {
+      "name": "פזמון (Chorus)",
+      "lines": [
+        [
+          "Em"
         ],
         [
           "D",
-          "F#m",
+          "F"
+        ],
+        [
           "Em",
-          "A"
-        ]
-      ]
-    },
-    {
-      "name": "פזמון (Chorus) — verify",
-      "lines": [
-        [
-          "G",
-          "A",
-          "D",
-          "Bm"
+          "B",
+          "Bb"
         ],
         [
-          "G",
-          "A",
-          "D"
+          "F D",
+          "Em"
+        ],
+        [
+          "Cmaj7",
+          "B",
+          "Bb"
         ]
       ]
     },
     {
-      "name": "סיום — verify",
+      "name": "תזוזה לפזמון (Pre-chorus tag)",
       "lines": [
         [
-          "D"
+          "Em Esus4",
+          "Em Esus4"
         ]
       ]
     }
@@ -73,14 +89,14 @@
   "lyrics": null,
   "show": 6,
   "formSteps": [
-    "Intro",
+    "אינטרו",
     "בית 1",
+    "תזוזה",
     "פזמון",
     "בית 2",
     "פזמון",
     "מעבר",
     "פזמון",
-    "סיום",
-    "(skeleton — verify the key + progressions at practice)"
+    "סיום"
   ]
 }

@@ -112,6 +112,19 @@
     'B/F#':    { frets: [2, 2, 4, 4, 4, 2], barre: { fret: 2, from: 0, to: 5 } },
     'A/E':     { frets: [0, 0, 2, 2, 2, 0] },
     'D/E':     { frets: [0, 'x', 0, 2, 3, 2] },
+    'C6':      { frets: ['x', 3, 2, 2, 1, 0] },
+    'D6':      { frets: ['x', 'x', 0, 2, 0, 2] },
+    'Am6':     { frets: ['x', 0, 2, 2, 1, 2] },
+    'Esus4':   { frets: [0, 2, 2, 2, 0, 0] },
+    'Asus4':   { frets: ['x', 0, 2, 2, 3, 0] },
+    'Csus4':   { frets: ['x', 3, 3, 0, 1, 1] },
+    'F#sus4':  { frets: [2, 4, 4, 4, 2, 2], barre: { fret: 2, from: 0, to: 5 } },
+    'B/Bb':    { frets: ['x', 1, 4, 4, 4, 2] },
+    'A/Ab':    { frets: ['x', 'x', 6, 6, 5, 5] },
+    'A/G':     { frets: [3, 0, 2, 2, 2, 0] },
+    'B/F#':    { frets: [2, 2, 4, 4, 4, 2], barre: { fret: 2, from: 0, to: 5 } },
+    'B':       { frets: ['x', 2, 4, 4, 4, 2], barre: { fret: 2, from: 1, to: 5 } },
+    'F#':      { frets: [2, 4, 4, 3, 2, 2], barre: { fret: 2, from: 0, to: 5 } },
   };
 
   function getShape(name) {

@@ -9,18 +9,16 @@
   "form": "",
   "dir": "rtl",
   "chords": [
-    "D",
-    "E",
-    "A",
-    "C",
-    "F#m",
-    "Bm",
+    "Em",
     "G",
-    "Em7"
+    "F#",
+    "Bm",
+    "C",
+    "F#m"
   ],
   "sections": [
     {
-      "name": "Opening — bass walk",
+      "name": "פתיחה — Bass",
       "lines": [
         [
           "D & E",
@@ -33,7 +31,7 @@
       ]
     },
     {
-      "name": "Opening — guitar",
+      "name": "פתיחה — Guitar",
       "lines": [
         [
           "F# & G",
@@ -45,39 +43,66 @@
       ]
     },
     {
-      "name": "בית (Verse) — verify",
+      "name": "בית (Verse)",
       "lines": [
         [
-          "D",
-          "E"
+          "Em"
         ],
         [
-          "A",
-          "C"
+          "G"
         ],
         [
-          "F#m",
+          "F#",
           "Bm"
-        ],
-        [
-          "G",
-          "A"
         ]
       ]
     },
     {
-      "name": "פזמון (Chorus) — verify",
+      "name": "פזמון (Chorus)",
+      "reps": "×2",
       "lines": [
         [
-          "G",
-          "A",
-          "D"
+          "Em"
         ],
         [
-          "G",
-          "A",
-          "Em7",
-          "A"
+          "F#",
+          "Bm",
+          "G"
+        ],
+        [
+          "Em"
+        ],
+        [
+          "G"
+        ],
+        [
+          "C",
+          "Bm"
+        ],
+        [
+          "C",
+          "Em"
+        ]
+      ]
+    },
+    {
+      "name": "סיום (Outro)",
+      "lines": [
+        [
+          "Em"
+        ],
+        [
+          "G"
+        ],
+        [
+          "Bm"
+        ],
+        [
+          "C"
+        ],
+        [
+          "Em G F# Em",
+          "(×4)"
         ]
       ]
     }
@@ -94,14 +119,13 @@
   ],
   "show": 2,
   "formSteps": [
-    "Opening (bass + guitar pattern)",
+    "פתיחה (bass + guitar)",
     "בית 1",
-    "פזמון",
+    "פזמון (×2)",
     "בית 2",
+    "פזמון (×2)",
+    "מעבר",
     "פזמון",
-    "מעבר / סולו",
-    "פזמון",
-    "סיום",
-    "(verse/chorus chord progression is a draft — verify at practice)"
+    "סיום (Em G F# Em ×4)"
   ]
 }

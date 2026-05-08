@@ -10,7 +10,7 @@
   "dir": "ltr",
   "chords": [
     "Db",
-    "Eb",
+    "Ebm",
     "Ebm7",
     "Gb",
     "Fm",
@@ -29,13 +29,13 @@
     },
     {
       "name": "Verse",
-      "reps": "8 bars",
+      "reps": "8 bars (bars 3+4 minor)",
       "lines": [
         [
           "Db",
           "Db",
-          "Eb",
-          "Eb"
+          "Ebm",
+          "Ebm"
         ],
         [
           "Db",
