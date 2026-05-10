@@ -70,63 +70,6 @@
       ]
     }
   ],
-  "lyrics": [
-    {
-      "section": "Intro",
-      "lines": [
-        "D  G/D  D  x4"
-      ]
-    },
-    {
-      "section": "Verse 1",
-      "lines": [
-        "[D]After midnight, w[F]e're gonna let[G] it all hang out [D]     [G/D]     [D]   [G/D]    [D]",
-        "[D]After midnight, w[F]e're gonna chu[G]g-a-lug and shout[D]     [G/D]     [D]   [G/D]    [D]"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "We're gonna [D]cause talk and suspicion;",
-        "            [F] give an exhibition,",
-        "            [G] find out what it is all [A]about...",
-        "[D] After midnight, [F]we're gonna le[G]t it all hang out[D]    [G/D]     [D]   [G/D]    [D]"
-      ]
-    },
-    {
-      "section": "Verse 2",
-      "lines": [
-        "[D]After midnight, w[F]e're gonna sha[G]ke your tambourin[D]e     [G/D]     [D]   [G/D]    [D]",
-        "[D]After midnight, i[F]t's gonna be pea[G]ches and crea[D]m    [G/D]     [D]   [G/D]    [D]"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "We're gonna [D]cause talk and suspicion;",
-        "            [F] give an exhibition,",
-        "            [G] find out what it is all [A]about...",
-        "[D] After midnight, [F]we're gonna le[G]t it all hang out[D]     [G/D]     [D]   [G/D]    [D]"
-      ]
-    },
-    {
-      "section": "Solo",
-      "lines": [
-        "D  F  G  D  G/D  D  G/D D  x2"
-      ]
-    },
-    {
-      "section": "Outro",
-      "lines": [
-        "We're gonna [D]cause talk and suspicion;",
-        "            [F] give an exhibition,",
-        "            [G] find out what it is all [A]about...",
-        "[D] After midnight, [F]we're gonna le[G]t it all hang out[D]     [G/D]     [D]   [G/D]    [D]",
-        "[D]After midnight, w[F]e're gonna let[G] it all hang out [D]     [G/D]     [D]   [G/D]    [D]",
-        "(fade)"
-      ]
-    }
-  ],
   "formSteps": [
     "Intro",
     "Verse 1",
@@ -135,5 +78,6 @@
     "Chorus",
     "Solo",
     "Outro / Chorus (fade)"
-  ]
+  ],
+  "lyrics": null
 }

@@ -117,7 +117,6 @@
       ]
     }
   ],
-  "lyrics": null,
   "formSteps": [
     "Intro (4 bars)",
     "Verse 1",
@@ -129,5 +128,6 @@
     "Chorus 2",
     "Bridge",
     "Chorus (final, repeat)"
-  ]
+  ],
+  "lyrics": null
 }

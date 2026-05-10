@@ -10,7 +10,6 @@
   "dir": "rtl",
   "chords": [],
   "sections": [],
-  "lyrics": null,
   "formSteps": [
     "בית — Break",
     "בית",
@@ -20,5 +19,6 @@
     "פזמון — Break",
     "בית — Break",
     "סיום"
-  ]
+  ],
+  "lyrics": null
 }

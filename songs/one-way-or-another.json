@@ -76,7 +76,6 @@
       ]
     }
   ],
-  "lyrics": null,
   "formSteps": [
     "Intro (E riff)",
     "Verse 1",
@@ -90,5 +89,6 @@
     "Pre-Chorus",
     "Chorus (×2 to fade)",
     "(skeleton — verify exact voicings at practice)"
-  ]
+  ],
+  "lyrics": null
 }

@@ -48,110 +48,6 @@
       ]
     }
   ],
-  "lyrics": [
-    {
-      "section": "Verse",
-      "lines": [
-        "[Gm]Birds flying [Gm7/F]high you kn[D#7]ow how I fe[D7]el",
-        "[Gm]Sun in the sk[Gm7/F]y you know [D#7]how I feel [D7]",
-        "[Gm]Reeds driftin[Gm7/F]’ on by you[D#7] know how I[D7] feel"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "[Gm]It’s a new dawn",
-        "[Gm7/F]It’s a new day",
-        "[D#7]It’s a new life",
-        "[D7]F-o-r     [C]me[D]",
-        "And I’m feeling good",
-        {
-          "chords": [
-            "Gm",
-            "Gm7/F",
-            "D#7",
-            "D7"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Verse",
-      "lines": [
-        "[Gm]Fish in the [Gm7/F]sea you kn[D#7]ow how I fe[D7]el",
-        "[Gm]River running [Gm7/F]free you kno[D#7]w how I fe[D7]el",
-        "[Gm]Blossom in the [Gm7/F]tree you kn[D#7]ow how I fe[D7]el"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "[Gm]It’s a new dawn",
-        "[Gm7/F]It’s a new day",
-        "[D#7]It’s a new life",
-        "[D7]F-o-r     [C]me[D]",
-        "And I’m feeling good",
-        {
-          "chords": [
-            "Gm",
-            "Gm7/F",
-            "D#7",
-            "D7"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Verse",
-      "lines": [
-        "[Gm]Dragonfly out in the [Gm7/F]sun you kn[D#7]ow what I me[D7]an, don’t you know",
-        "[Gm]Butterflies all havin’ [Gm7/F]fun you kn[D#7]ow what I m[D7]ean",
-        "[Gm]Sleep in [Gm7/F]peace when da[D#7]y is do[D7]ne",
-        "That’s what I mean"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "[Gm]And this old world",
-        "[Gm7/F]Is a new world",
-        "[D#7]And a bold world",
-        "[D7]F-o-r     [C]me[D]",
-        {
-          "chords": [
-            "Gm",
-            "Gm7/F",
-            "D#7",
-            "D7"
-          ]
-        },
-        "[Gm]Stars when you [Gm7/F]shine you kn[D#7]ow how I fe[D7]el",
-        "[Gm]Scent of the [Gm7/F]pine you kn[D#7]ow how I fe[D7]el",
-        "[Gm]Oh freedom is [Gm7/F]mine and I kn[D#7]ow how I fe[D7]el",
-        {
-          "chords": [
-            "Gm",
-            "Gm7/F",
-            "D#7",
-            "D7"
-          ]
-        },
-        "[Gm]It’s a new dawn",
-        "[Gm7/F]It’s a new day",
-        "[D#7]It’s a new life",
-        "[D7]F-o-r     [C]me[D]",
-        "And I’m feeling good",
-        {
-          "chords": [
-            "Gm",
-            "Gm7/F",
-            "D#7",
-            "D7"
-          ]
-        }
-      ]
-    }
-  ],
   "formSteps": [
     "Verse 1",
     "Chorus",
@@ -161,5 +57,6 @@
     "Chorus",
     "Verse (stars)",
     "Chorus"
-  ]
+  ],
+  "lyrics": null
 }

@@ -112,122 +112,6 @@
       ]
     }
   ],
-  "lyrics": [
-    {
-      "section": "Intro",
-      "lines": [
-        {
-          "chords": [
-            "F",
-            "Eb",
-            "G/D"
-          ]
-        },
-        "  (Lick 1)"
-      ]
-    },
-    {
-      "section": "Verse 1",
-      "lines": [
-        "[C] Something in the way she [Cmaj7]moves,",
-        "C7                        | F      F F/E |",
-        " Attracts me like no other lover.",
-        "D7                      | G G/A G7/B    |",
-        "Something in the way she woos me.",
-        "  Am                    Ammaj7",
-        "I don't wanna leave her now,",
-        "    Am7                 D9   | F   Eb G/D |",
-        "You know I believe, and how.   (Lick 1)"
-      ]
-    },
-    {
-      "section": "Verse 2",
-      "lines": [
-        "[C]Somewhere in her smile she [Cmaj7]knows,",
-        "C7                         | F      F F/E |",
-        " That I don't need no other lover.",
-        "D7                         | G G/A G7/B    |",
-        "Something in her style that shows me.",
-        "  Am                    Ammaj7",
-        "I don't wanna leave her now,",
-        "    Am7                D9  | F   Eb G/D | A |",
-        "You know I believe and how    (Lick 2)"
-      ]
-    },
-    {
-      "section": "Middle 8",
-      "lines": [
-        "[A] You're asking [C#m/G#]me will my love [F#m7]grow,  [A/E]",
-        "I don't [D]know, [G]I don't [A]know (Walkdown 1)",
-        "[A] You stick a[C#m/G#]round now, it may [F#m7]show, [A/E]",
-        "I don't [D]know, [G]I don't [C]know (Walkdown 2)"
-      ]
-    },
-    {
-      "section": "Solo",
-      "lines": [
-        {
-          "chords": [
-            "C",
-            "Cmaj7",
-            "C7",
-            "F",
-            "F",
-            "F/E",
-            "D7",
-            "G",
-            "G/A",
-            "G7/B"
-          ]
-        },
-        {
-          "chords": [
-            "Am",
-            "Ammaj7",
-            "Am7",
-            "D9"
-          ]
-        },
-        {
-          "chords": [
-            "F",
-            "Eb",
-            "G/D"
-          ]
-        },
-        "  (Lick 1)"
-      ]
-    },
-    {
-      "section": "Verse 4",
-      "lines": [
-        "[C]Something in the way she [Cmaj7]knows,",
-        "C7                     | F           F F/E |",
-        "And all I have to do is think of her.",
-        "D7                           | G    G/A G7/B    |",
-        "Something in the things she shows me.",
-        "  Am                    Ammaj7",
-        "I don't wanna leave her now.",
-        "You [Am7]know I believe and [D9]how."
-      ]
-    },
-    {
-      "section": "Outro",
-      "lines": [
-        {
-          "chords": [
-            "F",
-            "Eb",
-            "G/D",
-            "A"
-          ]
-        },
-        "  (Lick 2)",
-        "| F   Eb G/D | C",
-        "  (Lick 1)"
-      ]
-    }
-  ],
   "formSteps": [
     "Intro (Lick 1)",
     "Verse 1",
@@ -236,5 +120,6 @@
     "Solo",
     "Verse 4",
     "Outro (Lick 2 / Lick 1)"
-  ]
+  ],
+  "lyrics": null
 }

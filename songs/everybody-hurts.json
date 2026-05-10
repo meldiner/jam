@@ -89,69 +89,6 @@
       ]
     }
   ],
-  "lyrics": [
-    {
-      "section": "Verse 1",
-      "lines": [
-        "[D]   When the day is long[G]  and the ni[D]ght, the night is yours al[G]one",
-        "[D]   When you're sure you've had e[G]nough of this l[D]ife, hang o[G]n"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "[Em]    Don't let yourself g[A]o,  [Em]    'cause everybody c[A]ries",
-        "[Em]    And everybody h[A]urts [N.C]"
-      ]
-    },
-    {
-      "section": "Verse 2",
-      "lines": [
-        "Som[D]etimes, [G]  sometimes everything is w[D]rong,  [G]   now it's time to sing a[D]long",
-        "When your day is night al[G]one (hold on, ho[D]ld on)",
-        "If you feel like letting g[G]o (hold on)",
-        "[D]   When you think you've had too [G]much of this l[D]ife,   well, hang [G]on"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "[Em]    'Cause everybody h[A]urts, [Em]    take comfort in your f[A]riends",
-        "[Em]    Everybody h[A]urts"
-      ]
-    },
-    {
-      "section": "Bridge",
-      "lines": [
-        "[F#]    Don't throw your h[Bm]and,    o[F#]h    n[Bm]o     [F#]    Don't throw your h[Bm]and",
-        "[C]    When you feel like you're al[G]one     [C]No, no, no, you're [C/B]not al[Am]one  [N.C]"
-      ]
-    },
-    {
-      "section": "Verse 3",
-      "lines": [
-        "[D]   If you're on your o[G]wn, in this l[D]ife, the days and nights are l[G]ong",
-        "[D]   When you think you've had too[G] much, of this l[D]ife,   to hang [G]on"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "[Em]    Well, everybody h[A]urts,  so[Em]metimes everybody c[A]ries",
-        "[Em]    Everybody h[A]urts...[N.C]     som[D]etimes  [G]"
-      ]
-    },
-    {
-      "section": "Verse 4/Outro",
-      "lines": [
-        "Everybody h[D]urts   som[G]etimes so h[D/A]old on, h[G]old on, h[D]old on",
-        "Ho[G]ld on, ho[D]ld on, ho[G]ld on, ho[D]ld on, ho[G]ld on",
-        "Everybody [D]hurts  [G]    [D]No, no, no, no, [G]no...",
-        "You're not a[D]lone  [G]    [D]    [G]    [D]    [G]",
-        "(fade out)"
-      ]
-    }
-  ],
   "formSteps": [
     "Verse 1",
     "Chorus",
@@ -161,5 +98,6 @@
     "Verse 3",
     "Chorus",
     "Verse 4 / Outro (fade)"
-  ]
+  ],
+  "lyrics": null
 }

@@ -41,116 +41,6 @@
       ]
     }
   ],
-  "lyrics": [
-    {
-      "section": "Intro",
-      "lines": [
-        "G   Am   C   Gsus2  2x"
-      ]
-    },
-    {
-      "section": "Verse",
-      "lines": [
-        "2[G]5 years of my life and still",
-        "T[Am]ryin' to get up that great big hill of h[C]ope",
-        "for a desti[Gsus2]nation.",
-        "I[G] realized quickly when I knew I should",
-        "That the wor[Am]ld was made up of this brotherhood of [C]man,",
-        "for whatever that mea[Gsus2]ns."
-      ]
-    },
-    {
-      "section": "Pre-Chorus",
-      "lines": [
-        "And so I [G]cry sometimes, when I'm lying in bed",
-        "just to [Am]get all out, what's in my head, then [C]I,",
-        "I'm feeling, a little peculi[Gsus2]ar.",
-        "And so I wa[G]ke in the morning, and I step outside",
-        "And I [Am]take a deep breath, and I get real high, and [C]I,",
-        "scream from the top of my lungs, \"What's going [Gsus2]on?\""
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "And I say, \"[G]Hey yeah yeah hey, [Am]hey yeah yeah.\"",
-        "I said, \"[C]Hey, what's going [Gsus]on?\"",
-        "And I say, \"[G]Hey yeah yeah hey, [Am]hey yeah yeah.\"",
-        "I said, \"[C]Hey, what's going [Gsus2]on?\""
-      ]
-    },
-    {
-      "section": "Interlude",
-      "lines": [
-        "Oooh ohh...",
-        "[G]Oooh[Am] ohh.[C]..  [Gsus]",
-        {
-          "chords": [
-            "G",
-            "Am",
-            "C",
-            "Gsus"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Verse",
-      "lines": [
-        "And I try, [G]oh my god, do I [Am]try",
-        "I try all the t[C]ime, in this insti[Gsus]tution.",
-        "A[G]nd I pray, oh my god, do I [Am]pray",
-        "I pray every single [C]day, for a revo[Gsus2]lution."
-      ]
-    },
-    {
-      "section": "Interlude",
-      "lines": [
-        "Oooh ohh...",
-        "[G]Oooh[Am] ohh.[C]..  [Gsus]",
-        {
-          "chords": [
-            "G",
-            "Am",
-            "C",
-            "Gsus"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Verse",
-      "lines": [
-        "2[G]5 years of my life and still",
-        "T[Am]ryin' to get up that great big hill of [C]hope",
-        "for a desti[Gsus2]nation."
-      ]
-    },
-    {
-      "section": "Pre-Chorus",
-      "lines": [
-        "And so I [G]cry sometimes, when I'm lying in bed",
-        "just to g[Am]et all out, what's in my head, then [C]I,",
-        "I'm feeling, a little pec[Gsus2]uliar.",
-        "And so I w[G]ake in the morning, and I step outside",
-        "And I [Am]take a deep breath, and I get real high, and [C]I,",
-        "scream from the top of my lungs, \"What's going [Gsus2]on?\""
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "And I say, \"H[G]ey yeah yeah hey, [Am]hey yeah yeah.\"",
-        "I said, \"[C]Hey, what's going [Gsus]on?\"",
-        "And I say, \"[G]Hey yeah yeah hey, [Am]hey yeah yeah.\"",
-        "I said, \"[C]Hey, what's going [Gsus]on?\"",
-        "And I say, \"H[G]ey yeah yeah hey, [Am]hey yeah yeah.\"",
-        "I said, \"[C]Hey, what's going [Gsus2]on?\"",
-        "And I say, \"[G]Hey yeah yeah hey, [Am]hey yeah yeah.\"",
-        "I said, \"[C]Hey, what's going [Gsus2]on?\""
-      ]
-    }
-  ],
   "formSteps": [
     "Intro (×2)",
     "Verse 1",
@@ -162,5 +52,6 @@
     "Verse 3",
     "Pre-Chorus",
     "Chorus (×2)"
-  ]
+  ],
+  "lyrics": null
 }

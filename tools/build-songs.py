@@ -31,6 +31,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SONGS_DIR = ROOT / "songs"
+LOCAL_DIR = ROOT / "songs-local"   # gitignored — lyrics overlay
 SLIDES_DIR = Path("/tmp/pptx_extract/ppt/slides")
 
 NS = {"a": "http://schemas.openxmlformats.org/drawingml/2006/main"}
@@ -593,8 +594,29 @@ def build_song_json(song):
 
 def write_song(song):
     data = build_song_json(song)
+    # Split lyrics out to the gitignored overlay (songs-local/<slug>.json),
+    # leaving the public file (songs/<slug>.json) chart-only.
+    lyrics = data.pop("lyrics", None)
+    data["lyrics"] = None
     p = SONGS_DIR / f"{song['slug']}.json"
     p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    if lyrics:
+        LOCAL_DIR.mkdir(exist_ok=True)
+        overlay_path = LOCAL_DIR / f"{song['slug']}.json"
+        overlay = {}
+        if overlay_path.exists():
+            try:
+                overlay = json.loads(overlay_path.read_text(encoding="utf-8"))
+            except Exception:
+                overlay = {}
+        overlay["lyrics"] = lyrics
+        if data.get("dir"):
+            overlay["dir"] = data["dir"]
+        overlay_path.write_text(
+            json.dumps(overlay, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+    # Restore lyrics on the in-memory dict so callers can inspect counts
+    data["lyrics"] = lyrics
     return data
 
 

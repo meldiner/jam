@@ -77,7 +77,6 @@
       ]
     }
   ],
-  "lyrics": null,
   "formSteps": [
     "Intro (Am – F – E ×4)",
     "Verse 1",
@@ -90,5 +89,6 @@
     "Pre-Chorus",
     "Chorus",
     "Outro (Am – F – E fade)"
-  ]
+  ],
+  "lyrics": null
 }

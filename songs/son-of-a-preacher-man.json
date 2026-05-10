@@ -90,104 +90,6 @@
       ]
     }
   ],
-  "lyrics": [
-    {
-      "section": "Verse 1",
-      "lines": [
-        "[E]Billy Ray was a preacher's son",
-        "And when his [A]daddy would visit he'd [E]come along",
-        "[E]When they'd gather 'round and started talking",
-        "[B7]That's when Billy would take me walking",
-        "A-through the back yard we'd go walking",
-        "Then he'd look into my eyes",
-        "Lord knows to my surprise"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "The [E]only one who could ever reach me",
-        "[A]  Was the son of a pr[E]eacher man",
-        "The [E]only boy who could ever teach me",
-        "[A]  Was the son of a pr[E]eacher man",
-        "Ye[E]s he was, he was,[B]  mmm[A], yes he was"
-      ]
-    },
-    {
-      "section": "Instrumental",
-      "lines": [
-        "   E X1"
-      ]
-    },
-    {
-      "section": "Verse 2",
-      "lines": [
-        "[E]Being good isn't always easy",
-        "[A]No matter how [E]hard I'd try",
-        "[E]When he started sweet-talkin' to me",
-        "[B7]He'd come and tell me everything's all right",
-        "He'd kiss and tell me everything's all right",
-        "Can I get away again tonight"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "The [E]only one who could ever reach me",
-        "[A]  Was the son of a pr[E]eacher man",
-        "The [E]only boy who could ever teach me",
-        "[A]  Was the son of a pr[E]eacher man",
-        "Ye[E]s he was, he was[B],  mm[A]m, yes he was"
-      ]
-    },
-    {
-      "section": "Bridge",
-      "lines": [
-        "([D]Yes, he was)",
-        "H[D]ow well I remember",
-        "[A]The look was in his eyes",
-        "Stealin' kisses from me on the sly",
-        "[B7]   Takin' time to make time",
-        "Tellin' me that he's all mine",
-        "[E7]   Learnin' from each other's knowin'",
-        "Lookin' to see how much we've grown"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "And the [A]only one who could ever reach me",
-        "[D]  Was the son of a pr[A]eacher man",
-        "The [A]only boy who could ever teach me",
-        "[D]  Was the son of a pr[A]eacher man",
-        "Y[A]es he was, he w[E]as, [D7]ooh yes he was"
-      ]
-    },
-    {
-      "section": "Coda",
-      "lines": [
-        "(The o[A]nly one who could ever reach me",
-        "             [D]    Was the son of a pr[A]eacher man)",
-        "He was the sweet-talking son of a preacher man)",
-        "(The only boy who could ever teach me",
-        "        Was the son of a preacher man)",
-        "A kiss-stealin' son of a preacher man",
-        "(The only one who could ever move me",
-        "Was the son of a preacher man)",
-        "(The only one who could ever groove me",
-        "Was the son of a preacher man)",
-        "end:",
-        {
-          "chords": [
-            "A",
-            "E",
-            "D",
-            "A"
-          ]
-        }
-      ]
-    }
-  ],
   "formSteps": [
     "Verse 1",
     "Chorus",
@@ -197,5 +99,6 @@
     "Bridge",
     "Chorus 2 (in A)",
     "Coda (A E D A)"
-  ]
+  ],
+  "lyrics": null
 }

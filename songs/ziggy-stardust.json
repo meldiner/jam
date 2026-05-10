@@ -86,113 +86,6 @@
       ]
     }
   ],
-  "lyrics": [
-    {
-      "section": "Intro",
-      "lines": [
-        {
-          "chords": [
-            "G",
-            "D",
-            "Cadd9",
-            "G/B",
-            "G/A"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Verse 1",
-      "lines": [
-        "[G] Now Ziggy played guitar,",
-        "[Bm]  Jamming good with Weird and [C]Gilly,",
-        "And the Spi[B]ders [C]from [D]Mars.",
-        "He played it left hand,[G]",
-        "But made it too far.[Em]",
-        "Became the spec[A]ial man,",
-        "Then we were [C]Ziggy's band."
-      ]
-    },
-    {
-      "section": "Verse 2",
-      "lines": [
-        "[G]Ziggy really sang,",
-        "[Bm]screwed up eyes and screwed down [C]hairdo,",
-        "like some cat [B]from [C]Ja[D]pan.",
-        "He could lick 'em by smili[G]ng,",
-        "he could leave them to h[Em]ang.",
-        "They came on so [A]loaded, man,",
-        "well hung, [C]snow white tan...."
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "[Am]  So w[G5]here were the sp[F5]iders,   [G5]   [Am]",
-        "While the [G5]fly tried to break[F5] our balls?[G5]   [Am]",
-        "Just the bee[G5]r light to gu[F5]ide us,",
-        "so w[D]e bitched about hi[Dsus2]s fans",
-        "[D]and should we [E]crush his sweet hands?"
-      ]
-    },
-    {
-      "section": "Interlude",
-      "lines": [
-        {
-          "chords": [
-            "G",
-            "D",
-            "Cadd9",
-            "G/B",
-            "G/A"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Verse 3",
-      "lines": [
-        "[G]Ziggy played for time,",
-        "[Bm]Jiving us that we were voo[C]doo.",
-        "The kids [B]were [C]just [D]crass,",
-        "He was the [G]nazz,",
-        "With God given [Em]ass.",
-        "He took it [A]all too far,",
-        "But, boy, Could he [C]play guitar!"
-      ]
-    },
-    {
-      "section": "Chorus 2",
-      "lines": [
-        "[Am]Making [G5]love with his e[F5]go,      [G5]   [Am]",
-        "Ziggy [G5]sucked up in[F5]to his mind, [G5]   [Am]",
-        "Like a [G5]leper Mess[F5]iah,",
-        "When [G5]the [D]kids had killed th[Dsus2]e man",
-        "[D]I had to [E]break up the band!"
-      ]
-    },
-    {
-      "section": "Interlude",
-      "lines": [
-        {
-          "chords": [
-            "G",
-            "D",
-            "Cadd9",
-            "G/B",
-            "G/A"
-          ]
-        }
-      ]
-    },
-    {
-      "section": "Outro",
-      "lines": [
-        "[G]Yeah..[D].     [Cadd9]      [G/B]    [G/A]ooo.[G]...",
-        "[D]      [Cadd9]      ZIGGY PLAYED GUIT[G]AR!"
-      ]
-    }
-  ],
   "formSteps": [
     "Intro",
     "Verse 1",
@@ -203,5 +96,6 @@
     "Chorus 2",
     "Interlude",
     "Outro"
-  ]
+  ],
+  "lyrics": null
 }

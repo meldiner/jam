@@ -72,80 +72,6 @@
       ]
     }
   ],
-  "lyrics": [
-    {
-      "section": "Intro",
-      "lines": [
-        "Bbadd9/D   Gm7add11   F   Eb"
-      ]
-    },
-    {
-      "section": "Verse",
-      "lines": [
-        "Bbsus2                             Gm7",
-        "    I never meant to cause you any sorrow",
-        "[F]    I never meant to cause you any [Eb]pain",
-        "Bbsus2                                Gm7",
-        "    I only wanted to one time see you laughing",
-        "F                                                   Bbsus2",
-        "    I only wanted to see you laughing in the purple rain"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "    Purple rain, purple [Eb]rain",
-        "Eb                      Bbsus2",
-        "    Purple rain, purple rain",
-        "[Gm7]    Purple rain, purple [F]rain",
-        "F                                                  Bbsus2",
-        "    I only wanted to see you bathing in the purple rain"
-      ]
-    },
-    {
-      "section": "Verse",
-      "lines": [
-        "                                  Bbsus2      Gm7      F",
-        "    I never wanted to be your weekend lover",
-        "    I only wanted to be some kind of [Eb]friend",
-        "Bbsus2                                Gm7",
-        "   Baby I could never steal you from another",
-        "F                                          Bbsus2",
-        "   It’s such a shame our friendship had to end"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "   Purple rain, purple [Eb]rain",
-        "Eb                     Bbsus2",
-        "   Purple rain, purple rain",
-        "[Gm7]   Purple rain, purple [F]rain",
-        "F                                                 Bbsus2",
-        "   I only wanted to see you underneath the purple rain"
-      ]
-    },
-    {
-      "section": "Verse",
-      "lines": [
-        " Honey I know, I know, I know time[Bb]s are changi[Gm]ng       [F]",
-        "   It's time we all reach out for som[Eb]ething new, that means you too",
-        "[Bb]   You say you want a leader",
-        " [Gm] But you can't seem to make up your mind",
-        "[F] I think you better close it and let me guide you to the purple ra[Bb]in"
-      ]
-    },
-    {
-      "section": "Chorus",
-      "lines": [
-        "   Purple rain, purple [Eb]rain",
-        "[Eb]   Purple rain, purple [Bb]rain",
-        "[Gm]   Purple rain, purple [F]rain",
-        "[F] I only want to see you",
-        "I only want to see you in the purple ra[Bb]in"
-      ]
-    }
-  ],
   "formSteps": [
     "Intro",
     "Verse 1",
@@ -154,5 +80,6 @@
     "Chorus",
     "Verse 3",
     "Chorus (outro)"
-  ]
+  ],
+  "lyrics": null
 }

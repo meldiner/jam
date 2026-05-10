@@ -107,16 +107,6 @@
       ]
     }
   ],
-  "lyrics": [
-    {
-      "section": "",
-      "lines": [
-        "Opening",
-        "Bass: D & E | E & G | A & B | A & C",
-        "Guitar: F# & G | A & B | C & B & F# & E"
-      ]
-    }
-  ],
   "show": 3,
   "formSteps": [
     "פתיחה (bass + guitar)",
@@ -127,5 +117,6 @@
     "מעבר",
     "פזמון",
     "סיום (Em G F# Em ×4)"
-  ]
+  ],
+  "lyrics": null
 }

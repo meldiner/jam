@@ -3,3 +3,5 @@
 /tools/__pycache__/
 /tools/*.pyc
 node_modules/
+# Lyrics overlay — kept local only (chord charts in songs/ are public).
+/songs-local/

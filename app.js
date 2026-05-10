@@ -48,6 +48,12 @@ async function route() {
   if (state.slug !== slug) {
     try {
       state.song = await fetchJSON(`songs/${slug}.json`);
+      // Try to merge a local-only lyrics overlay (gitignored: songs-local/).
+      // Public site has no overlay → fetch fails silently; chart-only rendered.
+      try {
+        const overlay = await fetchJSON(`songs-local/${slug}.json`);
+        if (overlay && overlay.lyrics) state.song.lyrics = overlay.lyrics;
+      } catch (_) { /* no overlay — that's fine */ }
       state.slug = slug;
     } catch (err) {
       showFatal(`Couldn't load song "${slug}" — ${err.message}`);
@@ -392,6 +398,10 @@ async function reloadSong() {
   if (!state.slug) return;
   try {
     state.song = await fetchJSON(`songs/${state.slug}.json?ts=${Date.now()}`);
+    try {
+      const overlay = await fetchJSON(`songs-local/${state.slug}.json?ts=${Date.now()}`);
+      if (overlay && overlay.lyrics) state.song.lyrics = overlay.lyrics;
+    } catch (_) { /* no overlay */ }
     renderSong();
   } catch (err) {
     showFatal(`Reload failed: ${err.message}`);

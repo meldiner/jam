@@ -76,7 +76,6 @@
       ]
     }
   ],
-  "lyrics": null,
   "show": 5,
   "formSteps": [
     "Intro (groove)",
@@ -89,5 +88,6 @@
     "Bridge / Solo",
     "Chorus",
     "Outro (fade on Db)"
-  ]
+  ],
+  "lyrics": null
 }
