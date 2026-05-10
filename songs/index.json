@@ -8,7 +8,7 @@
       "key": "F major",
       "bpm": 69,
       "timeSig": "4/4",
-      "show": 8
+      "show": 4
     },
     {
       "slug": "one-way-or-another",
@@ -16,8 +16,7 @@
       "artist": "Blondie",
       "key": "E",
       "bpm": 164,
-      "timeSig": "4/4",
-      "show": 9
+      "timeSig": "4/4"
     },
     {
       "slug": "smooth",
@@ -25,8 +24,7 @@
       "artist": "Santana feat. Rob Thomas",
       "key": "Am",
       "bpm": 116,
-      "timeSig": "4/4",
-      "show": 11
+      "timeSig": "4/4"
     },
     {
       "slug": "dont-speak",
@@ -51,7 +49,7 @@
       "key": "Am",
       "bpm": null,
       "timeSig": "4/4",
-      "show": 13
+      "show": 9
     },
     {
       "slug": "ah-ah-ah",
@@ -60,7 +58,7 @@
       "key": "C",
       "bpm": null,
       "timeSig": "4/4",
-      "show": 4
+      "show": 2
     },
     {
       "slug": "kerach-9",
@@ -69,7 +67,7 @@
       "key": "Bb",
       "bpm": 160,
       "timeSig": "4/4",
-      "show": 7
+      "show": 12
     },
     {
       "slug": "yehudim-kah-oti",
@@ -77,7 +75,8 @@
       "artist": "היהודים",
       "key": "",
       "bpm": null,
-      "timeSig": ""
+      "timeSig": "",
+      "show": 10
     },
     {
       "slug": "ahava-hadasha",
@@ -86,7 +85,7 @@
       "key": "",
       "bpm": null,
       "timeSig": "",
-      "show": 2
+      "show": 3
     },
     {
       "slug": "everybody-hurts",
@@ -159,7 +158,7 @@
       "key": "",
       "bpm": null,
       "timeSig": "",
-      "show": 5
+      "show": 6
     },
     {
       "slug": "pahei-show",
@@ -248,7 +247,7 @@
       "key": "",
       "bpm": null,
       "timeSig": "",
-      "show": 6
+      "show": 7
     },
     {
       "slug": "yeled-mizdaken",
@@ -273,7 +272,7 @@
       "key": "",
       "bpm": null,
       "timeSig": "",
-      "show": 10
+      "show": 8
     },
     {
       "slug": "nitzotzot",
@@ -282,7 +281,7 @@
       "key": "Am",
       "bpm": null,
       "timeSig": "4/4",
-      "show": 12
+      "show": 13
     },
     {
       "slug": "after-midnight",
@@ -388,7 +387,7 @@
       "key": "Db major",
       "bpm": 102,
       "timeSig": "4/4",
-      "show": 3
+      "show": 5
     },
     {
       "slug": "haperach-begani",
@@ -396,7 +395,8 @@
       "artist": "זהר ארגוב",
       "key": "Cm",
       "bpm": null,
-      "timeSig": "4/4"
+      "timeSig": "4/4",
+      "show": 11
     },
     {
       "slug": "spontaneous",

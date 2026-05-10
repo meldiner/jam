@@ -324,10 +324,10 @@ SONGS = [
     # ---- New songs not in the pptx (added for the show) ----
     # tzar-li-charlie and valerie are defined further below (user-edited entries).
     {"slug": "one-way-or-another", "title": "One Way Or Another", "artist": "Blondie",
-     "slides": [], "skipParse": True, "show": 9,
+     "slides": [], "skipParse": True,
      "key": "E", "bpm": 164},
     {"slug": "smooth", "title": "Smooth", "artist": "Santana feat. Rob Thomas",
-     "slides": [], "skipParse": True, "show": 11,
+     "slides": [], "skipParse": True,
      "key": "Am", "bpm": 116},
 
     # ---- Songs from the pptx ----
@@ -342,22 +342,22 @@ SONGS = [
      "opening": "Drums + bass riff", "ending": "End on C"},
 
     {"slug": "blues-cnaani", "title": "בלוז כנעני", "artist": "אהוד בנאי",
-     "slides": [6], "dir": "rtl", "key": "Am", "show": 13,
+     "slides": [6], "dir": "rtl", "key": "Am", "show": 9,
      "form": "פתיחה → בית → פזמון → פתיחה → בית → פזמון → מעבר → בית → פזמון → מעבר → בית → פזמון → מעבר → חצי בית → סיום"},
 
     {"slug": "ah-ah-ah", "title": "אה אה אה", "artist": "אפרת גוש",
-     "slides": [7], "dir": "rtl", "key": "C", "show": 4,
+     "slides": [7], "dir": "rtl", "key": "C", "show": 2,
      "form": "פתיחה → בית 1 → פזמון → בית 2 → פזמון → בית 3 → פזמון → מעבר פסנתר → בית 4 → פזמון (×4) → סיום"},
 
     {"slug": "kerach-9", "title": "איתו לנצח", "artist": "קרח 9",
-     "slides": [8, 9], "dir": "rtl", "key": "Bb", "bpm": 160, "show": 7,
+     "slides": [8, 9], "dir": "rtl", "key": "Bb", "bpm": 160, "show": 12,
      "form": "פתיחה → בית → פזמון → פתיחה → בית → פזמון → מעבר → בית → פזמון → מעבר → Outro → פזמון*"},
 
     {"slug": "yehudim-kah-oti", "title": "קח אותי", "artist": "היהודים",
-     "slides": [10, 11], "dir": "rtl", "skipParse": True},
+     "slides": [10, 11], "dir": "rtl", "skipParse": True, "show": 10},
 
     {"slug": "ahava-hadasha", "title": "אהבה חדשה", "artist": "אסף אמדורסקי",
-     "slides": [12], "dir": "rtl", "show": 2,
+     "slides": [12], "dir": "rtl", "show": 3,
      "opening": "Bass: D & E | E & G | A & B | A & C   /   Guitar: F# & G | A & B | C & B & F# & E"},
 
     {"slug": "everybody-hurts", "title": "Everybody Hurts", "artist": "R.E.M.",
@@ -389,7 +389,7 @@ SONGS = [
      "opening": "Pull-off lick on Am, then E, then C (see pptx tab)"},
 
     {"slug": "parperei-titua", "title": "פרפרי תעתוע", "artist": "כרמלה גרוס וגנר / ערן צור",
-     "slides": [21], "dir": "rtl", "skipParse": True, "show": 5},
+     "slides": [21], "dir": "rtl", "skipParse": True, "show": 6},
 
     {"slug": "pahei-show", "title": "פחי שואו", "artist": "",
      "slides": [22], "dir": "rtl",
@@ -425,7 +425,7 @@ SONGS = [
      "slides": [31], "key": "Am", "bpm": 102},
 
     {"slug": "shir-hamakolet", "title": "שיר המכולת", "artist": "כוורת",
-     "slides": [32], "dir": "rtl", "skipParse": True, "show": 6},
+     "slides": [32], "dir": "rtl", "skipParse": True, "show": 7},
 
     {"slug": "yeled-mizdaken", "title": "ילד מזדקן", "artist": "",
      "slides": [33], "dir": "rtl", "skipParse": True},
@@ -434,10 +434,10 @@ SONGS = [
      "slides": [34], "key": "Am", "bpm": 100},
 
     {"slug": "mishehu", "title": "מישהו פעם", "artist": "עברי לידר",
-     "slides": [35], "dir": "rtl", "skipParse": True, "show": 10},
+     "slides": [35], "dir": "rtl", "skipParse": True, "show": 8},
 
     {"slug": "nitzotzot", "title": "ניצוצות", "artist": "ברי סחרוף ורמי פורטיס",
-     "slides": [36], "dir": "rtl", "key": "Am", "show": 12,
+     "slides": [36], "dir": "rtl", "key": "Am", "show": 13,
      "opening": "Intro: Am – C – Fmaj7 – Dadd9 (×4)",
      "ending": "Outro on C – G/B – D"},
 
@@ -489,11 +489,11 @@ SONGS = [
      "opening": "12-bar blues in Dm"},
 
     {"slug": "valerie", "title": "Valerie", "artist": "Mark Ronson ft. Amy Winehouse",
-     "slides": [], "key": "Db major", "bpm": 102, "skipParse": True, "show": 3,
+     "slides": [], "key": "Db major", "bpm": 102, "skipParse": True, "show": 5,
      "opening": "Drums + bass groove on Db"},
 
     {"slug": "haperach-begani", "title": "הפרח בגני", "artist": "זהר ארגוב",
-     "slides": [], "dir": "rtl", "key": "Cm", "skipParse": True,
+     "slides": [], "dir": "rtl", "key": "Cm", "skipParse": True, "show": 11,
      "opening": "Intro: G – Cm"},
 
     {"slug": "spontaneous", "title": "Spontaneous", "artist": "Netta Balter / Omree Gal-Oz",
@@ -598,7 +598,7 @@ def write_song(song):
     return data
 
 
-VAMPIRE_SHOW_ORDER = 8
+VAMPIRE_SHOW_ORDER = 4
 
 
 def write_index(all_songs):
