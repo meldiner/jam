@@ -9,24 +9,26 @@
   "form": "",
   "dir": "ltr",
   "chords": [
-    "G",
     "Cm",
-    "G7",
-    "Ab",
     "Cm/Bb",
+    "Ab",
+    "G",
+    "G7",
     "Fm",
-    "Cm/G",
     "Eb",
+    "Cm/G",
     "Dm7b5",
-    "Bb"
+    "Bb",
+    "C#",
+    "Cm/Ab"
   ],
   "sections": [
     {
       "name": "אינטרו (Intro)",
       "lines": [
         [
-          "G",
-          "Cm"
+          "Cm",
+          "G"
         ]
       ]
     },
@@ -34,22 +36,22 @@
       "name": "בית (Verse)",
       "lines": [
         [
-          "G7",
-          "Ab",
+          "Cm",
           "Cm/Bb",
-          "Cm"
+          "Ab",
+          "G7"
         ],
         [
-          "G7",
-          "Ab",
+          "Cm",
           "Cm/Bb",
-          "Cm"
+          "Ab",
+          "G7"
         ],
         [
-          "G7",
+          "Cm",
+          "Ab",
           "Fm",
-          "Ab",
-          "Cm"
+          "G7"
         ]
       ]
     },
@@ -57,27 +59,27 @@
       "name": "פזמון (Chorus)",
       "lines": [
         [
-          "Cm/G",
-          "Ab",
+          "Cm",
           "Cm/Bb",
-          "Cm"
+          "Ab",
+          "Cm/G"
         ],
         [
-          "G",
-          "Ab",
+          "Cm",
           "Cm/Bb",
-          "Cm"
+          "Ab",
+          "G"
         ],
         [
-          "Ab",
-          "G",
+          "Eb",
           "Fm",
-          "Eb"
+          "G",
+          "Ab"
         ],
         [
-          "G",
+          "Fm",
           "Dm7b5",
-          "Fm"
+          "G"
         ]
       ]
     },
@@ -85,28 +87,28 @@
       "name": "מעבר (Bridge)",
       "lines": [
         [
-          "G",
-          "Ab",
+          "Cm",
           "Cm/Bb",
-          "Cm"
+          "Ab",
+          "G"
         ],
         [
-          "G",
-          "Fm",
+          "Cm",
           "Ab",
-          "Cm"
+          "Fm",
+          "G"
         ],
         [
-          "G",
-          "Ab",
+          "Eb",
           "Fm",
-          "Eb"
+          "Ab",
+          "G"
         ],
         [
-          "G",
-          "Ab",
+          "Cm",
           "Fm",
-          "Cm"
+          "Ab",
+          "G"
         ]
       ]
     },
@@ -114,21 +116,21 @@
       "name": "סיום (Outro)",
       "lines": [
         [
+          "Cm",
           "G",
           "Bb",
-          "G",
+          "G"
+        ],
+        [
+          "Cm/Bb",
+          "Cm/Ab",
+          "C#",
           "Cm"
         ],
         [
-          "Cm",
-          "C#",
-          "Cm/Ab",
-          "Cm/Bb"
-        ],
-        [
-          "Cm",
+          "Ab",
           "Bb",
-          "Ab"
+          "Cm"
         ]
       ]
     }

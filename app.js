@@ -133,7 +133,7 @@ function renderSong() {
   const next = songsList[(idx + 1) % songsList.length];
 
   root().innerHTML = `
-    <div class="song">
+    <div class="song" dir="${song.dir === 'rtl' ? 'rtl' : 'ltr'}">
       <div class="song-head">
         <div class="title-block">
           ${song.show ? `<span class="show-pill">🎤 #${song.show}</span>` : ''}
