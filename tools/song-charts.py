@@ -582,15 +582,18 @@ CHARTS = {
     },
 
     "haperach-begani": {
-        "chartChords": ["Cm", "Cm/Bb", "Ab", "G", "G7", "Fm", "Eb", "Cm/G", "Dm7b5", "Bb", "C#", "Cm/Ab"],
+        "chartChords": ["Cm", "Cm/Bb", "Ab", "G", "G7", "Gsus4", "Fm", "Eb",
+                        "Cm/G", "Cm/Ab", "Dm7b5", "Bb", "C#"],
         "chartSections": [
             {"name": "אינטרו (Intro)",
              "lines": [["Cm", "G"]]},
-            {"name": "בית (Verse)",
+            {"name": "בית (Verse)", "reps": "5 lines",
              "lines": [
                  ["Cm", "Cm/Bb", "Ab", "G7"],
-                 ["Cm", "Cm/Bb", "Ab", "G7"],
                  ["Cm", "Ab", "Fm", "G7"],
+                 ["Eb", "Fm"],
+                 ["Ab", "G7"],
+                 ["Cm", "Fm", "Ab", "G7"],
              ]},
             {"name": "פזמון (Chorus)",
              "lines": [
@@ -599,18 +602,21 @@ CHARTS = {
                  ["Eb", "Fm", "G", "Ab"],
                  ["Fm", "Dm7b5", "G"],
              ]},
-            {"name": "מעבר (Bridge)",
+            {"name": "בית 2 (Verse 2)",
              "lines": [
                  ["Cm", "Cm/Bb", "Ab", "G"],
                  ["Cm", "Ab", "Fm", "G"],
                  ["Eb", "Fm", "Ab", "G"],
                  ["Cm", "Fm", "Ab", "G"],
              ]},
-            {"name": "סיום (Outro)",
+            {"name": "מעבר (Bridge)",
+             "lines": [["G", "Gsus4", "G", "Ab", "Bb", "Cm"]]},
+            {"name": "סיום (Final / Outro)",
              "lines": [
-                 ["Cm", "G", "Bb", "G"],
-                 ["Cm/Bb", "Cm/Ab", "C#", "Cm"],
-                 ["Ab", "Bb", "Cm"],
+                 ["Bb", "G", "Cm", "G", "(×2)"],
+                 ["Fm", "Dm7b5", "G", "Fm", "G", "Ab"],
+                 ["Ab", "Bb", "Cm", "Cm/Bb", "Cm/Ab", "C#", "Cm"],
+                 ["Cm", "G", "Bb", "G", "(×2)"],
              ]},
         ],
         "formSteps": [

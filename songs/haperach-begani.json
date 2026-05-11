@@ -14,13 +14,14 @@
     "Ab",
     "G",
     "G7",
+    "Gsus4",
     "Fm",
     "Eb",
     "Cm/G",
+    "Cm/Ab",
     "Dm7b5",
     "Bb",
-    "C#",
-    "Cm/Ab"
+    "C#"
   ],
   "sections": [
     {
@@ -34,13 +35,8 @@
     },
     {
       "name": "בית (Verse)",
+      "reps": "5 lines",
       "lines": [
-        [
-          "Cm",
-          "Cm/Bb",
-          "Ab",
-          "G7"
-        ],
         [
           "Cm",
           "Cm/Bb",
@@ -51,6 +47,20 @@
           "Cm",
           "Ab",
           "Fm",
+          "G7"
+        ],
+        [
+          "Eb",
+          "Fm"
+        ],
+        [
+          "Ab",
+          "G7"
+        ],
+        [
+          "Cm",
+          "Fm",
+          "Ab",
           "G7"
         ]
       ]
@@ -84,7 +94,7 @@
       ]
     },
     {
-      "name": "מעבר (Bridge)",
+      "name": "בית 2 (Verse 2)",
       "lines": [
         [
           "Cm",
@@ -113,24 +123,51 @@
       ]
     },
     {
-      "name": "סיום (Outro)",
+      "name": "מעבר (Bridge)",
       "lines": [
         [
+          "G",
+          "Gsus4",
+          "G",
+          "Ab",
+          "Bb",
+          "Cm"
+        ]
+      ]
+    },
+    {
+      "name": "סיום (Final / Outro)",
+      "lines": [
+        [
+          "Bb",
+          "G",
           "Cm",
           "G",
-          "Bb",
-          "G"
+          "(×2)"
         ],
         [
+          "Fm",
+          "Dm7b5",
+          "G",
+          "Fm",
+          "G",
+          "Ab"
+        ],
+        [
+          "Ab",
+          "Bb",
+          "Cm",
           "Cm/Bb",
           "Cm/Ab",
           "C#",
           "Cm"
         ],
         [
-          "Ab",
+          "Cm",
+          "G",
           "Bb",
-          "Cm"
+          "G",
+          "(×2)"
         ]
       ]
     }
