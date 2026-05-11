@@ -494,7 +494,7 @@ SONGS = [
      "opening": "Drums + bass groove on Db"},
 
     {"slug": "haperach-begani", "title": "הפרח בגני", "artist": "זהר ארגוב",
-     "slides": [], "dir": "rtl", "key": "Cm", "skipParse": True, "show": 11,
+     "slides": [], "dir": "ltr", "key": "Cm", "skipParse": True, "show": 11,
      "opening": "Intro: G – Cm"},
 
     {"slug": "spontaneous", "title": "Spontaneous", "artist": "Netta Balter / Omree Gal-Oz",
