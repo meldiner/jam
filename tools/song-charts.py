@@ -599,7 +599,7 @@ CHARTS = {
              "lines": [
                  ["Cm", "Cm/Bb", "Ab", "Cm/G"],
                  ["Cm", "Cm/Bb", "Ab", "G"],
-                 ["Eb", "Fm", "G", "Ab"],
+                 ["Eb", "Eb", "Fm", "G", "Ab"],
                  ["Fm", "Dm7b5", "G"],
              ]},
             {"name": "בית 2 (Verse 2)",
