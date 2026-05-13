@@ -451,8 +451,22 @@ async function toggleFullscreen() {
 }
 
 document.addEventListener('fullscreenchange', () => {
-  if (document.fullscreenElement) document.body.classList.add('fullscreen');
-  else document.body.classList.remove('fullscreen');
+  if (document.fullscreenElement) {
+    document.body.classList.add('fullscreen');
+    // Fullscreen transition can drop the wake lock — re-acquire and
+    // re-start the silent-video keep-awake fallback.
+    if (state.slug) requestWakeLock();
+  } else {
+    document.body.classList.remove('fullscreen');
+  }
+});
+
+// Re-request wake lock whenever the user clicks/presses something — Safari
+// in particular requires a gesture to start media playback.
+['click', 'keydown', 'touchstart'].forEach(ev => {
+  window.addEventListener(ev, () => {
+    if (state.slug && !state.wakeLock) requestWakeLock();
+  }, { passive: true });
 });
 
 // ---------------- Wake Lock ----------------
