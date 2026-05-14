@@ -322,8 +322,94 @@ body.fullscreen .hud { display: none; }
 /* ---------------- Sizes by section count ---------------- */
 /* (old cols-N grid rules removed — sections now use CSS multi-column flow) */
 
-/* ---------------- Mobile ---------------- */
-@media (max-width: 700px) {
+/* ---------------- Responsive: tablet ---------------- */
+@media (max-width: 1024px) {
+  /* Narrower sidebar, smaller form font so chart gets more room. */
+  .song-body { grid-template-columns: minmax(160px, 18vw) 1fr; }
+  .form-side ol { font-size: clamp(18px, 2.4vw, 32px); gap: 0.3vh; }
+  .form-side ol li { padding: 0.2vh 0.3vw; }
+  .picker .grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr));
+  }
+}
+
+/* ---------------- Responsive: small tablet / large phone ---------------- */
+@media (max-width: 768px) {
+  /* Sidebar moves above the main content, becomes a horizontal scroll strip. */
+  .song-body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 1vh;
+  }
+  .form-side {
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.6vh 1vw;
+    gap: 0.8vw;
+    max-height: 16vh;
+  }
+  .form-side .lbl {
+    margin: 0; padding: 0;
+    border-bottom: 0; border-right: 1px solid var(--border);
+    padding-right: 0.6em;
+    white-space: nowrap;
+  }
+  .form-side ol {
+    flex-direction: row;
+    gap: 0.6em;
+    font-size: clamp(15px, 3.8vw, 22px);
+    overflow-x: auto;
+    white-space: nowrap;
+    flex: 1; min-width: 0;
+  }
+  .form-side ol li {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.3vh 0.5em;
+    flex-shrink: 0;
+  }
   .sections { column-count: 1 !important; column-width: auto !important; }
-  .lyrics-cols { columns: 1 !important; }
+  .song-head {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5vh;
+  }
+  .song-head .title-block { flex-wrap: wrap; gap: 0.4em; }
+  .song-head .meta { flex-wrap: wrap; gap: 0.4em; }
+  .song-head .view-toggle { align-self: flex-start; }
+  .hud { display: none; }
+}
+
+/* ---------------- Responsive: phone ---------------- */
+@media (max-width: 480px) {
+  body { font-size: 14px; }
+  .picker { padding: 2vh 4vw; gap: 1.5vh; }
+  .picker h1 { font-size: clamp(20px, 6vw, 28px); }
+  .picker h1 .sub { display: block; margin: 0.3em 0 0; font-size: 0.5em; }
+  .picker .grid {
+    grid-template-columns: 1fr;
+    gap: 1vh;
+  }
+  .song { padding: 1vh 3vw; gap: 0.6vh; }
+  .song-head .title { font-size: clamp(20px, 6vw, 28px); }
+  .song-head .artist { font-size: clamp(14px, 3.5vw, 18px); }
+  .song-head .meta { font-size: clamp(11px, 3vw, 14px); }
+  .form-side ol { font-size: clamp(14px, 4.4vw, 20px); }
+  .setlist-h { font-size: clamp(16px, 4.8vw, 22px); }
+  .show-pill { font-size: 11px; padding: 0.1em 0.5em; }
+  .show-badge { font-size: 10px; padding: 0 0.4em; }
+  /* Lyrics view: collapse to single column on phone. */
+  .lyrics-grid { flex-direction: column; gap: 0.8vh; }
+  .lyrics-grid .col { border-right: 0; padding-right: 0; }
+}
+
+/* ---------------- Touch interactions ---------------- */
+@media (hover: none) and (pointer: coarse) {
+  /* Make song cards bigger touch targets, dim hover transforms. */
+  .song-card { padding: 2vh 3vw; }
+  .song-card:hover { transform: none; }
+  /* HUD often unhelpful on touch — hide entirely. */
+  .hud { display: none; }
 }
