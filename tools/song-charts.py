@@ -951,4 +951,61 @@ CHARTS = {
             "(skeleton — verify exact voicings at practice)",
         ],
     },
+
+    "all-the-small-things": {
+        # Blink-182. Key C major. Famously simple three-chord punk progression.
+        "chartChords": ["C", "G", "F"],
+        "chartSections": [
+            {"name": "Intro", "reps": "×2",
+             "lines": [["C", "G", "F", "F"]]},
+            {"name": "Verse", "reps": "loop",
+             "lines": [["C", "G", "F", "F"]]},
+            {"name": "Chorus (\"na na na\")",
+             "lines": [["C", "G", "F", "F"], ["C", "G", "F", "F"]]},
+            {"name": "Bridge — verify",
+             "lines": [["F", "F"], ["C", "C"], ["G", "G"], ["F", "F"]]},
+        ],
+        "formSteps": [
+            "Intro (×2)",
+            "Verse 1",
+            "Chorus (\"na na na\")",
+            "Verse 2",
+            "Chorus",
+            "Bridge",
+            "Chorus (×2)",
+            "Outro on F",
+        ],
+    },
+
+    "these-boots": {
+        # Nancy Sinatra. Key E. Verse is built on a famous descending bass
+        # walk under a sustained E tonic; chorus moves to A and resolves
+        # via B7. Slash-chord notation here represents the bass note
+        # walking down (the upper voicing stays close to E).
+        "chartChords": ["E", "E/D#", "E/D", "E/C#", "E/C", "E/B", "E/Bb", "A", "B7"],
+        "chartSections": [
+            {"name": "Intro — descending bass walk",
+             "lines": [["E", "E/D#", "E/D", "E/C#"],
+                       ["E/C", "E/B", "E/Bb", "A"]]},
+            {"name": "Verse — bass walks down on E",
+             "lines": [["E", "E/D#", "E/D", "E/C#"],
+                       ["E/C", "E/B", "E/Bb", "A"]]},
+            {"name": "Chorus",
+             "lines": [["A", "E"], ["A", "E"], ["A", "E"], ["B7", "E"]]},
+            {"name": "Outro — bass walk fade",
+             "lines": [["E", "E/D#", "E/D", "E/C#"],
+                       ["E/C", "E/B", "E/Bb", "A"]]},
+        ],
+        "formSteps": [
+            "Intro (bass walk on E)",
+            "Verse 1",
+            "Chorus",
+            "Verse 2",
+            "Chorus",
+            "Bridge / spoken break",
+            "Verse 3",
+            "Chorus",
+            "Outro (bass walk fade)",
+        ],
+    },
 }

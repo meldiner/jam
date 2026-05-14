@@ -190,22 +190,25 @@ body {
   flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 1vh;
   min-width: 0;
 }
-.chords-row {
-  display: grid; gap: 1vw;
-  padding: 1vh 1vw; background: var(--surface-2); border-radius: 10px;
-  justify-items: center;
-}
-.chords-row svg { width: 100%; height: auto; max-height: 13vh; }
-
+/* Sections flow top-to-bottom in each column; when a column fills,
+   browser breaks to the next column. Direction (RTL/LTR) is set
+   inline by app.js so Hebrew songs flow right-to-left. */
 .sections {
   flex: 1; min-height: 0;
-  display: grid; gap: 1vh 1.2vw;
+  column-width: 320px;
+  column-gap: 1.4vw;
+  column-fill: auto;
+  height: 100%;
 }
 .sec {
+  /* Inside each .sec keep LTR for chord names. */
+  direction: ltr;
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 10px; padding: 1.2vh 1.3vw;
-  display: flex; flex-direction: column; gap: 0.5vh;
-  min-height: 0;
+  border-radius: 10px; padding: 1vh 1.2vw;
+  display: flex; flex-direction: column; gap: 0.4vh;
+  margin-bottom: 1vh;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 .sec .tag {
   display: flex; justify-content: space-between; align-items: baseline;
@@ -317,13 +320,10 @@ body.fullscreen .hud { display: none; }
 .wake-status.off  { display: none; }
 
 /* ---------------- Sizes by section count ---------------- */
-.sections.cols-1 { grid-template-columns: 1fr; }
-.sections.cols-2 { grid-template-columns: 1fr 1fr; }
-.sections.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+/* (old cols-N grid rules removed — sections now use CSS multi-column flow) */
 
 /* ---------------- Mobile ---------------- */
 @media (max-width: 700px) {
-  .chords-row { grid-template-columns: repeat(4, 1fr) !important; }
-  .sections { grid-template-columns: 1fr !important; }
+  .sections { column-count: 1 !important; column-width: auto !important; }
   .lyrics-cols { columns: 1 !important; }
 }

@@ -1,0 +1,92 @@
+{
+  "title": "All The Small Things",
+  "artist": "Blink-182",
+  "key": "C major",
+  "bpm": 148,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "C",
+    "G",
+    "F"
+  ],
+  "sections": [
+    {
+      "name": "Intro",
+      "reps": "×2",
+      "lines": [
+        [
+          "C",
+          "G",
+          "F",
+          "F"
+        ]
+      ]
+    },
+    {
+      "name": "Verse",
+      "reps": "loop",
+      "lines": [
+        [
+          "C",
+          "G",
+          "F",
+          "F"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus (\"na na na\")",
+      "lines": [
+        [
+          "C",
+          "G",
+          "F",
+          "F"
+        ],
+        [
+          "C",
+          "G",
+          "F",
+          "F"
+        ]
+      ]
+    },
+    {
+      "name": "Bridge — verify",
+      "lines": [
+        [
+          "F",
+          "F"
+        ],
+        [
+          "C",
+          "C"
+        ],
+        [
+          "G",
+          "G"
+        ],
+        [
+          "F",
+          "F"
+        ]
+      ]
+    }
+  ],
+  "show": 14,
+  "formSteps": [
+    "Intro (×2)",
+    "Verse 1",
+    "Chorus (\"na na na\")",
+    "Verse 2",
+    "Chorus",
+    "Bridge",
+    "Chorus (×2)",
+    "Outro on F"
+  ],
+  "lyrics": null
+}

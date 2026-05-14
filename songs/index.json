@@ -405,6 +405,24 @@
       "key": "A major",
       "bpm": null,
       "timeSig": "4/4"
+    },
+    {
+      "slug": "all-the-small-things",
+      "title": "All The Small Things",
+      "artist": "Blink-182",
+      "key": "C major",
+      "bpm": 148,
+      "timeSig": "4/4",
+      "show": 14
+    },
+    {
+      "slug": "these-boots",
+      "title": "These Boots Are Made For Walkin'",
+      "artist": "Nancy Sinatra",
+      "key": "E",
+      "bpm": 92,
+      "timeSig": "4/4",
+      "show": 15
     }
   ]
 }

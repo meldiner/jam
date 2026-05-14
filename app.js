@@ -205,47 +205,21 @@ function renderChartView() {
   const song = state.song;
   const area = document.getElementById('view-area');
   area.className = '';
+  // Multi-column layout: sections flow top-to-bottom in each column,
+  // then to the next column. Column direction follows the song's `dir`
+  // (RTL songs: columns progress right→left; LTR: left→right).
+  const dir = song.dir === 'rtl' ? 'rtl' : 'ltr';
   area.innerHTML = `
     <div class="chart">
-      <div class="chords-row" id="chordsRow" dir="ltr"></div>
-      <div class="sections" id="sectionsGrid" dir="ltr"></div>
+      <div class="sections" id="sectionsGrid" dir="${dir}"></div>
     </div>
   `;
 
-  // chord row — `song.chords` may be an array of names or a {name: shape} object.
-  const chordsRow = document.getElementById('chordsRow');
-  const chordList = chordNamesFor(song);
-  const customShapes = song.chordShapes || {};
-  const renderableEntries = chordList.map(name => {
-    const shape = customShapes[name]
-      || (song.chords && !Array.isArray(song.chords) && song.chords[name])
-      || window.ChordRenderer.getShape(name);
-    return shape ? { name, shape } : null;
-  }).filter(Boolean);
-
-  if (renderableEntries.length) {
-    const colCount = Math.min(Math.max(renderableEntries.length, 4), 10);
-    chordsRow.style.gridTemplateColumns = `repeat(${colCount}, 1fr)`;
-    renderableEntries.forEach(({ name, shape }) => {
-      const div = document.createElement('div');
-      div.style.cssText = 'width:100%;display:flex;justify-content:center';
-      div.innerHTML = window.ChordRenderer.render(name, shape);
-      chordsRow.appendChild(div);
-    });
-  } else {
-    chordsRow.style.display = 'none';
-  }
-
-  // sections
   const sections = song.sections || [];
   const grid = document.getElementById('sectionsGrid');
-  // pick column count: 1 col if <=3 sections, 2 if <=6, else 3
-  const cols = sections.length <= 3 ? 1 : sections.length <= 6 ? 2 : 3;
-  grid.classList.add(`cols-${cols}`);
 
-  // size bars font based on the longest line, so they fit
+  // Font sizing: scale by the longest bar-line in any section.
   const maxBarsInLine = Math.max(1, ...sections.flatMap(s => (s.lines || []).map(l => l.length)));
-  // approximate font sizing: more bars => smaller. clamp() handles min/max.
   const barFont = `clamp(14px, ${Math.max(1.2, 3.0 - 0.18 * maxBarsInLine)}vw, 30px)`;
   grid.style.setProperty('--bar-font', barFont);
 

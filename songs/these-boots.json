@@ -1,0 +1,109 @@
+{
+  "title": "These Boots Are Made For Walkin'",
+  "artist": "Nancy Sinatra",
+  "key": "E",
+  "bpm": 92,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "E",
+    "E/D#",
+    "E/D",
+    "E/C#",
+    "E/C",
+    "E/B",
+    "E/Bb",
+    "A",
+    "B7"
+  ],
+  "sections": [
+    {
+      "name": "Intro — descending bass walk",
+      "lines": [
+        [
+          "E",
+          "E/D#",
+          "E/D",
+          "E/C#"
+        ],
+        [
+          "E/C",
+          "E/B",
+          "E/Bb",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "Verse — bass walks down on E",
+      "lines": [
+        [
+          "E",
+          "E/D#",
+          "E/D",
+          "E/C#"
+        ],
+        [
+          "E/C",
+          "E/B",
+          "E/Bb",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus",
+      "lines": [
+        [
+          "A",
+          "E"
+        ],
+        [
+          "A",
+          "E"
+        ],
+        [
+          "A",
+          "E"
+        ],
+        [
+          "B7",
+          "E"
+        ]
+      ]
+    },
+    {
+      "name": "Outro — bass walk fade",
+      "lines": [
+        [
+          "E",
+          "E/D#",
+          "E/D",
+          "E/C#"
+        ],
+        [
+          "E/C",
+          "E/B",
+          "E/Bb",
+          "A"
+        ]
+      ]
+    }
+  ],
+  "show": 15,
+  "formSteps": [
+    "Intro (bass walk on E)",
+    "Verse 1",
+    "Chorus",
+    "Verse 2",
+    "Chorus",
+    "Bridge / spoken break",
+    "Verse 3",
+    "Chorus",
+    "Outro (bass walk fade)"
+  ],
+  "lyrics": null
+}

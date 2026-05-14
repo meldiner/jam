@@ -501,6 +501,14 @@ SONGS = [
      "slides": [], "skipParse": True,
      "key": "A major", "timeSig": "4/4",
      "opening": "Intro: A – E – F#m – D (4 bars), pickup into V"},
+
+    {"slug": "all-the-small-things", "title": "All The Small Things", "artist": "Blink-182",
+     "slides": [], "skipParse": True, "show": 14,
+     "key": "C major", "bpm": 148, "timeSig": "4/4"},
+
+    {"slug": "these-boots", "title": "These Boots Are Made For Walkin'", "artist": "Nancy Sinatra",
+     "slides": [], "skipParse": True, "show": 15,
+     "key": "E", "bpm": 92, "timeSig": "4/4"},
 ]
 
 # vampire is a hand-curated chart that pre-existed; we keep its existing JSON.
