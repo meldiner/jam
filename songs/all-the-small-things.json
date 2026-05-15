@@ -10,8 +10,8 @@
   "dir": "ltr",
   "chords": [
     "C",
-    "F",
-    "G"
+    "G",
+    "F"
   ],
   "sections": [
     {
@@ -20,9 +20,20 @@
       "lines": [
         [
           "C",
-          "F",
           "G",
+          "F",
           "G"
+        ]
+      ]
+    },
+    {
+      "name": "Pre-Chorus",
+      "lines": [
+        [
+          "C",
+          "G",
+          "F",
+          "C"
         ]
       ]
     },
@@ -63,8 +74,10 @@
   "formSteps": [
     "Intro (×2)",
     "Verse 1",
+    "Pre-Chorus",
     "Chorus (\"na na na\")",
     "Verse 2",
+    "Pre-Chorus",
     "Chorus",
     "Bridge",
     "Chorus (×2)",

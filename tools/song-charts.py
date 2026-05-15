@@ -954,10 +954,15 @@ CHARTS = {
 
     "all-the-small-things": {
         # Blink-182. Key C major. Three-chord punk progression.
-        "chartChords": ["C", "F", "G"],
+        # Cross-referenced chordie.com + azchords.com — both agree on
+        # C | G | F | G for the verse/chorus loop with C | G | F | C
+        # for the pre-chorus.
+        "chartChords": ["C", "G", "F"],
         "chartSections": [
             {"name": "Intro / Verse", "reps": "loop",
-             "lines": [["C", "F", "G", "G"]]},
+             "lines": [["C", "G", "F", "G"]]},
+            {"name": "Pre-Chorus",
+             "lines": [["C", "G", "F", "C"]]},
             {"name": "Chorus (\"na na na\")",
              "lines": [["C", "G", "F", "G"]]},
             {"name": "Bridge — verify",
@@ -966,8 +971,10 @@ CHARTS = {
         "formSteps": [
             "Intro (×2)",
             "Verse 1",
+            "Pre-Chorus",
             "Chorus (\"na na na\")",
             "Verse 2",
+            "Pre-Chorus",
             "Chorus",
             "Bridge",
             "Chorus (×2)",
