@@ -190,15 +190,14 @@ body {
   flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 1vh;
   min-width: 0;
 }
-/* Sections flow top-to-bottom in each column; when a column fills,
-   browser breaks to the next column. Direction (RTL/LTR) is set
-   inline by app.js so Hebrew songs flow right-to-left. */
+/* Sections flow top-to-bottom in each column; the browser balances
+   content across columns (default column-fill: balance). Direction
+   (RTL/LTR) is set inline by app.js so Hebrew songs flow right-to-left. */
 .sections {
-  flex: 1; min-height: 0;
-  column-width: 320px;
+  flex: 1 1 auto;
+  min-height: 0;
+  column-width: 360px;
   column-gap: 1.4vw;
-  column-fill: auto;
-  height: 100%;
 }
 .sec {
   /* Inside each .sec keep LTR for chord names. */
