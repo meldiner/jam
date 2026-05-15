@@ -953,15 +953,13 @@ CHARTS = {
     },
 
     "all-the-small-things": {
-        # Blink-182. Key C major. Famously simple three-chord punk progression.
-        "chartChords": ["C", "G", "F"],
+        # Blink-182. Key C major. Three-chord punk progression.
+        "chartChords": ["C", "F", "G"],
         "chartSections": [
-            {"name": "Intro", "reps": "×2",
-             "lines": [["C", "G", "F", "F"]]},
-            {"name": "Verse", "reps": "loop",
-             "lines": [["C", "G", "F", "F"]]},
+            {"name": "Intro / Verse", "reps": "loop",
+             "lines": [["C", "F", "G", "G"]]},
             {"name": "Chorus (\"na na na\")",
-             "lines": [["C", "G", "F", "F"], ["C", "G", "F", "F"]]},
+             "lines": [["C", "G", "F", "G"]]},
             {"name": "Bridge — verify",
              "lines": [["F", "F"], ["C", "C"], ["G", "G"], ["F", "F"]]},
         ],
@@ -973,7 +971,7 @@ CHARTS = {
             "Chorus",
             "Bridge",
             "Chorus (×2)",
-            "Outro on F",
+            "Outro",
         ],
     },
 

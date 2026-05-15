@@ -10,31 +10,19 @@
   "dir": "ltr",
   "chords": [
     "C",
-    "G",
-    "F"
+    "F",
+    "G"
   ],
   "sections": [
     {
-      "name": "Intro",
-      "reps": "×2",
-      "lines": [
-        [
-          "C",
-          "G",
-          "F",
-          "F"
-        ]
-      ]
-    },
-    {
-      "name": "Verse",
+      "name": "Intro / Verse",
       "reps": "loop",
       "lines": [
         [
           "C",
-          "G",
           "F",
-          "F"
+          "G",
+          "G"
         ]
       ]
     },
@@ -45,13 +33,7 @@
           "C",
           "G",
           "F",
-          "F"
-        ],
-        [
-          "C",
-          "G",
-          "F",
-          "F"
+          "G"
         ]
       ]
     },
@@ -86,7 +68,7 @@
     "Chorus",
     "Bridge",
     "Chorus (×2)",
-    "Outro on F"
+    "Outro"
   ],
   "lyrics": null
 }
