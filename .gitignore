@@ -5,3 +5,5 @@
 node_modules/
 # Lyrics overlay — kept local only (chord charts in songs/ are public).
 /songs-local/
+# DevTools screenshot scratch directory.
+/.shots/
