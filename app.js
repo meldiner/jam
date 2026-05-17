@@ -265,7 +265,7 @@ function renderChartView() {
 
   // Font sizing: scale by the longest bar-line in any section.
   const maxBarsInLine = Math.max(1, ...sections.flatMap(s => (s.lines || []).map(l => l.length)));
-  const barFont = `clamp(12px, ${Math.max(0.9, 2.2 - 0.18 * maxBarsInLine)}vw, 20px)`;
+  const barFont = `clamp(14px, ${Math.max(1.1, 2.6 - 0.18 * maxBarsInLine)}vw, 26px)`;
   grid.style.setProperty('--bar-font', barFont);
 
   sections.forEach(sec => {
@@ -337,8 +337,8 @@ function renderLyricsView() {
   const tallestCol = Math.max(...cols.map(c => c.weight));
   // Aim: tallestCol lines should fit in roughly 88vh of vertical space.
   // Each line is ~1.6× the font height (chord row + lyric row + spacing).
-  const fontVh = Math.max(1.3, Math.min(2.4, 88 / (tallestCol * 2.2)));
-  const fontSize = `clamp(12px, ${fontVh.toFixed(2)}vh, 28px)`;
+  const fontVh = Math.max(1.5, Math.min(2.8, 88 / (tallestCol * 2.2)));
+  const fontSize = `clamp(14px, ${fontVh.toFixed(2)}vh, 32px)`;
 
   const colHTML = cols.map(col => {
     const inner = col.items.map(sec => {

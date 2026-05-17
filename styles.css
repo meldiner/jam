@@ -127,7 +127,7 @@ body {
   list-style: none; counter-reset: form-step;
   display: flex; flex-direction: column; gap: 0.4vh;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: clamp(14px, 1.5vw, 20px);
+  font-size: clamp(18px, 1.9vw, 26px);
   font-weight: 700;
   line-height: 1.25;
   color: var(--text);
@@ -165,14 +165,14 @@ body {
   align-self: center;
 }
 .song-head .title {
-  font-size: clamp(20px, 2.8vw, 34px); font-weight: 500;
+  font-size: clamp(24px, 3.2vw, 42px); font-weight: 500;
 }
 .song-head .artist {
   color: var(--text-3); font-weight: 400;
-  font-size: clamp(13px, 1.4vw, 20px);
+  font-size: clamp(15px, 1.6vw, 24px);
 }
 .song-head .meta {
-  font-size: clamp(11px, 1.2vw, 15px); color: var(--text-2);
+  font-size: clamp(13px, 1.4vw, 19px); color: var(--text-2);
   display: flex; align-items: baseline; gap: 0.7vw; flex-wrap: wrap;
 }
 .song-head .meta .dot { color: var(--text-3); }

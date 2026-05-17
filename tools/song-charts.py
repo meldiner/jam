@@ -979,7 +979,7 @@ CHARTS = {
             {"name": "Chorus (\"na na na\")", "reps": "×2",
              "lines": [["C", "G", "F", "C"]]},
             {"name": "Bridge", "reps": "×2",
-             "lines": [["C", "F", "Fb", "G (F)"]]},
+             "lines": [["C", "F", "E", "G (F)"]]},
             {"name": "Verse 2", "reps": "×2",
              "lines": [["C", "G", "F", "G"]]},
             {"name": "Chorus (\"say it ain't so\")",
