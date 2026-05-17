@@ -351,11 +351,11 @@ SONGS = [
      "form": "פתיחה → בית 1 → פזמון → בית 2 → פזמון → בית 3 → פזמון → מעבר פסנתר → בית 4 → פזמון (×4) → סיום"},
 
     {"slug": "kerach-9", "title": "איתו לנצח", "artist": "קרח 9",
-     "slides": [8, 9], "dir": "rtl", "key": "Bb", "bpm": 160, "show": 12,
+     "slides": [9], "lyricsSlides": [8], "dir": "rtl", "key": "Bb", "bpm": 160, "show": 12,
      "form": "פתיחה → בית → פזמון → פתיחה → בית → פזמון → מעבר → בית → פזמון → מעבר → Outro → פזמון*"},
 
     {"slug": "yehudim-kah-oti", "title": "קח אותי", "artist": "היהודים",
-     "slides": [10, 11], "dir": "rtl", "skipParse": True, "show": 10},
+     "slides": [11], "dir": "rtl", "skipParse": True, "show": 10},
 
     {"slug": "ahava-hadasha", "title": "אהבה חדשה", "artist": "אסף אמדורסקי",
      "slides": [12], "dir": "rtl", "show": 3,
@@ -447,7 +447,7 @@ SONGS = [
      "opening": "D - G/D - D (×4)"},
 
     {"slug": "seven-nation-army", "title": "Seven Nation Army", "artist": "The White Stripes",
-     "slides": [39, 40], "key": "Em", "bpm": 124,
+     "slides": [39], "key": "Em", "bpm": 124,
      "form": "Verse 1 → Inst. Chorus → Interlude → Verse 2 → Solo → Interlude → Verse 3 → Inst. Chorus"},
 
     {"slug": "hakaas", "title": "הכעס", "artist": "",

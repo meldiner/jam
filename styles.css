@@ -108,6 +108,9 @@ body {
   display: grid;
   grid-template-columns: minmax(180px, 16vw) 1fr;
   gap: 1.2vw;
+  /* Pin form-side to the left even when the song is RTL — Hebrew chars
+     inside the sidebar still render right-to-left via Unicode bidi. */
+  direction: ltr;
 }
 .form-side {
   background: var(--surface-2); border-radius: 10px;
@@ -124,7 +127,7 @@ body {
   list-style: none; counter-reset: form-step;
   display: flex; flex-direction: column; gap: 0.4vh;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: clamp(16px, 1.7vw, 22px);
+  font-size: clamp(14px, 1.5vw, 20px);
   font-weight: 700;
   line-height: 1.25;
   color: var(--text);
@@ -144,6 +147,7 @@ body {
   color: var(--text-2); font-style: italic;
 }
 .song-main { min-height: 0; min-width: 0; display: flex; flex-direction: column; gap: 1vh; }
+.song-main #view-area { flex: 1 1 0; min-height: 0; display: flex; flex-direction: column; }
 .song-head {
   display: flex; justify-content: space-between; align-items: baseline;
   padding-bottom: 0.8vh; border-bottom: 1px solid var(--border);
@@ -161,14 +165,14 @@ body {
   align-self: center;
 }
 .song-head .title {
-  font-size: clamp(22px, 3vw, 38px); font-weight: 500;
+  font-size: clamp(20px, 2.8vw, 34px); font-weight: 500;
 }
 .song-head .artist {
   color: var(--text-3); font-weight: 400;
-  font-size: clamp(14px, 1.5vw, 22px);
+  font-size: clamp(13px, 1.4vw, 20px);
 }
 .song-head .meta {
-  font-size: clamp(12px, 1.3vw, 17px); color: var(--text-2);
+  font-size: clamp(11px, 1.2vw, 15px); color: var(--text-2);
   display: flex; align-items: baseline; gap: 0.7vw; flex-wrap: wrap;
 }
 .song-head .meta .dot { color: var(--text-3); }
@@ -190,6 +194,29 @@ body {
   flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 1vh;
   min-width: 0;
 }
+
+/* Slide-image chart: when a song has pptx slides, the chart view is just
+   the slide image(s). Hide the form sidebar (the slide already shows the
+   form), let the main column take full width, and fit images to the
+   available space. */
+body.slide-chart .song-body {
+  grid-template-columns: 1fr;
+}
+body.slide-chart .form-side { display: none; }
+.slide-chart-body {
+  flex: 1; min-height: 0;
+  display: flex; flex-direction: column;
+  gap: 1vh;
+}
+.slide-img {
+  flex: 1 1 0;
+  min-height: 0;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: white;
+  border-radius: 6px;
+}
 /* Sections flow top-to-bottom in each column; the browser balances
    content across columns (default column-fill: balance). Direction
    (RTL/LTR) is set inline by app.js so Hebrew songs flow right-to-left. */
@@ -198,6 +225,11 @@ body {
   min-height: 0;
   column-width: 360px;
   column-gap: 1.4vw;
+  column-fill: auto;
+}
+.sec.col-break {
+  break-before: column;
+  -webkit-column-break-before: always;
 }
 .sec {
   /* Inside each .sec keep LTR for chord names. */

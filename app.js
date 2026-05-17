@@ -30,7 +30,35 @@ async function init() {
     showFatal(`Couldn't load songs/index.json — ${err.message}.\nMake sure you're serving via http (e.g. \`python3 -m http.server\` from the jam folder), not opening the file directly.`);
     return;
   }
+  applyNavOrder(state.index);
   await route();
+}
+
+// Global song order, used by the picker and by arrow-key navigation.
+//
+// Source of truth (in order of precedence):
+//   1. state.index.navOrder — explicit array of slugs in songs/index.json
+//   2. show: N fields in each song — show songs sorted ascending, then
+//      non-show songs in their current index order.
+//
+// Configure by editing `show: N` values in tools/build-songs.py SONGS,
+// or by adding a `navOrder: [...]` array to songs/index.json.
+function applyNavOrder(index) {
+  const songs = index.songs;
+  if (Array.isArray(index.navOrder) && index.navOrder.length) {
+    const bySlug = new Map(songs.map(s => [s.slug, s]));
+    const ordered = index.navOrder.map(slug => bySlug.get(slug)).filter(Boolean);
+    const seen = new Set(ordered.map(s => s.slug));
+    for (const s of songs) if (!seen.has(s.slug)) ordered.push(s);
+    index.songs = ordered;
+    return;
+  }
+  songs.sort((a, b) => {
+    if (a.show && b.show) return a.show - b.show;
+    if (a.show) return -1;
+    if (b.show) return 1;
+    return 0; // stable: keep original order for non-show
+  });
 }
 
 // ---------------- Routing ----------------
@@ -40,6 +68,7 @@ async function route() {
     state.song = null; state.slug = null;
     releaseWakeLock();
     document.body.classList.remove('in-song');
+    document.body.classList.remove('slide-chart');
     renderPicker();
     return;
   }
@@ -53,6 +82,8 @@ async function route() {
       try {
         const overlay = await fetchJSON(`songs-local/${slug}.json`);
         if (overlay && overlay.lyrics) state.song.lyrics = overlay.lyrics;
+        if (overlay && overlay.slideImages) state.song.slideImages = overlay.slideImages;
+        if (overlay && overlay.lyricsImages) state.song.lyricsImages = overlay.lyricsImages;
       } catch (_) { /* no overlay — that's fine */ }
       state.slug = slug;
     } catch (err) {
@@ -155,7 +186,7 @@ function renderSong() {
       </div>
       <div class="song-body">
         <aside class="form-side">${renderFormSide(song)}</aside>
-        <main class="song-main"><div id="view-area"></div></main>
+        <main class="song-main" dir="${song.dir === 'rtl' ? 'rtl' : 'ltr'}"><div id="view-area"></div></main>
       </div>
     </div>
   `;
@@ -205,6 +236,20 @@ function renderChartView() {
   const song = state.song;
   const area = document.getElementById('view-area');
   area.className = '';
+
+  // Slide-image chart: for songs that have a PowerPoint slide, just show
+  // it as-is — the slide already contains the chord chart in the form the
+  // band rehearsed with.
+  if (Array.isArray(song.slideImages) && song.slideImages.length) {
+    document.body.classList.add('slide-chart');
+    const imgs = song.slideImages.map(src =>
+      `<img class="slide-img" src="${attr(src)}" alt="${attr(song.title)} slide">`
+    ).join('');
+    area.innerHTML = `<div class="chart slide-chart-body">${imgs}</div>`;
+    return;
+  }
+  document.body.classList.remove('slide-chart');
+
   // Multi-column layout: sections flow top-to-bottom in each column,
   // then to the next column. Column direction follows the song's `dir`
   // (RTL songs: columns progress right→left; LTR: left→right).
@@ -220,12 +265,12 @@ function renderChartView() {
 
   // Font sizing: scale by the longest bar-line in any section.
   const maxBarsInLine = Math.max(1, ...sections.flatMap(s => (s.lines || []).map(l => l.length)));
-  const barFont = `clamp(14px, ${Math.max(1.2, 3.0 - 0.18 * maxBarsInLine)}vw, 30px)`;
+  const barFont = `clamp(12px, ${Math.max(0.9, 2.2 - 0.18 * maxBarsInLine)}vw, 20px)`;
   grid.style.setProperty('--bar-font', barFont);
 
   sections.forEach(sec => {
     const block = document.createElement('div');
-    block.className = 'sec';
+    block.className = 'sec' + (sec.colBreak ? ' col-break' : '');
     const lines = (sec.lines || []).map(line => `
       <div class="bars" dir="ltr" style="font-size:${barFont}">
         <span class="sep">|</span>
@@ -247,6 +292,19 @@ function renderChartView() {
 function renderLyricsView() {
   const song = state.song;
   const area = document.getElementById('view-area');
+  document.body.classList.remove('slide-chart');
+
+  // Slide-image lyrics: when the pptx has a lyrics slide (lyrics-with-chords
+  // format), show it as-is and skip the text-parsed lyrics.
+  if (Array.isArray(song.lyricsImages) && song.lyricsImages.length) {
+    document.body.classList.add('slide-chart');
+    const imgs = song.lyricsImages.map(src =>
+      `<img class="slide-img" src="${attr(src)}" alt="${attr(song.title)} lyrics slide">`
+    ).join('');
+    area.innerHTML = `<div class="chart slide-chart-body">${imgs}</div>`;
+    return;
+  }
+
   const lyrics = song.lyrics;
 
   if (!lyrics || !lyrics.length) {
@@ -279,8 +337,8 @@ function renderLyricsView() {
   const tallestCol = Math.max(...cols.map(c => c.weight));
   // Aim: tallestCol lines should fit in roughly 88vh of vertical space.
   // Each line is ~1.6× the font height (chord row + lyric row + spacing).
-  const fontVh = Math.max(1.4, Math.min(2.6, 88 / (tallestCol * 2.2)));
-  const fontSize = `clamp(13px, ${fontVh.toFixed(2)}vh, 30px)`;
+  const fontVh = Math.max(1.3, Math.min(2.4, 88 / (tallestCol * 2.2)));
+  const fontSize = `clamp(12px, ${fontVh.toFixed(2)}vh, 28px)`;
 
   const colHTML = cols.map(col => {
     const inner = col.items.map(sec => {
@@ -375,6 +433,8 @@ async function reloadSong() {
     try {
       const overlay = await fetchJSON(`songs-local/${state.slug}.json?ts=${Date.now()}`);
       if (overlay && overlay.lyrics) state.song.lyrics = overlay.lyrics;
+      if (overlay && overlay.slideImages) state.song.slideImages = overlay.slideImages;
+      if (overlay && overlay.lyricsImages) state.song.lyricsImages = overlay.lyricsImages;
     } catch (_) { /* no overlay */ }
     renderSong();
   } catch (err) {

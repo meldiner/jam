@@ -10,13 +10,24 @@
   "dir": "ltr",
   "chords": [
     "C",
-    "G",
-    "F"
+    "F",
+    "G"
   ],
   "sections": [
     {
-      "name": "Intro / Verse",
-      "reps": "loop",
+      "name": "Intro",
+      "lines": [
+        [
+          "C",
+          "F",
+          "G",
+          "G (F)"
+        ]
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "reps": "×4",
       "lines": [
         [
           "C",
@@ -27,18 +38,43 @@
       ]
     },
     {
-      "name": "Pre-Chorus",
+      "name": "Chorus (\"say it ain't so\")",
       "lines": [
         [
           "C",
-          "G",
-          "F",
-          "C"
+          "(C)",
+          "(G)",
+          "(F)"
         ]
       ]
     },
     {
       "name": "Chorus (\"na na na\")",
+      "reps": "×2",
+      "lines": [
+        [
+          "C",
+          "G",
+          "F",
+          "C"
+        ]
+      ]
+    },
+    {
+      "name": "Bridge",
+      "reps": "×2",
+      "lines": [
+        [
+          "C",
+          "F",
+          "Fb",
+          "G (F)"
+        ]
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "reps": "×2",
       "lines": [
         [
           "C",
@@ -49,39 +85,73 @@
       ]
     },
     {
-      "name": "Bridge — verify",
+      "name": "Chorus (\"say it ain't so\")",
+      "lines": [
+        [
+          "C",
+          "(C)",
+          "(G)",
+          "(F)"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus (\"na na na\")",
+      "reps": "×2",
+      "lines": [
+        [
+          "C",
+          "G",
+          "F",
+          "C"
+        ]
+      ]
+    },
+    {
+      "name": "Instrumental",
+      "reps": "×4",
+      "lines": [
+        [
+          "C",
+          "C",
+          "F",
+          "G"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus (\"say it ain't so\") — outro",
+      "reps": "×4",
+      "lines": [
+        [
+          "C",
+          "C",
+          "G",
+          "F"
+        ]
+      ]
+    },
+    {
+      "name": "Ending",
       "lines": [
         [
           "F",
-          "F"
-        ],
-        [
-          "C",
           "C"
-        ],
-        [
-          "G",
-          "G"
-        ],
-        [
-          "F",
-          "F"
         ]
       ]
     }
   ],
   "show": 14,
   "formSteps": [
-    "Intro (×2)",
+    "Intro",
     "Verse 1",
-    "Pre-Chorus",
-    "Chorus (\"na na na\")",
-    "Verse 2",
-    "Pre-Chorus",
     "Chorus",
     "Bridge",
-    "Chorus (×2)",
-    "Outro"
+    "Verse 2",
+    "Chorus",
+    "Instrumental",
+    "Chorus",
+    "Ending"
   ],
   "lyrics": null
 }
