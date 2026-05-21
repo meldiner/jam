@@ -65,85 +65,10 @@
     },
     {
       "name": "מעבר (Bridge)",
-      "lines": [
-        [
-          "Cm",
-          "Ab",
-          "G",
-          "G"
-        ],
-        [
-          "Fm",
-          "Ab",
-          "G",
-          "G"
-        ]
-      ]
-    },
-    {
-      "name": "פזמון (Chorus)",
-      "lines": [
-        [
-          "Cm",
-          "Cm/Bb",
-          "Ab",
-          "Cm/G"
-        ],
-        [
-          "Cm",
-          "Cm/Bb",
-          "Ab",
-          "G"
-        ],
-        [
-          "Eb",
-          "Eb",
-          "Fm",
-          "G"
-        ],
-        [
-          "Ab",
-          "Fm",
-          "Dm7b5",
-          "G"
-        ]
-      ]
-    },
-    {
-      "name": "בית (Verse)",
       "colBreak": true,
       "lines": [
         [
           "Cm",
-          "Cm/Bb",
-          "Ab",
-          "G7"
-        ],
-        [
-          "Cm",
-          "Ab",
-          "Fm",
-          "G7"
-        ],
-        [
-          "Eb",
-          "Fm",
-          "Ab",
-          "G7"
-        ],
-        [
-          "Cm",
-          "Fm",
-          "Ab",
-          "G7"
-        ]
-      ]
-    },
-    {
-      "name": "מעבר (Bridge)",
-      "lines": [
-        [
-          "Cm",
           "Ab",
           "G",
           "G"
@@ -158,7 +83,6 @@
     },
     {
       "name": "פזמון (Chorus)",
-      "reps": "×2",
       "lines": [
         [
           "Cm",
@@ -196,7 +120,7 @@
           "G"
         ],
         [
-          "Bb",
+          "G",
           "Cm"
         ]
       ]

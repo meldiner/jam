@@ -55,15 +55,17 @@ def main():
         slug = song["slug"]
         slides = song.get("slides") or []
         lyrics_slides = song.get("lyricsSlides") or []
-        if not slides and not lyrics_slides:
-            continue
         chart_rel = copy_set(slug, slides, "") if slides else []
         lyrics_rel = copy_set(slug, lyrics_slides, "-lyrics") if lyrics_slides else []
-        if not chart_rel and not lyrics_rel:
-            continue
         total += len(chart_rel) + len(lyrics_rel)
-        # Update overlay JSON
+        # Normalize the overlay JSON so clearing `slides` in SONGS removes
+        # stale slideImages. But only strip when `slides` is intentionally
+        # empty — never when the source export dir just happens to be missing
+        # (that would silently wipe every overlay's slideImages on a fresh
+        # checkout where /tmp/jam_slides_export hasn't been re-exported yet).
         overlay_path = LOCAL_DIR / f"{slug}.json"
+        if not overlay_path.exists() and not chart_rel and not lyrics_rel:
+            continue
         data = {}
         if overlay_path.exists():
             try:
@@ -72,11 +74,11 @@ def main():
                 data = {}
         if chart_rel:
             data["slideImages"] = chart_rel
-        else:
+        elif not slides:
             data.pop("slideImages", None)
         if lyrics_rel:
             data["lyricsImages"] = lyrics_rel
-        else:
+        elif not lyrics_slides:
             data.pop("lyricsImages", None)
         overlay_path.write_text(
             json.dumps(data, ensure_ascii=False, indent=2) + "\n",

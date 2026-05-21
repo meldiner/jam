@@ -223,7 +223,7 @@ body.slide-chart .form-side { display: none; }
 .sections {
   flex: 1 1 auto;
   min-height: 0;
-  column-width: 360px;
+  column-count: 2;
   column-gap: 1.4vw;
   column-fill: auto;
 }

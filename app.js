@@ -242,8 +242,9 @@ function renderChartView() {
   // band rehearsed with.
   if (Array.isArray(song.slideImages) && song.slideImages.length) {
     document.body.classList.add('slide-chart');
+    const ts = state.slideTs || '';
     const imgs = song.slideImages.map(src =>
-      `<img class="slide-img" src="${attr(src)}" alt="${attr(song.title)} slide">`
+      `<img class="slide-img" src="${attr(src + (ts ? `?ts=${ts}` : ''))}" alt="${attr(song.title)} slide">`
     ).join('');
     area.innerHTML = `<div class="chart slide-chart-body">${imgs}</div>`;
     return;
@@ -298,8 +299,9 @@ function renderLyricsView() {
   // format), show it as-is and skip the text-parsed lyrics.
   if (Array.isArray(song.lyricsImages) && song.lyricsImages.length) {
     document.body.classList.add('slide-chart');
+    const ts = state.slideTs || '';
     const imgs = song.lyricsImages.map(src =>
-      `<img class="slide-img" src="${attr(src)}" alt="${attr(song.title)} lyrics slide">`
+      `<img class="slide-img" src="${attr(src + (ts ? `?ts=${ts}` : ''))}" alt="${attr(song.title)} lyrics slide">`
     ).join('');
     area.innerHTML = `<div class="chart slide-chart-body">${imgs}</div>`;
     return;
@@ -436,6 +438,7 @@ async function reloadSong() {
       if (overlay && overlay.slideImages) state.song.slideImages = overlay.slideImages;
       if (overlay && overlay.lyricsImages) state.song.lyricsImages = overlay.lyricsImages;
     } catch (_) { /* no overlay */ }
+    state.slideTs = Date.now();
     renderSong();
   } catch (err) {
     showFatal(`Reload failed: ${err.message}`);
