@@ -58,6 +58,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/rehab.png"
+  ],
   "formSteps": [
     "Chorus",
     "Verse 1",

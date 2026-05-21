@@ -44,6 +44,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/dreams.png"
+  ],
   "formSteps": [
     "Verse 1",
     "Bridge",

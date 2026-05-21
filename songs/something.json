@@ -112,6 +112,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/something.png"
+  ],
   "formSteps": [
     "Intro (Lick 1)",
     "Verse 1",

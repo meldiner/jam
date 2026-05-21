@@ -91,6 +91,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/ballad-of-a-thin-man.png"
+  ],
   "formSteps": [
     "Intro",
     "Verse 1",

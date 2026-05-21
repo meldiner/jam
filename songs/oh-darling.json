@@ -79,6 +79,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/oh-darling.png"
+  ],
   "formSteps": [
     "Verse 1",
     "Verse 2",

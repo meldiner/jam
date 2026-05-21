@@ -89,6 +89,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/everybody-hurts.png"
+  ],
   "formSteps": [
     "Verse 1",
     "Chorus",

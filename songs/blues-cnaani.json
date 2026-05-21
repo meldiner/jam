@@ -86,6 +86,9 @@
     }
   ],
   "show": 9,
+  "slideImages": [
+    "slides/blues-cnaani.png"
+  ],
   "formSteps": [
     "פתיחה",
     "בית",

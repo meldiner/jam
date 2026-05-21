@@ -87,6 +87,9 @@
     }
   ],
   "show": 7,
+  "slideImages": [
+    "slides/shir-hamakolet.png"
+  ],
   "formSteps": [
     "אינטרו",
     "בית 1",

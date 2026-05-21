@@ -89,6 +89,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/powerful.png"
+  ],
   "formSteps": [
     "Verse 1",
     "Pre-Chorus",

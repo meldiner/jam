@@ -72,6 +72,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/purple-rain.png"
+  ],
   "formSteps": [
     "Intro",
     "Verse 1",

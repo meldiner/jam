@@ -554,6 +554,22 @@ def build_song_json(song):
     if song.get("show"):
         out["show"] = song["show"]
 
+    # Slide images that match the original pptx layout — used by the chart
+    # view (and lyrics view, when lyricsSlides is set) instead of the
+    # generated chord chart. Paths are deterministic from SONGS config;
+    # actual PNGs are produced by tools/copy-slides.py.
+    def _slide_paths(slides, suffix):
+        if not slides:
+            return None
+        if len(slides) == 1:
+            return [f"slides/{song['slug']}{suffix}.png"]
+        return [f"slides/{song['slug']}{suffix}-{i}.png" for i in range(1, len(slides) + 1)]
+
+    if song.get("slides"):
+        out["slideImages"] = _slide_paths(song["slides"], "")
+    if song.get("lyricsSlides"):
+        out["lyricsImages"] = _slide_paths(song["lyricsSlides"], "-lyrics")
+
     # Optional explicit form-steps override (becomes the left-sidebar list)
     if song.get("formSteps"):
         out["formSteps"] = song["formSteps"]

@@ -75,6 +75,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/true-colors.png"
+  ],
   "formSteps": [
     "Verse 1",
     "Pre-Chorus",

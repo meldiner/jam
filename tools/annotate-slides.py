@@ -15,7 +15,7 @@ from PIL import Image, ImageDraw, ImageFont
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SLIDES_DIR = ROOT / "songs-local" / "slides"
+SLIDES_DIR = ROOT / "slides"
 SOURCE_DIR = Path("/tmp/jam_slides_export")
 
 BLUE = (43, 87, 209)

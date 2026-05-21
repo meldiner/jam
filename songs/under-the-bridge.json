@@ -93,6 +93,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/under-the-bridge.png"
+  ],
   "formSteps": [
     "Intro",
     "Verse 1",

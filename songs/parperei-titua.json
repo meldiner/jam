@@ -126,6 +126,9 @@
     }
   ],
   "show": 6,
+  "slideImages": [
+    "slides/parperei-titua.png"
+  ],
   "formSteps": [
     "פתיחה",
     "בית 1",

@@ -76,6 +76,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/i-put-a-spell-on-you.png"
+  ],
   "formSteps": [
     "Intro",
     "Verse 1",

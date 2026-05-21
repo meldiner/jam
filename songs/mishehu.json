@@ -158,6 +158,9 @@
     }
   ],
   "show": 8,
+  "slideImages": [
+    "slides/mishehu.png"
+  ],
   "formSteps": [
     "פתיחה (B B/Bb A A/Ab ×2)",
     "בית 1 (Bb)",

@@ -116,6 +116,12 @@
     }
   ],
   "show": 12,
+  "slideImages": [
+    "slides/kerach-9.png"
+  ],
+  "lyricsImages": [
+    "slides/kerach-9-lyrics.png"
+  ],
   "formSteps": [
     "פתיחה (×2)",
     "בית 1",

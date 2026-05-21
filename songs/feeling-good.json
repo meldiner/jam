@@ -48,6 +48,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/feeling-good.png"
+  ],
   "formSteps": [
     "Verse 1",
     "Chorus",

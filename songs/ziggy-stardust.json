@@ -86,6 +86,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/ziggy-stardust.png"
+  ],
   "formSteps": [
     "Intro",
     "Verse 1",

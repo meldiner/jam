@@ -67,6 +67,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/dont-speak.png"
+  ],
   "formSteps": [
     "Intro (gtr)",
     "Long Verse",

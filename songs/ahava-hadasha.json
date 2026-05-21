@@ -108,6 +108,9 @@
     }
   ],
   "show": 3,
+  "slideImages": [
+    "slides/ahava-hadasha.png"
+  ],
   "formSteps": [
     "פתיחה (bass + guitar)",
     "בית 1",

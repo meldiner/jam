@@ -83,6 +83,9 @@
       ]
     }
   ],
+  "slideImages": [
+    "slides/give-it-away.png"
+  ],
   "formSteps": [
     "Intro (Am7)",
     "Verse 1",

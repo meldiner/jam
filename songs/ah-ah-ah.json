@@ -105,6 +105,9 @@
     }
   ],
   "show": 2,
+  "slideImages": [
+    "slides/ah-ah-ah.png"
+  ],
   "formSteps": [
     "פתיחה",
     "בית (1)",
