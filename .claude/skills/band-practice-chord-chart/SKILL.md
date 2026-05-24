@@ -1,0 +1,1 @@
+../../../.agents/skills/band-practice-chord-chart/SKILL.md
