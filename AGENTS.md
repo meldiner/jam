@@ -45,7 +45,7 @@ gating.
 
 ## Setlist
 
-Currently tracking **Show 5/29/26** — 13 songs from the Spotify playlist
+Currently tracking **Show 5/29/26** — 15 songs from the Spotify playlist
 [06p38NK6BWO8MjW6glhasN](https://open.spotify.com/playlist/06p38NK6BWO8MjW6glhasN).
 Songs in the show are tagged with a `show: <position>` field in their JSON
 and the index. The picker groups Show songs (with numbered badges and an

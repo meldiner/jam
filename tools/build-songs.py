@@ -343,7 +343,7 @@ SONGS = [
      "opening": "Drums + bass riff", "ending": "End on C"},
 
     {"slug": "blues-cnaani", "title": "בלוז כנעני", "artist": "אהוד בנאי",
-     "slides": [6], "dir": "rtl", "key": "Am", "show": 9,
+     "slides": [6], "dir": "rtl", "key": "Am", "show": 10,
      "form": "פתיחה → בית → פזמון → פתיחה → בית → פזמון → מעבר → בית → פזמון → מעבר → בית → פזמון → מעבר → חצי בית → סיום"},
 
     {"slug": "ah-ah-ah", "title": "אה אה אה", "artist": "אפרת גוש",
@@ -351,11 +351,11 @@ SONGS = [
      "form": "פתיחה → בית 1 → פזמון → בית 2 → פזמון → בית 3 → פזמון → מעבר פסנתר → בית 4 → פזמון (×4) → סיום"},
 
     {"slug": "kerach-9", "title": "איתו לנצח", "artist": "קרח 9",
-     "slides": [9], "lyricsSlides": [8], "dir": "rtl", "key": "Bb", "bpm": 160, "show": 12,
+     "slides": [9], "lyricsSlides": [8], "dir": "rtl", "key": "Bb", "bpm": 160, "show": 13,
      "form": "פתיחה → בית → פזמון → פתיחה → בית → פזמון → מעבר → בית → פזמון → מעבר → Outro → פזמון*"},
 
     {"slug": "yehudim-kah-oti", "title": "קח אותי", "artist": "היהודים",
-     "slides": [11], "dir": "rtl", "skipParse": True, "show": 10},
+     "slides": [11], "dir": "rtl", "skipParse": True, "show": 11},
 
     {"slug": "ahava-hadasha", "title": "אהבה חדשה", "artist": "אסף אמדורסקי",
      "slides": [12], "dir": "rtl", "show": 3,
@@ -390,7 +390,7 @@ SONGS = [
      "opening": "Pull-off lick on Am, then E, then C (see pptx tab)"},
 
     {"slug": "parperei-titua", "title": "פרפרי תעתוע", "artist": "כרמלה גרוס וגנר / ערן צור",
-     "slides": [21], "dir": "rtl", "skipParse": True, "show": 6},
+     "slides": [21], "dir": "rtl", "skipParse": True, "show": 7},
 
     {"slug": "pahei-show", "title": "פחי שואו", "artist": "",
      "slides": [22], "dir": "rtl",
@@ -426,7 +426,7 @@ SONGS = [
      "slides": [31], "key": "Am", "bpm": 102},
 
     {"slug": "shir-hamakolet", "title": "שיר המכולת", "artist": "כוורת",
-     "slides": [32], "dir": "rtl", "skipParse": True, "show": 7},
+     "slides": [32], "dir": "rtl", "skipParse": True, "show": 8},
 
     {"slug": "yeled-mizdaken", "title": "ילד מזדקן", "artist": "",
      "slides": [33], "dir": "rtl", "skipParse": True},
@@ -435,10 +435,10 @@ SONGS = [
      "slides": [34], "key": "Am", "bpm": 100},
 
     {"slug": "mishehu", "title": "מישהו פעם", "artist": "עברי לידר",
-     "slides": [35], "dir": "rtl", "skipParse": True, "show": 8},
+     "slides": [35], "dir": "rtl", "skipParse": True, "show": 9},
 
     {"slug": "nitzotzot", "title": "ניצוצות", "artist": "ברי סחרוף ורמי פורטיס",
-     "slides": [36], "dir": "rtl", "key": "Am", "show": 13,
+     "slides": [36], "dir": "rtl", "key": "Am", "show": 14,
      "opening": "Intro: Am – C – Fmaj7 – Dadd9 (×4)",
      "ending": "Outro on C – G/B – D"},
 
@@ -490,11 +490,11 @@ SONGS = [
      "opening": "12-bar blues in Dm"},
 
     {"slug": "valerie", "title": "Valerie", "artist": "Mark Ronson ft. Amy Winehouse",
-     "slides": [], "key": "Db major", "bpm": 102, "skipParse": True, "show": 5,
+     "slides": [], "key": "Db major", "bpm": 102, "skipParse": True, "show": 6,
      "opening": "Drums + bass groove on Db"},
 
     {"slug": "haperach-begani", "title": "הפרח בגני", "artist": "זהר ארגוב",
-     "slides": [], "dir": "ltr", "key": "Cm", "skipParse": True, "show": 11,
+     "slides": [], "dir": "ltr", "key": "Cm", "skipParse": True, "show": 15,
      "opening": "Intro: G – Cm"},
 
     {"slug": "spontaneous", "title": "Spontaneous", "artist": "Netta Balter / Omree Gal-Oz",
@@ -503,11 +503,11 @@ SONGS = [
      "opening": "Intro: A – E – F#m – D (4 bars), pickup into V"},
 
     {"slug": "all-the-small-things", "title": "All The Small Things", "artist": "Blink-182",
-     "slides": [], "skipParse": True, "show": 14,
+     "slides": [], "skipParse": True, "show": 12,
      "key": "C major", "bpm": 148, "timeSig": "4/4"},
 
     {"slug": "these-boots", "title": "These Boots Are Made For Walkin'", "artist": "Nancy Sinatra",
-     "slides": [], "skipParse": True, "show": 15,
+     "slides": [], "skipParse": True, "show": 5,
      "key": "E", "bpm": 92, "timeSig": "4/4"},
 ]
 
