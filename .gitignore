@@ -2,8 +2,12 @@
 *.pptx
 /tools/__pycache__/
 /tools/*.pyc
+__pycache__/
+*.pyc
 node_modules/
 # Lyrics overlay — kept local only (chord charts in songs/ are public).
 /songs-local/
 # DevTools screenshot scratch directory.
 /.shots/
+# Local secrets for repo-bundled Codex skills.
+/.agents/skills/*/.env
