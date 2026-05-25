@@ -24,6 +24,8 @@ This file is updated from empirical ADB exploration on the dedicated Android pho
 ## Safety Notes
 
 - Do not tap `Save` unless the user explicitly confirms the target preset/slot.
+- Before saving meaningful preset edits, verify a recent Fender Tone backup exists or create one in the app.
+- Create another Fender Tone backup periodically during long editing sessions, especially after finishing a group of show-preset changes.
 - Opening Add Block and selecting an insertion point can turn the preset badge red / enable `Save` even before confirming a new effect. Back out and force-stop/relaunch to avoid saving accidental state.
 - Fender Tone may reconnect to the amp and show the currently active amp slot, which can differ from the previously visible `My Presets` list.
 
@@ -48,7 +50,18 @@ adb shell input keyevent KEYCODE_HOME
 - Add effect drawer/menu: insertion and category picker mapped.
 - Amp model selection: not mapped.
 - Save/rename preset flow: not mapped.
-- Settings / My Amps / Wi-Fi / Backup-Restore: not mapped.
+- Settings / My Amps / Wi-Fi / Backup-Restore: not mapped. Map this before any significant write session so backup verification can be done reliably.
+
+## Backup Screen Mapping
+
+Pending. Next exploration should map:
+
+- Where backups are created/restored in Fender Tone.
+- Whether the app shows backup timestamps.
+- Whether backup creation requires account/cloud connectivity.
+- The exact coordinates for creating a backup and confirming completion.
+
+Until this is mapped, the operator must visually verify backup status before edits.
 
 ## Coordinate Map at 720x1520
 

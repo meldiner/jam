@@ -12,7 +12,10 @@ Use this skill to operate the Fender Tone Android app on a dedicated phone conne
 - Treat the phone UI as the source of truth. Use screenshots and UI dumps before tapping.
 - Do not bypass device security. If the phone is locked, ask the user to unlock it.
 - Avoid destructive preset edits until the user has named the exact preset/slot and confirmed the save target.
+- Before any significant preset edits, verify there is a recent Fender Tone/GTX backup. If none is visible or the backup age is uncertain, create one in Fender Tone before editing.
+- Create a new backup periodically during long editing sessions, especially before changing multiple presets, adding/removing blocks, changing footswitch assignments, or saving over show presets 1-15.
 - Before editing, capture a screenshot and UI XML into `/tmp/codex-android/`.
+- Run `python3 scripts/tone_adb.py audit-snapshot --label <short-label>` before and after meaningful changes to preserve local evidence of the app state.
 - Prefer ADB controls over macOS mouse clicks. Use `scrcpy` only as a monitor/manual override.
 
 ## Verified Local Facts
@@ -36,6 +39,7 @@ python3 scripts/tone_adb.py unlock
 python3 scripts/tone_adb.py launch
 python3 scripts/tone_adb.py snapshot
 python3 scripts/tone_adb.py ui-text
+python3 scripts/tone_adb.py audit-snapshot --label before-edit
 ```
 
 If `status` shows no device, run:
@@ -79,6 +83,18 @@ When exploring a new app state:
 4. Record stable labels, content descriptions, and coordinates in `references/app-map.md`.
 5. Prefer navigation by labels when `uiautomator` exposes text; otherwise use coordinate taps with screen-size assumptions and recapture after every tap.
 6. If the preset badge turns red or Save becomes enabled after exploration, do not tap Save. Force-stop/relaunch Fender Tone to discard unsaved app state unless the user asked to save.
+
+## Backup Protocol
+
+Use this before editing presets on the real amp:
+
+1. Confirm Fender Tone is connected to the intended amp, usually `Mustang GTX #2`.
+2. Navigate to the Fender Tone backup/restore area and verify there is a recent backup from the current rehearsal/editing session.
+3. If there is no recent backup, create one before making changes.
+4. Run `python3 scripts/tone_adb.py audit-snapshot --label backup-verified` to capture local evidence of the connected app state.
+5. During long sessions, create another backup after each coherent batch of changes, such as after finishing volume alignment, after adding all solo boosts, or before experimenting with larger tone redesigns.
+
+Until the backup/restore screen is mapped in `references/app-map.md`, do not assume a backup exists just because the user mentioned one. Verify it visually or ask the user to show/create it.
 
 The helper reads a local `.env` beside this file. Keep secrets there, not in SKILL.md:
 

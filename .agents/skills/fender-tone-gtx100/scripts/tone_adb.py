@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import datetime as dt
 import os
 import subprocess
 import sys
@@ -63,6 +64,13 @@ def launch(_args):
 def snapshot(args):
     ensure_out_dir()
     prefix = args.prefix or "fender-tone"
+    png, xml = capture_snapshot(prefix)
+    print(png)
+    print(xml)
+
+
+def capture_snapshot(prefix):
+    ensure_out_dir()
     png = os.path.join(OUT_DIR, f"{prefix}.png")
     xml = os.path.join(OUT_DIR, f"{prefix}.xml")
     with open(png, "wb") as f:
@@ -71,8 +79,7 @@ def snapshot(args):
             raise SystemExit(proc.returncode)
     adb("shell", "uiautomator", "dump", "/sdcard/window.xml")
     adb("pull", "/sdcard/window.xml", xml)
-    print(png)
-    print(xml)
+    return png, xml
 
 
 def ui_text(args):
@@ -110,6 +117,34 @@ def unlock(_args):
     adb("shell", "input", "keyevent", "KEYCODE_ENTER")
 
 
+def audit_snapshot(args):
+    stamp = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+    safe_label = "".join(c if c.isalnum() or c in "-_" else "-" for c in args.label).strip("-")
+    prefix = f"audit-{stamp}-{safe_label or 'state'}"
+    png, xml = capture_snapshot(prefix)
+    meta = os.path.join(OUT_DIR, f"{prefix}.txt")
+    lines = [
+        f"label: {args.label}",
+        f"timestamp: {stamp}",
+        "adb devices:",
+        adb("devices", "-l").rstrip(),
+        "",
+        "device:",
+        f"model: {adb('shell', 'getprop', 'ro.product.model').strip()}",
+        f"android: {adb('shell', 'getprop', 'ro.build.version.release').strip()}",
+        adb("shell", "wm", "size").strip(),
+        "",
+        "window:",
+    ]
+    window = adb("shell", "dumpsys", "window")
+    lines.extend(line.strip() for line in window.splitlines() if "mCurrentFocus" in line or "mFocusedApp" in line)
+    with open(meta, "w") as f:
+        f.write("\n".join(lines) + "\n")
+    print(png)
+    print(xml)
+    print(meta)
+
+
 def main():
     parser = argparse.ArgumentParser()
     sub = parser.add_subparsers(required=True)
@@ -139,6 +174,10 @@ def main():
 
     p = sub.add_parser("unlock")
     p.set_defaults(func=unlock)
+
+    p = sub.add_parser("audit-snapshot")
+    p.add_argument("--label", default="state")
+    p.set_defaults(func=audit_snapshot)
 
     args = parser.parse_args()
     args.func(args)

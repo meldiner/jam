@@ -20,6 +20,13 @@
 - When Fender Tone is connected to Mustang GTX, the amp display shows a `TONE` icon.
 - Bluetooth audio volume can be controlled from the external device or the amp's Bluetooth menu.
 
+## Backup Discipline
+
+- Treat Fender Tone backups as the rollback source for real amp edits.
+- Before changing show presets, verify the newest backup is recent enough for the current work session or create a new backup.
+- Create another backup after each batch of coherent edits so rollback points are meaningful: for example after volume alignment, after adding solo boosts, or before larger tone redesigns.
+- Local ADB screenshots/XML are audit artifacts, not a substitute for a Fender Tone/amp backup.
+
 ## Source URLs
 
 - https://support.fender.com/hc/en-us/articles/42656586637083-What-is-Fender-Tone
