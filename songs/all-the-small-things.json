@@ -4,14 +4,15 @@
   "key": "C major",
   "bpm": 148,
   "timeSig": "4/4",
-  "opening": "",
+  "opening": "Keys: Hammond organ sound; piano lower/softer",
   "ending": "",
   "form": "",
   "dir": "ltr",
   "chords": [
     "C",
     "F",
-    "G"
+    "G",
+    "E"
   ],
   "sections": [
     {
@@ -66,8 +67,8 @@
       "lines": [
         [
           "C",
-          "F",
-          "E",
+          "F -> E",
+          "G",
           "G (F)"
         ]
       ]

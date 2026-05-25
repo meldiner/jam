@@ -653,24 +653,49 @@ CHARTS = {
     "tzar-li-charlie": {
         "chartChords": ["Dm", "Gm", "A7"],
         "chartSections": [
-            {"name": "פתיחה (build-up)", "reps": "all on Dm",
+            {"name": "פתיחה — תופים + בס + גיטרה", "reps": "4 תיבות על Dm",
              "lines": [
                  ["Dm", "Dm", "Dm", "Dm"],
              ]},
-            {"name": "12-bar blues (Dm)",
+            {"name": "קלידים מצטרפים", "reps": "4 תיבות על Dm",
+             "lines": [
+                 ["Dm", "Dm", "Dm", "Dm"],
+             ]},
+            {"name": "Break",
+             "lines": [
+                 ["N.C."],
+             ]},
+            {"name": "חצוצרה", "reps": "4 תיבות על Dm",
+             "lines": [
+                 ["Dm", "Dm", "Dm", "Dm"],
+             ]},
+            {"name": "Break",
+             "lines": [
+                 ["N.C."],
+             ]},
+            {"name": "בית / פזמון / סולו — 12-bar blues (Dm)",
              "lines": [
                  ["Dm", "Dm", "Dm", "Dm"],
                  ["Gm", "Gm", "Dm", "Dm"],
                  ["A7", "Gm", "Dm", "A7"],
              ]},
+            {"name": "סיום",
+             "lines": [
+                 ["Dm"],
+             ]},
         ],
         "formSteps": [
-            "בס + תופים + גיטרה — 4 בארים (Dm)",
-            "+ פסנתר וחצוצרה — 4 בארים",
+            "פתיחה: תופים + בס + גיטרה",
+            "קלידים מצטרפים ל-4 תיבות",
             "Break",
-            "נכנסת השירה — ראש (head)",
-            "סולו × N",
-            "ראש (חזרה)",
+            "חצוצרה 4 תיבות",
+            "Break",
+            "בית",
+            "פזמון",
+            "בית",
+            "סולואים — 5 בתים",
+            "בית",
+            "פזמון ×2",
             "סיום על Dm",
         ],
     },
@@ -949,7 +974,7 @@ CHARTS = {
         # Blink-182. Key C major. Confirmed by user against UG.
         # Boxes laid out top-to-bottom in performance order; the form
         # sidebar uses a single "Chorus" entry per chorus block.
-        "chartChords": ["C", "F", "G"],
+        "chartChords": ["C", "F", "G", "E"],
         "chartSections": [
             {"name": "Intro",
              "lines": [["C", "F", "G", "G (F)"]]},
@@ -960,7 +985,7 @@ CHARTS = {
             {"name": "Chorus (\"na na na\")", "reps": "×2",
              "lines": [["C", "C", "G", "F"]]},
             {"name": "Bridge", "reps": "×2",
-             "lines": [["C", "F", "E", "G (F)"]]},
+             "lines": [["C", "F -> E", "G", "G (F)"]]},
             {"name": "Verse 2", "reps": "×2",
              "lines": [["C", "G", "F", "G"]]},
             {"name": "Chorus (\"say it ain't so\")",
@@ -988,26 +1013,19 @@ CHARTS = {
     },
 
     "these-boots": {
-        # Nancy Sinatra. Key E. Verse is built on a famous descending bass
-        # walk under a sustained E tonic; chorus moves to A and resolves
-        # via B7. Slash-chord notation here represents the bass note
-        # walking down (the upper voicing stays close to E).
-        "chartChords": ["E", "E/D#", "E/D", "E/C#", "E/C", "E/B", "E/Bb", "A", "B7"],
+        # Nancy Sinatra. Rehearsal simplification: guitar chart uses the
+        # band arrangement instead of the original descending bass walk.
+        "chartChords": ["E", "A", "G"],
         "chartSections": [
-            {"name": "Intro — descending bass walk",
-             "lines": [["E", "E/D#", "E/D", "E/C#"],
-                       ["E/C", "E/B", "E/Bb", "A"]]},
-            {"name": "Verse — bass walks down on E",
-             "lines": [["E", "E/D#", "E/D", "E/C#"],
-                       ["E/C", "E/B", "E/Bb", "A"]]},
+            {"name": "Intro / Verse",
+             "lines": [["E", "E", "A", "E"]]},
             {"name": "Chorus",
-             "lines": [["A", "E"], ["A", "E"], ["A", "E"], ["B7", "E"]]},
-            {"name": "Outro — bass walk fade",
-             "lines": [["E", "E/D#", "E/D", "E/C#"],
-                       ["E/C", "E/B", "E/Bb", "A"]]},
+             "lines": [["E", "G", "E", "G"]]},
+            {"name": "Outro",
+             "lines": [["E", "E", "A", "E"]]},
         ],
         "formSteps": [
-            "Intro (bass walk on E)",
+            "Intro / Verse: E E A E",
             "Verse 1",
             "Chorus",
             "Verse 2",

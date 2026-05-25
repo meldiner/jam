@@ -4,53 +4,24 @@
   "key": "E",
   "bpm": 92,
   "timeSig": "4/4",
-  "opening": "",
+  "opening": "Guitar: E E A E",
   "ending": "",
   "form": "",
   "dir": "ltr",
   "chords": [
     "E",
-    "E/D#",
-    "E/D",
-    "E/C#",
-    "E/C",
-    "E/B",
-    "E/Bb",
     "A",
-    "B7"
+    "G"
   ],
   "sections": [
     {
-      "name": "Intro — descending bass walk",
+      "name": "Intro / Verse",
       "lines": [
         [
           "E",
-          "E/D#",
-          "E/D",
-          "E/C#"
-        ],
-        [
-          "E/C",
-          "E/B",
-          "E/Bb",
-          "A"
-        ]
-      ]
-    },
-    {
-      "name": "Verse — bass walks down on E",
-      "lines": [
-        [
           "E",
-          "E/D#",
-          "E/D",
-          "E/C#"
-        ],
-        [
-          "E/C",
-          "E/B",
-          "E/Bb",
-          "A"
+          "A",
+          "E"
         ]
       ]
     },
@@ -58,44 +29,28 @@
       "name": "Chorus",
       "lines": [
         [
-          "A",
-          "E"
-        ],
-        [
-          "A",
-          "E"
-        ],
-        [
-          "A",
-          "E"
-        ],
-        [
-          "B7",
-          "E"
+          "E",
+          "G",
+          "E",
+          "G"
         ]
       ]
     },
     {
-      "name": "Outro — bass walk fade",
+      "name": "Outro",
       "lines": [
         [
           "E",
-          "E/D#",
-          "E/D",
-          "E/C#"
-        ],
-        [
-          "E/C",
-          "E/B",
-          "E/Bb",
-          "A"
+          "E",
+          "A",
+          "E"
         ]
       ]
     }
   ],
   "show": 5,
   "formSteps": [
-    "Intro (bass walk on E)",
+    "Intro / Verse: E E A E",
     "Verse 1",
     "Chorus",
     "Verse 2",
