@@ -36,6 +36,7 @@ Run the helper from this skill directory:
 ```bash
 python3 scripts/tone_adb.py status
 python3 scripts/tone_adb.py unlock
+python3 scripts/tone_adb.py stay-awake
 python3 scripts/tone_adb.py launch
 python3 scripts/tone_adb.py snapshot
 python3 scripts/tone_adb.py ui-text
@@ -94,7 +95,7 @@ Use this before editing presets on the real amp:
 4. Run `python3 scripts/tone_adb.py audit-snapshot --label backup-verified` to capture local evidence of the connected app state.
 5. During long sessions, create another backup after each coherent batch of changes, such as after finishing volume alignment, after adding all solo boosts, or before experimenting with larger tone redesigns.
 
-Until the backup/restore screen is mapped in `references/app-map.md`, do not assume a backup exists just because the user mentioned one. Verify it visually or ask the user to show/create it.
+If backup creation shows `Creating Backup` for more than a few minutes, do not edit presets in that app state. Capture a screenshot, back out or force-stop/relaunch Fender Tone, and verify the amp reconnects before continuing. A failed/stuck backup attempt can leave the app disconnected from the amp.
 
 The helper reads a local `.env` beside this file. Keep secrets there, not in SKILL.md:
 

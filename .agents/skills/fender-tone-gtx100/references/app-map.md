@@ -54,14 +54,36 @@ adb shell input keyevent KEYCODE_HOME
 
 ## Backup Screen Mapping
 
-Pending. Next exploration should map:
+Seen screens:
 
-- Where backups are created/restored in Fender Tone.
-- Whether the app shows backup timestamps.
-- Whether backup creation requires account/cloud connectivity.
-- The exact coordinates for creating a backup and confirming completion.
+- `/tmp/codex-android/current-before-backup-map.png`
+- `/tmp/codex-android/backup-name-done.png`
+- `/tmp/codex-android/backup-created-confirm-4.png`
 
-Until this is mapped, the operator must visually verify backup status before edits.
+Path:
+
+1. From app settings, tap `Backup & Restore`.
+2. Backup list shows filenames such as:
+   - `GTX_20260526_011927`
+   - `GTX_20260523_200141`
+   - `GTX_20260522_222126`
+3. `Create Backup` button is bottom center: `(360,1450)`.
+4. Filename screen defaults to a timestamped name such as `GTX_20260526_013155`.
+5. With keyboard open, tap Android keyboard `Done`: roughly `(658,1370)`.
+6. Then tap `BACKUP TO CLOUD`: roughly `(360,1455)`.
+
+Observed issue:
+
+- A backup attempt on 2026-05-26 01:31 phone time remained stuck on `Creating Backup` for several minutes.
+- Pressing Back moved to Settings but left the modal overlay visible.
+- Force-stopping/relaunching Fender Tone cleared the overlay, but the app then showed `No Devices Found`.
+- Do not proceed to preset edits after a stuck backup until the app reconnects to `Mustang GTX #2`.
+
+Still unknown:
+
+- Whether backup creation requires stable internet/account/cloud connectivity.
+- Whether a stuck backup eventually appears in the list.
+- Whether backup can be created locally without cloud.
 
 ## Coordinate Map at 720x1520
 

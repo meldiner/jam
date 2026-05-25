@@ -117,6 +117,10 @@ def unlock(_args):
     adb("shell", "input", "keyevent", "KEYCODE_ENTER")
 
 
+def stay_awake(_args):
+    adb("shell", "svc", "power", "stayon", "usb")
+
+
 def audit_snapshot(args):
     stamp = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
     safe_label = "".join(c if c.isalnum() or c in "-_" else "-" for c in args.label).strip("-")
@@ -174,6 +178,9 @@ def main():
 
     p = sub.add_parser("unlock")
     p.set_defaults(func=unlock)
+
+    p = sub.add_parser("stay-awake")
+    p.set_defaults(func=stay_awake)
 
     p = sub.add_parser("audit-snapshot")
     p.add_argument("--label", default="state")
