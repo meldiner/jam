@@ -162,6 +162,7 @@ function renderSong() {
   const idx = songsList.findIndex(s => s.slug === slug);
   const prev = songsList[(idx - 1 + songsList.length) % songsList.length];
   const next = songsList[(idx + 1) % songsList.length];
+  const position = idx >= 0 ? `${idx + 1} / ${songsList.length}` : '';
 
   root().innerHTML = `
     <div class="song" dir="${song.dir === 'rtl' ? 'rtl' : 'ltr'}">
@@ -179,9 +180,19 @@ function renderSong() {
           ${song.opening && song.ending ? '<span class="dot">·</span>' : ''}
           ${song.ending ? `<span class="cue">■ ${esc(song.ending)}</span>` : ''}
         </div>
-        <div class="view-toggle">
-          <button data-view="chart"  class="${state.view==='chart' ?'active':''}">Chart</button>
-          <button data-view="lyrics" class="${state.view==='lyrics'?'active':''}">Lyrics</button>
+        <div class="song-tools">
+          <div class="view-toggle" aria-label="View">
+            <button type="button" data-view="chart"  class="${state.view==='chart' ?'active':''}" aria-pressed="${state.view==='chart'}">Chart</button>
+            <button type="button" data-view="lyrics" class="${state.view==='lyrics'?'active':''}" aria-pressed="${state.view==='lyrics'}">Lyrics</button>
+          </div>
+          <div class="song-actions" aria-label="Touch controls">
+            <button type="button" class="song-action icon" data-action="prev" aria-label="Previous song" title="${attr(prev.title || 'Previous song')}">‹</button>
+            <button type="button" class="song-action" data-action="setlist">Setlist</button>
+            ${position ? `<span class="song-position" aria-label="Song ${idx + 1} of ${songsList.length}">${position}</span>` : ''}
+            <button type="button" class="song-action icon" data-action="fullscreen" aria-label="Toggle fullscreen" title="Toggle fullscreen">⛶</button>
+            <button type="button" class="song-action icon" data-action="reload" aria-label="Reload song" title="Reload song">↻</button>
+            <button type="button" class="song-action icon" data-action="next" aria-label="Next song" title="${attr(next.title || 'Next song')}">›</button>
+          </div>
         </div>
       </div>
       <div class="song-body">
@@ -194,8 +205,58 @@ function renderSong() {
   root().querySelectorAll('.view-toggle button').forEach(b => {
     b.addEventListener('click', () => setView(b.dataset.view));
   });
+  root().querySelectorAll('.song-action').forEach(b => {
+    b.addEventListener('click', () => onSongAction(b.dataset.action));
+  });
+  attachSongGestures();
 
   if (state.view === 'lyrics') renderLyricsView(); else renderChartView();
+}
+
+function onSongAction(action) {
+  switch (action) {
+    case 'prev':
+      gotoSong(-1);
+      break;
+    case 'next':
+      gotoSong(+1);
+      break;
+    case 'setlist':
+      location.hash = '';
+      break;
+    case 'fullscreen':
+      toggleFullscreen();
+      break;
+    case 'reload':
+      reloadSong();
+      break;
+  }
+}
+
+function attachSongGestures() {
+  const target = root().querySelector('.song-main');
+  if (!target) return;
+  let start = null;
+
+  target.addEventListener('pointerdown', e => {
+    if (e.pointerType === 'mouse' || e.isPrimary === false) return;
+    start = { x: e.clientX, y: e.clientY, t: Date.now() };
+  }, { passive: true });
+
+  target.addEventListener('pointerup', e => {
+    if (!start || e.pointerType === 'mouse' || e.isPrimary === false) return;
+    const dx = e.clientX - start.x;
+    const dy = e.clientY - start.y;
+    const elapsed = Date.now() - start.t;
+    start = null;
+
+    if (elapsed > 900) return;
+    if (Math.abs(dx) < 70 || Math.abs(dx) < Math.abs(dy) * 1.4) return;
+    e.preventDefault();
+    gotoSong(dx < 0 ? +1 : -1);
+  });
+
+  target.addEventListener('pointercancel', () => { start = null; }, { passive: true });
 }
 
 function chordNamesFor(song) {

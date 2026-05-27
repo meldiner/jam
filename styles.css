@@ -27,12 +27,16 @@ body.theme-dark {
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { height: 100%; }
+html { min-height: -webkit-fill-available; }
 body {
   background: var(--bg); color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   overflow: hidden;
+  min-height: 100dvh;
+  -webkit-tap-highlight-color: transparent;
 }
-#root { height: 100%; display: flex; flex-direction: column; }
+button, [role="button"] { touch-action: manipulation; }
+#root { height: 100%; min-height: 100dvh; display: flex; flex-direction: column; }
 
 /* ---------------- Picker ---------------- */
 .picker {
@@ -146,7 +150,11 @@ body {
 .form-side ol li.note {
   color: var(--text-2); font-style: italic;
 }
-.song-main { min-height: 0; min-width: 0; display: flex; flex-direction: column; gap: 1vh; }
+.song-main {
+  min-height: 0; min-width: 0;
+  display: flex; flex-direction: column; gap: 1vh;
+  touch-action: pan-y;
+}
 .song-main #view-area { flex: 1 1 0; min-height: 0; display: flex; flex-direction: column; }
 .song-head {
   display: flex; justify-content: space-between; align-items: baseline;
@@ -177,6 +185,10 @@ body {
 }
 .song-head .meta .dot { color: var(--text-3); }
 .song-head .meta .cue { color: var(--accent); font-weight: 500; }
+.song-tools {
+  display: flex; align-items: center; justify-content: flex-end;
+  gap: 0.7vw; flex-wrap: wrap;
+}
 .song-head .view-toggle {
   display: inline-flex; gap: 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden;
 }
@@ -187,6 +199,33 @@ body {
 }
 .song-head .view-toggle button.active {
   background: var(--surface); color: var(--text);
+}
+.song-actions {
+  display: none; align-items: center; gap: 0.45rem;
+}
+.song-action {
+  min-width: 44px; min-height: 44px;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: var(--surface); color: var(--text);
+  padding: 0.45rem 0.75rem;
+  font: inherit; font-size: clamp(13px, 1.1vw, 15px);
+  font-weight: 600; cursor: pointer;
+}
+.song-action.icon {
+  width: 44px; padding: 0;
+  font-size: 24px; line-height: 1;
+}
+.song-action:active,
+.song-head .view-toggle button:active,
+.song-card:active {
+  transform: translateY(1px);
+}
+.song-position {
+  color: var(--text-2);
+  font-size: clamp(12px, 1.1vw, 15px);
+  font-weight: 700;
+  min-width: 3.8em;
+  text-align: center;
 }
 
 /* ---------------- Chart view ---------------- */
@@ -338,7 +377,7 @@ body:hover .hud { opacity: 0.9; }
 body.fullscreen .hud { display: none; }
 
 .wake-status {
-  position: fixed; top: 0.8vh; right: 1vw;
+  position: fixed; left: 1vw; bottom: 1vh;
   font-size: clamp(10px, 0.95vw, 12px);
   background: var(--surface); border: 1px solid var(--border);
   padding: 0.3vh 0.7vw; border-radius: 6px;
@@ -361,6 +400,26 @@ body.fullscreen .hud { display: none; }
   .form-side ol li { padding: 0.2vh 0.3vw; }
   .picker .grid {
     grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr));
+  }
+}
+
+@media (max-width: 1024px), (hover: none) and (pointer: coarse) {
+  .song-head { align-items: flex-start; }
+  .song-tools {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .song-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .song-head .view-toggle button {
+    min-width: 72px;
+    min-height: 44px;
+    padding: 0.55rem 0.9rem;
+    font-size: clamp(14px, 1.6vw, 18px);
+    font-weight: 650;
   }
 }
 
@@ -409,7 +468,16 @@ body.fullscreen .hud { display: none; }
   }
   .song-head .title-block { flex-wrap: wrap; gap: 0.4em; }
   .song-head .meta { flex-wrap: wrap; gap: 0.4em; }
+  .song-tools {
+    justify-content: flex-start;
+    gap: 0.6rem;
+  }
   .song-head .view-toggle { align-self: flex-start; }
+  .song-actions {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.35rem;
+  }
   .hud { display: none; }
 }
 
@@ -427,6 +495,13 @@ body.fullscreen .hud { display: none; }
   .song-head .title { font-size: clamp(20px, 6vw, 28px); }
   .song-head .artist { font-size: clamp(14px, 3.5vw, 18px); }
   .song-head .meta { font-size: clamp(11px, 3vw, 14px); }
+  .song-action {
+    min-width: 42px;
+    min-height: 42px;
+    padding: 0.4rem 0.55rem;
+  }
+  .song-action.icon { width: 42px; font-size: 22px; }
+  .song-position { display: none; }
   .form-side ol { font-size: clamp(14px, 4.4vw, 20px); }
   .setlist-h { font-size: clamp(16px, 4.8vw, 22px); }
   .show-pill { font-size: 11px; padding: 0.1em 0.5em; }
@@ -439,7 +514,7 @@ body.fullscreen .hud { display: none; }
 /* ---------------- Touch interactions ---------------- */
 @media (hover: none) and (pointer: coarse) {
   /* Make song cards bigger touch targets, dim hover transforms. */
-  .song-card { padding: 2vh 3vw; }
+  .song-card { min-height: 72px; padding: 2vh 3vw; }
   .song-card:hover { transform: none; }
   /* HUD often unhelpful on touch — hide entirely. */
   .hud { display: none; }
