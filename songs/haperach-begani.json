@@ -5,7 +5,7 @@
   "bpm": null,
   "timeSig": "4/4",
   "opening": "Intro: G – Cm",
-  "ending": "",
+  "ending": "Cm | Cm/Bb | Ab | G | Cm | Cm/Bb | ...",
   "form": "",
   "dir": "ltr",
   "chords": [
@@ -114,14 +114,15 @@
       "name": "סיום (Ending)",
       "lines": [
         [
+          "Cm",
+          "Cm/Bb",
           "Ab",
-          "Fm",
-          "Dm7b5",
           "G"
         ],
         [
-          "G",
-          "Cm"
+          "Cm",
+          "Cm/Bb",
+          "..."
         ]
       ]
     }
@@ -129,12 +130,15 @@
   "show": 15,
   "formSteps": [
     "אינטרו",
-    "בית",
+    "בית x2",
     "מעבר",
     "פזמון",
     "בית",
     "מעבר",
     "פזמון",
+    "מעבר ארוך",
+    "פזמון x2",
+    "חזרה על שורה אחרונה בפזמון",
     "סיום"
   ],
   "lyrics": null

@@ -495,7 +495,8 @@ SONGS = [
 
     {"slug": "haperach-begani", "title": "הפרח בגני", "artist": "זהר ארגוב",
      "slides": [], "dir": "ltr", "key": "Cm", "skipParse": True, "show": 15,
-     "opening": "Intro: G – Cm"},
+     "opening": "Intro: G – Cm",
+     "ending": "Cm | Cm/Bb | Ab | G | Cm | Cm/Bb | ..."},
 
     {"slug": "spontaneous", "title": "Spontaneous", "artist": "Netta Balter / Omree Gal-Oz",
      "slides": [], "skipParse": True,
