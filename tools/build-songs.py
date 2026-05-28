@@ -390,7 +390,7 @@ SONGS = [
      "opening": "Pull-off lick on Am, then E, then C (see pptx tab)"},
 
     {"slug": "parperei-titua", "title": "פרפרי תעתוע", "artist": "כרמלה גרוס וגנר / ערן צור",
-     "slides": [21], "dir": "rtl", "skipParse": True, "show": 7},
+     "slides": [21], "dir": "rtl", "skipParse": True, "show": 6},
 
     {"slug": "pahei-show", "title": "פחי שואו", "artist": "",
      "slides": [22], "dir": "rtl",
@@ -426,7 +426,7 @@ SONGS = [
      "slides": [31], "key": "Am", "bpm": 102},
 
     {"slug": "shir-hamakolet", "title": "שיר המכולת", "artist": "כוורת",
-     "slides": [32], "dir": "rtl", "skipParse": True, "show": 8},
+     "slides": [32], "dir": "rtl", "skipParse": True, "show": 7},
 
     {"slug": "yeled-mizdaken", "title": "ילד מזדקן", "artist": "",
      "slides": [33], "dir": "rtl", "skipParse": True},
@@ -490,7 +490,7 @@ SONGS = [
      "opening": "12-bar blues in Dm"},
 
     {"slug": "valerie", "title": "Valerie", "artist": "Mark Ronson ft. Amy Winehouse",
-     "slides": [], "key": "Db major", "bpm": 102, "skipParse": True, "show": 6,
+     "slides": [], "key": "Db major", "bpm": 102, "skipParse": True, "show": 8,
      "opening": "Drums + bass groove on Db"},
 
     {"slug": "haperach-begani", "title": "הפרח בגני", "artist": "זהר ארגוב",

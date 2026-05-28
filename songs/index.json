@@ -158,7 +158,7 @@
       "key": "",
       "bpm": null,
       "timeSig": "",
-      "show": 7
+      "show": 6
     },
     {
       "slug": "pahei-show",
@@ -247,7 +247,7 @@
       "key": "",
       "bpm": null,
       "timeSig": "",
-      "show": 8
+      "show": 7
     },
     {
       "slug": "yeled-mizdaken",
@@ -387,7 +387,7 @@
       "key": "Db major",
       "bpm": 102,
       "timeSig": "4/4",
-      "show": 6
+      "show": 8
     },
     {
       "slug": "haperach-begani",
