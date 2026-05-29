@@ -556,6 +556,9 @@ def build_song_json(song):
     }
     if song.get("show"):
         out["show"] = song["show"]
+        amp_preset = amp_preset_image_for(song["slug"])
+        if amp_preset:
+            out["ampPresetImage"] = amp_preset
 
     # Slide images that match the original pptx layout — used by the chart
     # view (and lyrics view, when lyricsSlides is set) instead of the
@@ -650,17 +653,32 @@ def write_song(song):
 VAMPIRE_SHOW_ORDER = 4
 
 
+def amp_preset_image_for(slug):
+    amp_preset = Path("assets") / "amp-presets" / f"{slug}.png"
+    if (ROOT / amp_preset).exists():
+        return amp_preset.as_posix()
+    return None
+
+
 def write_index(all_songs):
     idx = {"setlist": SHOW_NAME, "songs": []}
+    entries = []
     # Keep vampire (pre-existing manual chart) and mark its show order.
     vampire_path = SONGS_DIR / f"{VAMPIRE_SLUG}.json"
     if vampire_path.exists():
         v = json.loads(vampire_path.read_text(encoding="utf-8"))
         # Persist show order on the per-song JSON too, so the song view can show it.
+        vampire_amp_preset = amp_preset_image_for(VAMPIRE_SLUG)
+        changed = False
         if v.get("show") != VAMPIRE_SHOW_ORDER:
             v["show"] = VAMPIRE_SHOW_ORDER
+            changed = True
+        if vampire_amp_preset and v.get("ampPresetImage") != vampire_amp_preset:
+            v["ampPresetImage"] = vampire_amp_preset
+            changed = True
+        if changed:
             vampire_path.write_text(json.dumps(v, ensure_ascii=False, indent=2), encoding="utf-8")
-        idx["songs"].append({
+        entries.append({
             "slug": VAMPIRE_SLUG, "title": v.get("title", "vampire"),
             "artist": v.get("artist", ""), "key": v.get("key", ""),
             "bpm": v.get("bpm"), "timeSig": v.get("timeSig", ""),
@@ -677,7 +695,15 @@ def write_index(all_songs):
         }
         if song.get("show"):
             entry["show"] = song["show"]
-        idx["songs"].append(entry)
+        entries.append(entry)
+    idx["songs"] = sorted(
+        entries,
+        key=lambda entry: (
+            0 if entry.get("show") else 1,
+            entry.get("show") or 9999,
+            entries.index(entry),
+        ),
+    )
     (SONGS_DIR / "index.json").write_text(
         json.dumps(idx, ensure_ascii=False, indent=2), encoding="utf-8"
     )

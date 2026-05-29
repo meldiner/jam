@@ -143,6 +143,7 @@
     }
   ],
   "show": 12,
+  "ampPresetImage": "assets/amp-presets/all-the-small-things.png",
   "formSteps": [
     "Intro",
     "Verse 1",

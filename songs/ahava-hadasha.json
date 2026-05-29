@@ -108,6 +108,7 @@
     }
   ],
   "show": 3,
+  "ampPresetImage": "assets/amp-presets/ahava-hadasha.png",
   "slideImages": [
     "slides/ahava-hadasha.png"
   ],

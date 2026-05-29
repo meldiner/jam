@@ -126,6 +126,7 @@
     }
   ],
   "show": 14,
+  "ampPresetImage": "assets/amp-presets/nitzotzot.png",
   "slideImages": [
     "slides/nitzotzot.png"
   ],

@@ -69,6 +69,7 @@ async function route() {
     releaseWakeLock();
     document.body.classList.remove('in-song');
     document.body.classList.remove('slide-chart');
+    document.body.classList.remove('has-amp-preset');
     renderPicker();
     return;
   }
@@ -163,6 +164,8 @@ function renderSong() {
   const prev = songsList[(idx - 1 + songsList.length) % songsList.length];
   const next = songsList[(idx + 1) % songsList.length];
   const position = idx >= 0 ? `${idx + 1} / ${songsList.length}` : '';
+
+  document.body.classList.toggle('has-amp-preset', Boolean(song.ampPresetImage));
 
   root().innerHTML = `
     <div class="song" dir="${song.dir === 'rtl' ? 'rtl' : 'ltr'}">
@@ -280,15 +283,26 @@ function parseForm(song) {
 
 function renderFormSide(song) {
   const items = parseForm(song);
-  if (!items.length) {
-    return `<div class="lbl">Form</div>
-            <ol><li class="note">No form set —<br>fill in during practice</li></ol>`;
-  }
+  const form = items.length ? `
+    <div class="form-list">
+      <div class="lbl">Form</div>
+      <ol>
+        ${items.map(it => `<li class="${it.note ? 'note' : ''}">${esc(it.text)}</li>`).join('')}
+      </ol>
+    </div>
+  ` : '';
   return `
-    <div class="lbl">Form</div>
-    <ol>
-      ${items.map(it => `<li class="${it.note ? 'note' : ''}">${esc(it.text)}</li>`).join('')}
-    </ol>
+    ${form}
+    ${renderAmpPresetImage(song)}
+  `;
+}
+
+function renderAmpPresetImage(song) {
+  if (!song.ampPresetImage) return '';
+  return `
+    <figure class="amp-preset">
+      <img src="${attr(song.ampPresetImage)}" alt="${attr(`${song.title} amp preset chain`)}">
+    </figure>
   `;
 }
 

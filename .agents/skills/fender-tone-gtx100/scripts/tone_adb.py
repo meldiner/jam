@@ -2,12 +2,14 @@
 import argparse
 import datetime as dt
 import os
+import shutil
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
 
 OUT_DIR = "/tmp/codex-android"
 PKG = "com.fender.tone"
+DEFAULT_SERIAL = "R58M70C8J9Y"
 SKILL_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ENV_FILE = os.path.join(SKILL_DIR, ".env")
 
@@ -26,6 +28,11 @@ def run(args, check=True, capture=True):
 
 def adb(*args, check=True, capture=True):
     return run(["adb", *args], check=check, capture=capture)
+
+
+def require_tool(name):
+    if not shutil.which(name):
+        raise SystemExit(f"{name} is not installed or not on PATH")
 
 
 def load_env():
@@ -59,6 +66,33 @@ def status(_args):
 
 def launch(_args):
     adb("shell", "monkey", "-p", PKG, "-c", "android.intent.category.LAUNCHER", "1")
+
+
+def monitor(args):
+    require_tool("scrcpy")
+    serial = args.serial or os.environ.get("ANDROID_SERIAL") or DEFAULT_SERIAL
+    cmd = [
+        "scrcpy",
+        "--serial",
+        serial,
+        "--max-size",
+        str(args.max_size),
+        "--stay-awake",
+        "--no-audio",
+        "--window-title",
+        "Fender Tone GTX100",
+    ]
+    if args.background:
+        subprocess.Popen(
+            cmd,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            start_new_session=True,
+        )
+        print(" ".join(cmd))
+    else:
+        run(cmd, capture=False)
 
 
 def snapshot(args):
@@ -101,6 +135,19 @@ def ui_text(args):
 
 def tap(args):
     adb("shell", "input", "tap", str(args.x), str(args.y))
+
+
+def swipe(args):
+    adb(
+        "shell",
+        "input",
+        "swipe",
+        str(args.x1),
+        str(args.y1),
+        str(args.x2),
+        str(args.y2),
+        str(args.duration_ms),
+    )
 
 
 def key(args):
@@ -159,6 +206,12 @@ def main():
     p = sub.add_parser("launch")
     p.set_defaults(func=launch)
 
+    p = sub.add_parser("monitor")
+    p.add_argument("--serial")
+    p.add_argument("--max-size", type=int, default=720)
+    p.add_argument("--background", action="store_true")
+    p.set_defaults(func=monitor)
+
     p = sub.add_parser("snapshot")
     p.add_argument("--prefix")
     p.set_defaults(func=snapshot)
@@ -171,6 +224,14 @@ def main():
     p.add_argument("x", type=int)
     p.add_argument("y", type=int)
     p.set_defaults(func=tap)
+
+    p = sub.add_parser("swipe")
+    p.add_argument("x1", type=int)
+    p.add_argument("y1", type=int)
+    p.add_argument("x2", type=int)
+    p.add_argument("y2", type=int)
+    p.add_argument("duration_ms", type=int)
+    p.set_defaults(func=swipe)
 
     p = sub.add_parser("key")
     p.add_argument("key")

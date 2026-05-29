@@ -110,7 +110,7 @@ button, [role="button"] { touch-action: manipulation; }
 .song-body {
   flex: 1; min-height: 0;
   display: grid;
-  grid-template-columns: minmax(180px, 16vw) 1fr;
+  grid-template-columns: minmax(230px, 19vw) 1fr;
   gap: 1.2vw;
   /* Pin form-side to the left even when the song is RTL — Hebrew chars
      inside the sidebar still render right-to-left via Unicode bidi. */
@@ -120,7 +120,11 @@ button, [role="button"] { touch-action: manipulation; }
   background: var(--surface-2); border-radius: 10px;
   padding: 1vh 0.9vw;
   display: flex; flex-direction: column; gap: 0.4vh;
-  min-height: 0; overflow-y: auto;
+  min-height: 0; overflow: hidden;
+}
+.form-list {
+  display: flex; flex-direction: column; gap: 0.4vh;
+  min-height: 0;
 }
 .form-side .lbl {
   font-size: clamp(10px, 1vw, 13px); color: var(--text-2);
@@ -130,8 +134,10 @@ button, [role="button"] { touch-action: manipulation; }
 .form-side ol {
   list-style: none; counter-reset: form-step;
   display: flex; flex-direction: column; gap: 0.4vh;
+  min-height: 0;
+  overflow-y: auto;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: clamp(18px, 1.9vw, 26px);
+  font-size: clamp(16px, 1.7vw, 23px);
   font-weight: 700;
   line-height: 1.25;
   color: var(--text);
@@ -149,6 +155,21 @@ button, [role="button"] { touch-action: manipulation; }
 }
 .form-side ol li.note {
   color: var(--text-2); font-style: italic;
+}
+.amp-preset {
+  margin-top: auto;
+  padding-top: 0.7vh;
+  border-top: 1px solid var(--border);
+  flex: 0 0 auto;
+}
+.amp-preset img {
+  display: block;
+  width: 100%;
+  max-height: 18vh;
+  object-fit: contain;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #000;
 }
 .song-main {
   min-height: 0; min-width: 0;
@@ -235,13 +256,24 @@ button, [role="button"] { touch-action: manipulation; }
 }
 
 /* Slide-image chart: when a song has pptx slides, the chart view is just
-   the slide image(s). Hide the form sidebar (the slide already shows the
-   form), let the main column take full width, and fit images to the
-   available space. */
+   the slide image(s). Hide the duplicate form list, but keep the amp preset
+   visible when the song has one. */
 body.slide-chart .song-body {
   grid-template-columns: 1fr;
 }
-body.slide-chart .form-side { display: none; }
+body.slide-chart.has-amp-preset .song-body {
+  grid-template-columns: minmax(190px, 16vw) 1fr;
+}
+body.slide-chart:not(.has-amp-preset) .form-side { display: none; }
+body.slide-chart .form-list { display: none; }
+body.slide-chart .amp-preset {
+  margin-top: auto;
+  padding-top: 0;
+  border-top: 0;
+}
+body.slide-chart .amp-preset img {
+  max-height: 64vh;
+}
 .slide-chart-body {
   flex: 1; min-height: 0;
   display: flex; flex-direction: column;
@@ -395,8 +427,8 @@ body.fullscreen .hud { display: none; }
 /* ---------------- Responsive: tablet ---------------- */
 @media (max-width: 1024px) {
   /* Narrower sidebar, smaller form font so chart gets more room. */
-  .song-body { grid-template-columns: minmax(160px, 18vw) 1fr; }
-  .form-side ol { font-size: clamp(18px, 2.4vw, 32px); gap: 0.3vh; }
+  .song-body { grid-template-columns: minmax(190px, 20vw) 1fr; }
+  .form-side ol { font-size: clamp(16px, 2vw, 26px); gap: 0.3vh; }
   .form-side ol li { padding: 0.2vh 0.3vw; }
   .picker .grid {
     grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr));
@@ -440,6 +472,11 @@ body.fullscreen .hud { display: none; }
     gap: 0.8vw;
     max-height: 16vh;
   }
+  .form-list {
+    flex-direction: row;
+    align-items: center;
+    min-width: 0;
+  }
   .form-side .lbl {
     margin: 0; padding: 0;
     border-bottom: 0; border-right: 1px solid var(--border);
@@ -451,6 +488,7 @@ body.fullscreen .hud { display: none; }
     gap: 0.6em;
     font-size: clamp(15px, 3.8vw, 22px);
     overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
     flex: 1; min-width: 0;
   }
@@ -459,6 +497,19 @@ body.fullscreen .hud { display: none; }
     border-radius: 6px;
     padding: 0.3vh 0.5em;
     flex-shrink: 0;
+  }
+  .amp-preset {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0.8vw;
+    border-top: 0;
+    border-left: 1px solid var(--border);
+    flex: 0 0 auto;
+  }
+  .amp-preset img {
+    width: auto;
+    height: 12vh;
+    max-height: 12vh;
   }
   .sections { column-count: 1 !important; column-width: auto !important; }
   .song-head {
@@ -502,7 +553,7 @@ body.fullscreen .hud { display: none; }
   }
   .song-action.icon { width: 42px; font-size: 22px; }
   .song-position { display: none; }
-  .form-side ol { font-size: clamp(14px, 4.4vw, 20px); }
+  .form-side ol { font-size: clamp(13px, 4vw, 18px); }
   .setlist-h { font-size: clamp(16px, 4.8vw, 22px); }
   .show-pill { font-size: 11px; padding: 0.1em 0.5em; }
   .show-badge { font-size: 10px; padding: 0 0.4em; }

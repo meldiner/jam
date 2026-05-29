@@ -86,6 +86,7 @@
     }
   ],
   "show": 10,
+  "ampPresetImage": "assets/amp-presets/blues-cnaani.png",
   "slideImages": [
     "slides/blues-cnaani.png"
   ],

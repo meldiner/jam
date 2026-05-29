@@ -77,6 +77,7 @@
     }
   ],
   "show": 8,
+  "ampPresetImage": "assets/amp-presets/valerie.png",
   "formSteps": [
     "Intro (groove)",
     "Verse 1",

@@ -173,5 +173,6 @@
     }
   ],
   "lyrics": null,
-  "show": 4
+  "show": 4,
+  "ampPresetImage": "assets/amp-presets/vampire.png"
 }

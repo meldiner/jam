@@ -2,6 +2,33 @@
   "setlist": "5/29/26",
   "songs": [
     {
+      "slug": "tzar-li-charlie",
+      "title": "צר לי צ'רלי",
+      "artist": "כרולינה",
+      "key": "Dm",
+      "bpm": null,
+      "timeSig": "4/4",
+      "show": 1
+    },
+    {
+      "slug": "ah-ah-ah",
+      "title": "אה אה אה",
+      "artist": "אפרת גוש",
+      "key": "C",
+      "bpm": null,
+      "timeSig": "4/4",
+      "show": 2
+    },
+    {
+      "slug": "ahava-hadasha",
+      "title": "אהבה חדשה",
+      "artist": "אסף אמדורסקי",
+      "key": "",
+      "bpm": null,
+      "timeSig": "",
+      "show": 3
+    },
+    {
       "slug": "vampire",
       "title": "vampire",
       "artist": "Olivia Rodrigo",
@@ -9,6 +36,105 @@
       "bpm": 69,
       "timeSig": "4/4",
       "show": 4
+    },
+    {
+      "slug": "these-boots",
+      "title": "These Boots Are Made For Walkin'",
+      "artist": "Nancy Sinatra",
+      "key": "E",
+      "bpm": 92,
+      "timeSig": "4/4",
+      "show": 5
+    },
+    {
+      "slug": "parperei-titua",
+      "title": "פרפרי תעתוע",
+      "artist": "כרמלה גרוס וגנר / ערן צור",
+      "key": "",
+      "bpm": null,
+      "timeSig": "",
+      "show": 6
+    },
+    {
+      "slug": "shir-hamakolet",
+      "title": "שיר המכולת",
+      "artist": "כוורת",
+      "key": "",
+      "bpm": null,
+      "timeSig": "",
+      "show": 7
+    },
+    {
+      "slug": "valerie",
+      "title": "Valerie",
+      "artist": "Mark Ronson ft. Amy Winehouse",
+      "key": "Db major",
+      "bpm": 102,
+      "timeSig": "4/4",
+      "show": 8
+    },
+    {
+      "slug": "mishehu",
+      "title": "מישהו פעם",
+      "artist": "עברי לידר",
+      "key": "",
+      "bpm": null,
+      "timeSig": "",
+      "show": 9
+    },
+    {
+      "slug": "blues-cnaani",
+      "title": "בלוז כנעני",
+      "artist": "אהוד בנאי",
+      "key": "Am",
+      "bpm": null,
+      "timeSig": "4/4",
+      "show": 10
+    },
+    {
+      "slug": "yehudim-kah-oti",
+      "title": "קח אותי",
+      "artist": "היהודים",
+      "key": "",
+      "bpm": null,
+      "timeSig": "",
+      "show": 11
+    },
+    {
+      "slug": "all-the-small-things",
+      "title": "All The Small Things",
+      "artist": "Blink-182",
+      "key": "C major",
+      "bpm": 148,
+      "timeSig": "4/4",
+      "show": 12
+    },
+    {
+      "slug": "kerach-9",
+      "title": "איתו לנצח",
+      "artist": "קרח 9",
+      "key": "Bb",
+      "bpm": 160,
+      "timeSig": "4/4",
+      "show": 13
+    },
+    {
+      "slug": "nitzotzot",
+      "title": "ניצוצות",
+      "artist": "ברי סחרוף ורמי פורטיס",
+      "key": "Am",
+      "bpm": null,
+      "timeSig": "4/4",
+      "show": 14
+    },
+    {
+      "slug": "haperach-begani",
+      "title": "הפרח בגני",
+      "artist": "זהר ארגוב",
+      "key": "Cm",
+      "bpm": null,
+      "timeSig": "4/4",
+      "show": 15
     },
     {
       "slug": "one-way-or-another",
@@ -41,51 +167,6 @@
       "key": "C major",
       "bpm": 71,
       "timeSig": "4/4"
-    },
-    {
-      "slug": "blues-cnaani",
-      "title": "בלוז כנעני",
-      "artist": "אהוד בנאי",
-      "key": "Am",
-      "bpm": null,
-      "timeSig": "4/4",
-      "show": 10
-    },
-    {
-      "slug": "ah-ah-ah",
-      "title": "אה אה אה",
-      "artist": "אפרת גוש",
-      "key": "C",
-      "bpm": null,
-      "timeSig": "4/4",
-      "show": 2
-    },
-    {
-      "slug": "kerach-9",
-      "title": "איתו לנצח",
-      "artist": "קרח 9",
-      "key": "Bb",
-      "bpm": 160,
-      "timeSig": "4/4",
-      "show": 13
-    },
-    {
-      "slug": "yehudim-kah-oti",
-      "title": "קח אותי",
-      "artist": "היהודים",
-      "key": "",
-      "bpm": null,
-      "timeSig": "",
-      "show": 11
-    },
-    {
-      "slug": "ahava-hadasha",
-      "title": "אהבה חדשה",
-      "artist": "אסף אמדורסקי",
-      "key": "",
-      "bpm": null,
-      "timeSig": "",
-      "show": 3
     },
     {
       "slug": "everybody-hurts",
@@ -150,15 +231,6 @@
       "key": "",
       "bpm": null,
       "timeSig": ""
-    },
-    {
-      "slug": "parperei-titua",
-      "title": "פרפרי תעתוע",
-      "artist": "כרמלה גרוס וגנר / ערן צור",
-      "key": "",
-      "bpm": null,
-      "timeSig": "",
-      "show": 6
     },
     {
       "slug": "pahei-show",
@@ -241,15 +313,6 @@
       "timeSig": "4/4"
     },
     {
-      "slug": "shir-hamakolet",
-      "title": "שיר המכולת",
-      "artist": "כוורת",
-      "key": "",
-      "bpm": null,
-      "timeSig": "",
-      "show": 7
-    },
-    {
       "slug": "yeled-mizdaken",
       "title": "ילד מזדקן",
       "artist": "",
@@ -264,24 +327,6 @@
       "key": "Am",
       "bpm": 100,
       "timeSig": "4/4"
-    },
-    {
-      "slug": "mishehu",
-      "title": "מישהו פעם",
-      "artist": "עברי לידר",
-      "key": "",
-      "bpm": null,
-      "timeSig": "",
-      "show": 9
-    },
-    {
-      "slug": "nitzotzot",
-      "title": "ניצוצות",
-      "artist": "ברי סחרוף ורמי פורטיס",
-      "key": "Am",
-      "bpm": null,
-      "timeSig": "4/4",
-      "show": 14
     },
     {
       "slug": "after-midnight",
@@ -372,57 +417,12 @@
       "timeSig": "4/4"
     },
     {
-      "slug": "tzar-li-charlie",
-      "title": "צר לי צ'רלי",
-      "artist": "כרולינה",
-      "key": "Dm",
-      "bpm": null,
-      "timeSig": "4/4",
-      "show": 1
-    },
-    {
-      "slug": "valerie",
-      "title": "Valerie",
-      "artist": "Mark Ronson ft. Amy Winehouse",
-      "key": "Db major",
-      "bpm": 102,
-      "timeSig": "4/4",
-      "show": 8
-    },
-    {
-      "slug": "haperach-begani",
-      "title": "הפרח בגני",
-      "artist": "זהר ארגוב",
-      "key": "Cm",
-      "bpm": null,
-      "timeSig": "4/4",
-      "show": 15
-    },
-    {
       "slug": "spontaneous",
       "title": "Spontaneous",
       "artist": "Netta Balter / Omree Gal-Oz",
       "key": "A major",
       "bpm": null,
       "timeSig": "4/4"
-    },
-    {
-      "slug": "all-the-small-things",
-      "title": "All The Small Things",
-      "artist": "Blink-182",
-      "key": "C major",
-      "bpm": 148,
-      "timeSig": "4/4",
-      "show": 12
-    },
-    {
-      "slug": "these-boots",
-      "title": "These Boots Are Made For Walkin'",
-      "artist": "Nancy Sinatra",
-      "key": "E",
-      "bpm": 92,
-      "timeSig": "4/4",
-      "show": 5
     }
   ]
 }

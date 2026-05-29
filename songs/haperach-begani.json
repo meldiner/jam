@@ -128,6 +128,7 @@
     }
   ],
   "show": 15,
+  "ampPresetImage": "assets/amp-presets/haperach-begani.png",
   "formSteps": [
     "אינטרו",
     "בית x2",

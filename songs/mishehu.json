@@ -158,6 +158,7 @@
     }
   ],
   "show": 9,
+  "ampPresetImage": "assets/amp-presets/mishehu.png",
   "slideImages": [
     "slides/mishehu.png"
   ],

@@ -38,6 +38,7 @@ python3 scripts/tone_adb.py status
 python3 scripts/tone_adb.py unlock
 python3 scripts/tone_adb.py stay-awake
 python3 scripts/tone_adb.py launch
+python3 scripts/tone_adb.py monitor --background
 python3 scripts/tone_adb.py snapshot
 python3 scripts/tone_adb.py ui-text
 python3 scripts/tone_adb.py audit-snapshot --label before-edit
@@ -61,6 +62,18 @@ Fender Tone controls Mustang GTX100 over Bluetooth from the Android app. Codex c
 4. `adb pull /sdcard/window.xml /tmp/codex-android/window.xml`
 5. Inspect visible text, content descriptions, and bounds.
 6. Tap only after identifying the target from screenshot/UI XML.
+
+## Fast Practice Mode
+
+Use this when the goal is responsive control during rehearsal:
+
+1. Run `python3 scripts/tone_adb.py monitor --background` to open a live `scrcpy` view.
+2. Use the `scrcpy` window as the visual source of truth while sending actions through ADB.
+3. Prefer helper commands such as `tap`, `swipe`, and `key` for mapped controls.
+4. Run `snapshot` only when entering an unmapped screen or when the live view is ambiguous.
+5. Run `audit-snapshot --label <label>` before and after meaningful preset edits, backup creation, and any confirmed save.
+
+Keep macOS mouse clicks in the `scrcpy` window as a manual override only. ADB coordinates remain the repeatable control surface, and the coordinate map assumes the phone's native `720x1520` screen.
 
 ## Fender Workflow Facts
 
@@ -111,6 +124,10 @@ adb shell input keyevent KEYCODE_BACK
 adb shell input tap X Y
 adb shell input swipe X1 Y1 X2 Y2 DURATION_MS
 adb shell input text 'Preset%20Name'
+python3 scripts/tone_adb.py monitor --background
+python3 scripts/tone_adb.py tap X Y
+python3 scripts/tone_adb.py swipe X1 Y1 X2 Y2 DURATION_MS
+python3 scripts/tone_adb.py key KEYCODE_BACK
 ```
 
 For Fender Tone, use `%s` or `%20` for spaces in `adb shell input text` depending on shell quoting behavior; verify the text field after entry.

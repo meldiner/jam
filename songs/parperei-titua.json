@@ -126,6 +126,7 @@
     }
   ],
   "show": 6,
+  "ampPresetImage": "assets/amp-presets/parperei-titua.png",
   "slideImages": [
     "slides/parperei-titua.png"
   ],

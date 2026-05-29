@@ -105,6 +105,7 @@
     }
   ],
   "show": 2,
+  "ampPresetImage": "assets/amp-presets/ah-ah-ah.png",
   "slideImages": [
     "slides/ah-ah-ah.png"
   ],

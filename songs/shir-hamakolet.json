@@ -87,6 +87,7 @@
     }
   ],
   "show": 7,
+  "ampPresetImage": "assets/amp-presets/shir-hamakolet.png",
   "slideImages": [
     "slides/shir-hamakolet.png"
   ],

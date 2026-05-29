@@ -38,6 +38,9 @@ adb shell uiautomator dump /sdcard/window.xml
 adb pull /sdcard/window.xml /tmp/codex-android/window.xml
 adb shell input keyevent KEYCODE_BACK
 adb shell input keyevent KEYCODE_HOME
+python3 scripts/tone_adb.py monitor --background
+python3 scripts/tone_adb.py tap X Y
+python3 scripts/tone_adb.py swipe X1 Y1 X2 Y2 DURATION_MS
 ```
 
 ## Screens To Map
@@ -113,10 +116,12 @@ Seen screen: `/tmp/codex-android/fender-tone-unlocked.png`
 Seen screen: `/tmp/codex-android/charlie-edit-or-detail.png`
 
 - Chain shown for `01 Charlie`: Overdrive -> Simple Comp -> `'65 Twin` amp -> `'65 Spring Reverb`.
+- Chain shown for `12 Blink 182 Tone` after editing: EVH-style amp -> `Small Hall Reverb`.
 - Overdrive block center: `(292,370)`
 - Simple Comp block center: `(426,370)`
 - Amp block center: `(360,765)`
 - Reverb block center: `(360,1160)`
+- For a one-amp horizontal chain, insert-after-amp plus: roughly `(475,762)`.
 - Add Block control: `(350,1440)`
 - Tempo/BPM control: `(600,1440)`, displayed `120 BPM`
 - Back to preset list: `(48,92)`
@@ -170,4 +175,21 @@ Process:
    - DYN + EQ
    - FILT + PITCH
 5. Example selected stomp model: `Ranger Boost`.
-6. `Confirm` is at top right `(632,92)`. Do not tap unless user asked to add this block.
+6. `REVERB` tab is centered around `(370,185)`.
+7. Example selected reverb model: `Small Hall Reverb`.
+8. `DYN + EQ` tab is centered around `(480,185)`.
+9. Example selected dynamics model: `Simple Compressor`.
+10. `Confirm` is at top right `(632,92)`. Do not tap unless user asked to add this block.
+
+For simple horizontal amp-plus-reverb chains, the pre-amp insertion point was
+verified at roughly `(184,762)`.
+
+### Save Preset Flow
+
+Seen screen: `/tmp/codex-android/blink-save-dialog.png`
+
+- Top `Save` button from an edited preset: `(594,92)`.
+- Save dialog highlights the current preset slot with a leading `*`.
+- Bottom dialog buttons:
+  - Cancel: roughly `(265,1420)`
+  - Save/confirm overwrite: roughly `(456,1420)`
