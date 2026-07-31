@@ -63,6 +63,27 @@ python3 scripts/xair_osc.py --host 192.168.1.149 color-bus 5 red --apply
 Color commands read the current integer value first and verify the requested
 value after every applied write.
 
+## Fader And Gain Workflow
+
+Fader commands intentionally expose only `unity` (`0 dB`) and `minimum`
+(`-inf`) positions. Headamp gain accepts `-12` through `+60 dB` in `0.5 dB`
+steps. Preview every target first:
+
+```bash
+python3 scripts/xair_osc.py --host 192.168.1.149 set-channel-fader 1 unity
+python3 scripts/xair_osc.py --host 192.168.1.149 set-bus-fader 1 unity
+python3 scripts/xair_osc.py --host 192.168.1.149 set-main-fader minimum
+python3 scripts/xair_osc.py --host 192.168.1.149 set-headamp-gain 1 0
+python3 scripts/xair_osc.py --host 192.168.1.149 set-channel-bus-send 1 1 unity
+python3 scripts/xair_osc.py --host 192.168.1.149 set-return-fader aux minimum
+python3 scripts/xair_osc.py --host 192.168.1.149 set-return-bus-send 1 1 minimum
+```
+
+Use `--apply` only after showing the exact targets and values to the user and
+receiving explicit authorization. Raising faders to unity can create feedback
+or a sudden loud output. Setting headamp gain to `0 dB` can silence low-level
+microphones until gain is rebuilt during soundcheck.
+
 ## Operating Workflow
 
 1. Run `self-test` after changing the helper.

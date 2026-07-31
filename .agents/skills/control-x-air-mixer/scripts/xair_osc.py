@@ -28,6 +28,18 @@ COLOR_VALUES = {
     "cyan": 6,
     "white": 7,
 }
+FADER_POSITIONS = {
+    "minimum": 0.0,
+    "unity": 0.75,
+}
+HEADAMP_GAIN_MIN_DB = -12.0
+HEADAMP_GAIN_MAX_DB = 60.0
+HEADAMP_GAIN_STEP_DB = 0.5
+# XR18V2 stores normalized controls on a 10-bit-style grid. For example,
+# requested unity 0.75 reads back as 0.7497556209564209. Half of one 1/1023
+# step is about 0.000489, so 0.0005 accepts hardware quantization without
+# accepting a neighboring control step.
+FLOAT_VERIFY_TOLERANCE = 0.0005
 
 
 class XAirError(RuntimeError):
@@ -218,6 +230,79 @@ def color_path(kind: str, number: int) -> str:
     raise XAirError(f"unsupported color target: {kind}")
 
 
+def fader_path(kind: str, number: int | None = None) -> str:
+    if kind == "channel":
+        if number is None or not 1 <= number <= 16:
+            raise XAirError("channel number must be between 1 and 16")
+        return f"/ch/{number:02d}/mix/fader"
+    if kind == "bus":
+        if number is None or not 1 <= number <= 6:
+            raise XAirError("bus number must be between 1 and 6")
+        return f"/bus/{number}/mix/fader"
+    if kind == "main":
+        if number is not None:
+            raise XAirError("main fader does not accept a number")
+        return "/lr/mix/fader"
+    raise XAirError(f"unsupported fader target: {kind}")
+
+
+def channel_bus_send_path(channel: int, bus: int) -> str:
+    if not 1 <= channel <= 16:
+        raise XAirError("channel number must be between 1 and 16")
+    if not 1 <= bus <= 6:
+        raise XAirError("bus number must be between 1 and 6")
+    return f"/ch/{channel:02d}/mix/{bus:02d}/level"
+
+
+def validate_return_target(target: str) -> None:
+    if target != "aux" and target not in {"1", "2", "3", "4"}:
+        raise XAirError("return target must be aux or an FX return from 1 to 4")
+
+
+def return_fader_path(target: str) -> str:
+    validate_return_target(target)
+    return f"/rtn/{target}/mix/fader"
+
+
+def return_bus_send_path(target: str, bus: int) -> str:
+    validate_return_target(target)
+    if not 1 <= bus <= 6:
+        raise XAirError("bus number must be between 1 and 6")
+    return f"/rtn/{target}/mix/{bus:02d}/level"
+
+
+def headamp_gain_path(number: int) -> str:
+    if not 1 <= number <= 16:
+        raise XAirError("headamp number must be between 1 and 16")
+    return f"/headamp/{number:02d}/gain"
+
+
+def validate_headamp_gain_db(gain_db: float) -> None:
+    if not HEADAMP_GAIN_MIN_DB <= gain_db <= HEADAMP_GAIN_MAX_DB:
+        raise XAirError(
+            f"headamp gain must be between {HEADAMP_GAIN_MIN_DB:g} and "
+            f"{HEADAMP_GAIN_MAX_DB:g} dB"
+        )
+    steps = (gain_db - HEADAMP_GAIN_MIN_DB) / HEADAMP_GAIN_STEP_DB
+    if abs(steps - round(steps)) > 1e-9:
+        raise XAirError(
+            f"headamp gain must use {HEADAMP_GAIN_STEP_DB:g} dB steps"
+        )
+
+
+def headamp_db_to_normalized(gain_db: float) -> float:
+    validate_headamp_gain_db(gain_db)
+    return (gain_db - HEADAMP_GAIN_MIN_DB) / (
+        HEADAMP_GAIN_MAX_DB - HEADAMP_GAIN_MIN_DB
+    )
+
+
+def headamp_normalized_to_db(value: float) -> float:
+    return HEADAMP_GAIN_MIN_DB + value * (
+        HEADAMP_GAIN_MAX_DB - HEADAMP_GAIN_MIN_DB
+    )
+
+
 def command_self_test(_args: argparse.Namespace) -> None:
     cases = [
         ("/xinfo", [], encode_message("/xinfo")),
@@ -247,7 +332,25 @@ def command_self_test(_args: argparse.Namespace) -> None:
         "white": 7,
     }:
         raise XAirError("self-test failed: color mapping")
-    emit({"ok": True, "tests": len(cases) + 3})
+    if fader_path("channel", 16) != "/ch/16/mix/fader":
+        raise XAirError("self-test failed: channel fader path")
+    if fader_path("bus", 6) != "/bus/6/mix/fader":
+        raise XAirError("self-test failed: bus fader path")
+    if fader_path("main") != "/lr/mix/fader":
+        raise XAirError("self-test failed: main fader path")
+    if headamp_gain_path(1) != "/headamp/01/gain":
+        raise XAirError("self-test failed: headamp path")
+    if channel_bus_send_path(16, 6) != "/ch/16/mix/06/level":
+        raise XAirError("self-test failed: channel bus-send path")
+    if return_fader_path("aux") != "/rtn/aux/mix/fader":
+        raise XAirError("self-test failed: Aux return fader path")
+    if return_bus_send_path("4", 6) != "/rtn/4/mix/06/level":
+        raise XAirError("self-test failed: FX return bus-send path")
+    if abs(headamp_db_to_normalized(0.0) - (1.0 / 6.0)) > 1e-9:
+        raise XAirError("self-test failed: 0 dB headamp conversion")
+    if abs(headamp_normalized_to_db(0.375) - 15.0) > 1e-9:
+        raise XAirError("self-test failed: normalized headamp conversion")
+    emit({"ok": True, "tests": len(cases) + 12})
 
 
 def command_probe(args: argparse.Namespace) -> None:
@@ -367,6 +470,109 @@ def command_color(args: argparse.Namespace) -> None:
         emit(result)
 
 
+def command_fader(args: argparse.Namespace) -> None:
+    if args.fader_kind == "channel-send":
+        path = channel_bus_send_path(args.channel, args.bus)
+    elif args.fader_kind == "return":
+        path = return_fader_path(args.target)
+    elif args.fader_kind == "return-send":
+        path = return_bus_send_path(args.target, args.bus)
+    else:
+        number = getattr(args, "number", None)
+        path = fader_path(args.fader_kind, number)
+    requested = FADER_POSITIONS[args.position]
+    with XAirClient(args.host, args.port, args.timeout) as client:
+        before = require_single_value(client.request(path), path)
+        if not isinstance(before, float):
+            raise XAirError(
+                f"expected float fader value for {path}, received {before!r}"
+            )
+        result: dict[str, Any] = {
+            "applied": False,
+            "before_normalized": before,
+            "host": args.host,
+            "operation": f"set-{args.fader_kind}-fader",
+            "path": path,
+            "port": args.port,
+            "requested_normalized": requested,
+            "requested_position": args.position,
+            "requested_db": "-inf" if args.position == "minimum" else 0.0,
+        }
+        if not args.apply or abs(before - requested) <= FLOAT_VERIFY_TOLERANCE:
+            result["verified_normalized"] = before
+            emit(result)
+            return
+
+        client.send(path, requested)
+        verified = None
+        for _attempt in range(3):
+            try:
+                candidate = require_single_value(client.request(path), path)
+            except XAirError:
+                continue
+            if isinstance(candidate, float):
+                verified = candidate
+            if verified is not None and abs(verified - requested) <= FLOAT_VERIFY_TOLERANCE:
+                break
+        if verified is None or abs(verified - requested) > FLOAT_VERIFY_TOLERANCE:
+            raise XAirError(
+                f"write verification failed for {path}: expected {requested!r}, "
+                f"received {verified!r}"
+            )
+        result["applied"] = True
+        result["verified_normalized"] = verified
+        emit(result)
+
+
+def command_headamp_gain(args: argparse.Namespace) -> None:
+    validate_headamp_gain_db(args.gain_db)
+    path = headamp_gain_path(args.number)
+    requested = headamp_db_to_normalized(args.gain_db)
+    with XAirClient(args.host, args.port, args.timeout) as client:
+        before = require_single_value(client.request(path), path)
+        if not isinstance(before, float):
+            raise XAirError(
+                f"expected float headamp value for {path}, received {before!r}"
+            )
+        result: dict[str, Any] = {
+            "applied": False,
+            "before_db": headamp_normalized_to_db(before),
+            "before_normalized": before,
+            "host": args.host,
+            "operation": "set-headamp-gain",
+            "path": path,
+            "port": args.port,
+            "requested_db": args.gain_db,
+            "requested_normalized": requested,
+        }
+        if not args.apply or abs(before - requested) <= FLOAT_VERIFY_TOLERANCE:
+            result["verified_db"] = headamp_normalized_to_db(before)
+            result["verified_normalized"] = before
+            emit(result)
+            return
+
+        client.send(path, requested)
+        verified = None
+        for _attempt in range(3):
+            try:
+                candidate = require_single_value(client.request(path), path)
+            except XAirError:
+                continue
+            if isinstance(candidate, float):
+                verified = candidate
+            if verified is not None and abs(verified - requested) <= FLOAT_VERIFY_TOLERANCE:
+                break
+        if verified is None or abs(verified - requested) > FLOAT_VERIFY_TOLERANCE:
+            raise XAirError(
+                f"write verification failed for {path}: expected {requested!r}, "
+                f"received {verified!r}"
+            )
+        result["applied"] = True
+        result["verified_db"] = headamp_normalized_to_db(verified)
+        result["verified_normalized"] = verified
+        emit(result)
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Safely inspect and identify a Behringer X AIR mixer over OSC"
@@ -414,6 +620,83 @@ def build_parser() -> argparse.ArgumentParser:
             help="write and verify; without this flag the command is read-only",
         )
         command.set_defaults(func=command_color, color_kind=kind)
+
+        command = commands.add_parser(
+            f"set-{kind}-fader",
+            help=f"preview or set a {kind} fader to unity or minimum",
+        )
+        command.add_argument("number", type=int, help=f"{kind} number ({limit})")
+        command.add_argument("position", choices=tuple(FADER_POSITIONS))
+        command.add_argument(
+            "--apply",
+            action="store_true",
+            help="write and verify; without this flag the command is read-only",
+        )
+        command.set_defaults(func=command_fader, fader_kind=kind)
+
+    command = commands.add_parser(
+        "set-main-fader", help="preview or set the Main LR fader to unity or minimum"
+    )
+    command.add_argument("position", choices=tuple(FADER_POSITIONS))
+    command.add_argument(
+        "--apply",
+        action="store_true",
+        help="write and verify; without this flag the command is read-only",
+    )
+    command.set_defaults(func=command_fader, fader_kind="main")
+
+    command = commands.add_parser(
+        "set-channel-bus-send",
+        help="preview or set one channel's send level to one bus",
+    )
+    command.add_argument("channel", type=int, help="input channel number (1-16)")
+    command.add_argument("bus", type=int, help="bus number (1-6)")
+    command.add_argument("position", choices=tuple(FADER_POSITIONS))
+    command.add_argument(
+        "--apply",
+        action="store_true",
+        help="write and verify; without this flag the command is read-only",
+    )
+    command.set_defaults(func=command_fader, fader_kind="channel-send")
+
+    command = commands.add_parser(
+        "set-return-fader",
+        help="preview or set the Aux input or an FX return's Main fader",
+    )
+    command.add_argument("target", choices=("aux", "1", "2", "3", "4"))
+    command.add_argument("position", choices=tuple(FADER_POSITIONS))
+    command.add_argument(
+        "--apply",
+        action="store_true",
+        help="write and verify; without this flag the command is read-only",
+    )
+    command.set_defaults(func=command_fader, fader_kind="return")
+
+    command = commands.add_parser(
+        "set-return-bus-send",
+        help="preview or set the Aux input or an FX return's send to one bus",
+    )
+    command.add_argument("target", choices=("aux", "1", "2", "3", "4"))
+    command.add_argument("bus", type=int, help="bus number (1-6)")
+    command.add_argument("position", choices=tuple(FADER_POSITIONS))
+    command.add_argument(
+        "--apply",
+        action="store_true",
+        help="write and verify; without this flag the command is read-only",
+    )
+    command.set_defaults(func=command_fader, fader_kind="return-send")
+
+    command = commands.add_parser(
+        "set-headamp-gain", help="preview or set one analog input preamp gain"
+    )
+    command.add_argument("number", type=int, help="headamp/input number (1-16)")
+    command.add_argument("gain_db", type=float, help="gain in dB (-12 to +60, 0.5 dB steps)")
+    command.add_argument(
+        "--apply",
+        action="store_true",
+        help="write and verify; without this flag the command is read-only",
+    )
+    command.set_defaults(func=command_headamp_gain)
 
     return parser
 
