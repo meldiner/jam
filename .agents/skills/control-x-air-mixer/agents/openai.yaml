@@ -1,0 +1,4 @@
+interface:
+  display_name: "X AIR Mixer Control"
+  short_description: "Safely inspect and control an X AIR mixer"
+  default_prompt: "Use $control-x-air-mixer to inspect my mixer and make the requested changes safely."
