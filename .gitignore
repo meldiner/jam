@@ -11,3 +11,7 @@ node_modules/
 /.shots/
 # Local secrets for repo-bundled Codex skills.
 /.agents/skills/*/.env
+/.env
+
+# Local mixer recordings and generated audio exports are too large for GitHub Pages.
+/Guesthouse Show 5.29.2026/
