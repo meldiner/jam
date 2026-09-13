@@ -1040,3 +1040,73 @@ CHARTS = {
         ],
     },
 }
+
+# 2027: source-derived starting charts. Sequence cells are chord changes,
+# NOT asserted bar durations. Promote to bar charts after recording review.
+def _draft_2027(key, source, note, sections, form):
+    return {
+        'key': key,
+        'chartStatus': 'Draft · needs rehearsal check',
+        'chartNote': 'Draft — arrows show chord changes, not bar lengths. ' + note,
+        'sources': [{'label': label, 'url': url} for label, url in source],
+        'chartChords': list(dict.fromkeys(chord for _, rows in sections for row in rows for chord in row)),
+        'chartSections': [{'name': name, 'unit': 'changes', 'lines': rows} for name, rows in sections],
+        'formSteps': form,
+    }
+
+CHARTS.update({
+    'milim-yafot-meele': _draft_2027('F#m', [
+        ('Shironet', 'https://mshironet.mako.co.il/artist?lang=1&prfid=1333&type=chords&wrkid=13613'),
+        ('GuitarArt', 'https://www.guitarart.co.il/heb_accord/m/Milim_yafot_me_ele.pdf'),
+    ], 'Concert pitch, no capo. Sources disagree on passing chords; these follow Shironet. Full form and durations need checking.', [
+        ('פתיחה / בית / מעבר', [['F#m', 'Cdim/Eb', 'D', 'F#m/C#'], ['Bm', 'F#m/A', 'G#dim', 'C#'], ['F#m']]),
+        ('פזמון', [['D', 'A', 'Bm'], ['Bm/G#', 'F#m', 'F#m/E'], ['D', 'A', 'Bm'], ['C#sus4', 'D'], ['Bm/G#', 'C#', 'F#m']]),
+    ], ['פתיחה ×2', 'בית 1', 'פזמון', 'מעבר', 'בית 2', 'פזמון / אלתור', 'סיום — לבדיקה']),
+    'somebody-told-me': _draft_2027('Bbm', [
+        ('UkuTabs', 'https://ukutabs.com/t/the-killers/somebody-told-me/'),
+        ('GuitarTabsExplorer', 'https://www.guitartabsexplorer.com/killers/somebody-told-me-chords'),
+    ], 'Source key Bbm. Verse/bridge transcriptions differ; repeats, rhythm and ending are unverified.', [
+        ('Intro — source sequence', [['Bbm', 'Gb', 'Ab', 'Bbm'], ['Bbm', 'Gb', 'Ab', 'Bbm'], ['Bbm', 'Gb', 'Ab', 'Gb'], ['Bbm', 'Gb', 'Bbm']]),
+        ('Verse — main changes', [['Bbm', 'Gb', 'Ab', 'Gb'], ['Bbm']]),
+        ('Pre-chorus', [['Gb', 'Ab', 'Bbm'], ['Gb', 'Ab', 'Gb']]),
+        ('Chorus — repeat cycle', [['Bbm', 'Gb', 'Ab', 'F']]),
+        ('Bridge — verify', [['Gb', 'Ab', 'Bbm'], ['Db', 'Ebm', 'Gb'], ['Bbm', 'Gb', 'F']]),
+    ], ['Intro', 'Verse 1', 'Pre-chorus', 'Chorus', 'Verse 2', 'Pre-chorus', 'Chorus', 'Bridge', 'Chorus / outro']),
+    'ten-li-ktzat-mimcha': _draft_2027('Am', [
+        ('Tab4U', 'https://www.tab4u.com/tabs/songs/1634_יזהר_אשדות_וקורין_אלאל_-_תן_לי_קצת_ממך.html?type=piano'),
+    ], 'Izhar Ashdot & Corinne Allal. D major in the chorus. Riff rhythm, repeats and ending need checking.', [
+        ('פתיחה — ריף', [['Am']]),
+        ('בית — שינויי אקורדים', [['Am', 'E', 'F', 'G'], ['Am']]),
+        ('פזמון — חזרה ×2', [['Am', 'D', 'F'], ['G', 'C', 'G', 'Am']]),
+    ], ['פתיחה', 'בית 1', 'פזמון ×2', 'מעבר', 'בית 2', 'פזמון', 'המשך / סיום לבדיקה']),
+    'yesh-li-chor-balev': _draft_2027('G#m', [
+        ('Tab4U — public excerpt', 'https://www.tab4u.com/tabs/songs/67363_%D7%92%26%2339%3B%D7%99%D7%A8%D7%A4%D7%95%D7%AA_-_%D7%99%D7%A9_%D7%9C%D7%99_%D7%97%D7%95%D7%A8_%D7%91%D7%9C%D7%91.html?type=ukulele'),
+    ], 'Corrected from Tab4U: G#m, starting on C#m; second vocal phrase uses F#. Public excerpt covers only intro and opening vocal phrases. Full form remains unverified.', [
+        ('פתיחה — רצף ×4', [['C#m', 'D#m', 'G#m']]),
+        ('שירה — משפט ראשון', [['C#m', 'D#m', 'G#m']]),
+        ('שירה — משפט שני', [['C#m', 'F#', 'G#m']]),
+    ], ['פתיחה', 'שירה — משפט 1', 'שירה — משפט 2', 'המשך — טרם אומת']),
+    'little-wing': _draft_2027('Ebm (Em guitar shapes)', [
+        ('Your Guitar Academy', 'https://yourguitaracademy.com/courses/jimi-hendrix-songs/lessons/little-wing-guitar-lesson'),
+        ('Applied Guitar Theory', 'https://appliedguitartheory.com/lessons/jimi-hendrix-little-wing-intro-tab/'),
+    ], 'Hendrix studio version. Guitar shapes below: tune every string down ½ step (Eb Ab Db Gb Bb Eb). Concert-pitch row is for keys/bass. Passing voicings vary; rhythm and turnaround lengths need checking.', [
+        ('Guitar shapes — main cycle', [['Em', 'G', 'Am', 'Em'], ['Bm', 'Bbm', 'Am', 'C'], ['G', 'Fadd9', 'C', 'D']]),
+        ('Concert pitch — same cycle', [['Ebm', 'Gb', 'Abm', 'Ebm'], ['Bbm', 'Am', 'Abm', 'B'], ['Gb', 'Eadd9', 'B', 'Db']]),
+    ], ['Guitar intro', 'Verse 1', 'Verse 2', 'Guitar solo / fade']),
+    'proud-mary': _draft_2027('D', [
+        ('Spy Tunes', 'https://spytunes.com/proud-mary-chords/'),
+        ('Songsterr — Ike & Tina', 'https://www.songsterr.com/a/wsa/ike-tina-turner-proud-mary-chords-s56717'),
+    ], 'Ike & Tina Turner: slow opening, then fast. Tag endings differ between sources; exact recording cuts need checking.', [
+        ('Slow intro / verse', [['D']]),
+        ('Turnaround', [['A', 'Bm', 'G']]),
+        ('Refrain', [['D']]),
+        ('Fast verse — D/D6 groove', [['D', 'D6', 'C', 'G'], ['D', 'D6']]),
+        ('Fast tag — verify ending', [['C', 'A', 'C', 'A'], ['C', 'A', 'G', 'F'], ['D']]),
+        ('Outro — repeat groove', [['D', 'D6']]),
+    ], ['Slow intro', 'Slow verse 1', 'Turn / refrain', 'Slow verse 2', 'Turn / refrain', 'Fast groove', 'Fast verse 3', 'Turn / refrain / tag', 'Fast verse 4', 'Turn / refrain / tag', 'Fast verse 5', 'Outro']),
+})
+CHARTS['proud-mary']['opening'] = 'Slow D groove; follow vocal cue into fast section'
+
+CHARTS['little-wing']['opening'] = 'Guitar intro — one cycle'
+CHARTS['little-wing']['ending'] = 'Studio fade; agree a live ending'
+CHARTS['little-wing']['chartChords'] = ['Em', 'G', 'Am', 'Bm', 'Bbm', 'C', 'Fadd9', 'D']

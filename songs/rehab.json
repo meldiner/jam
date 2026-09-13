@@ -58,6 +58,12 @@
       ]
     }
   ],
+  "setlists": [
+    {
+      "name": "2027",
+      "position": 4
+    }
+  ],
   "slideImages": [
     "slides/rehab.png"
   ],

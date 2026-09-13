@@ -1,0 +1,131 @@
+{
+  "title": "Proud Mary",
+  "artist": "Ike & Tina Turner",
+  "key": "D",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "Slow D groove; follow vocal cue into fast section",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "D",
+    "A",
+    "Bm",
+    "G",
+    "D6",
+    "C",
+    "F"
+  ],
+  "sections": [
+    {
+      "name": "Slow intro / verse",
+      "unit": "changes",
+      "lines": [
+        [
+          "D"
+        ]
+      ]
+    },
+    {
+      "name": "Turnaround",
+      "unit": "changes",
+      "lines": [
+        [
+          "A",
+          "Bm",
+          "G"
+        ]
+      ]
+    },
+    {
+      "name": "Refrain",
+      "unit": "changes",
+      "lines": [
+        [
+          "D"
+        ]
+      ]
+    },
+    {
+      "name": "Fast verse — D/D6 groove",
+      "unit": "changes",
+      "lines": [
+        [
+          "D",
+          "D6",
+          "C",
+          "G"
+        ],
+        [
+          "D",
+          "D6"
+        ]
+      ]
+    },
+    {
+      "name": "Fast tag — verify ending",
+      "unit": "changes",
+      "lines": [
+        [
+          "C",
+          "A",
+          "C",
+          "A"
+        ],
+        [
+          "C",
+          "A",
+          "G",
+          "F"
+        ],
+        [
+          "D"
+        ]
+      ]
+    },
+    {
+      "name": "Outro — repeat groove",
+      "unit": "changes",
+      "lines": [
+        [
+          "D",
+          "D6"
+        ]
+      ]
+    }
+  ],
+  "setlists": [
+    {
+      "name": "2027",
+      "position": 6
+    }
+  ],
+  "chartStatus": "Draft · needs rehearsal check",
+  "chartNote": "Draft — arrows show chord changes, not bar lengths. Ike & Tina Turner: slow opening, then fast. Tag endings differ between sources; exact recording cuts need checking.",
+  "sources": [
+    {
+      "label": "Spy Tunes",
+      "url": "https://spytunes.com/proud-mary-chords/"
+    },
+    {
+      "label": "Songsterr — Ike & Tina",
+      "url": "https://www.songsterr.com/a/wsa/ike-tina-turner-proud-mary-chords-s56717"
+    }
+  ],
+  "formSteps": [
+    "Slow intro",
+    "Slow verse 1",
+    "Turn / refrain",
+    "Slow verse 2",
+    "Turn / refrain",
+    "Fast groove",
+    "Fast verse 3",
+    "Turn / refrain / tag",
+    "Fast verse 4",
+    "Turn / refrain / tag",
+    "Fast verse 5",
+    "Outro"
+  ],
+  "lyrics": null
+}

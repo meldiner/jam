@@ -45,7 +45,7 @@ gating.
 
 ## Setlist
 
-Currently tracking **Show 5/29/26** — 15 songs from the Spotify playlist
+The picker starts with **2027**, followed by **Show 5/29/26** — 15 songs from the Spotify playlist
 [06p38NK6BWO8MjW6glhasN](https://open.spotify.com/playlist/06p38NK6BWO8MjW6glhasN).
 Songs in the show are tagged with a `show: <position>` field in their JSON
 and the index. The picker groups Show songs (with numbered badges and an
@@ -208,6 +208,16 @@ in: `yehudim-kah-oti`, `ksheze-amok`, `ani-taluy`, `parperei-titua`,
 - **Setlist editor in the UI** — for now, setlists are edited in
   `tools/build-songs.py` (the `show: N` field). UI editing would mean
   per-user state management.
-- **Multi-setlist support** — only one current setlist (`SHOW_NAME`). When
-  the band has another show, generalize `show` into `setlists: [{name,
-  position}]`.
+## Named setlists (2027 onward)
+
+New memberships use `setlists: [{"name": "2027", "position": 1}]` in SONGS
+and per-song/index JSON. The index's `setlists` array orders picker sections.
+Legacy `show: N` fields still place songs in the 2026 show. Navigation visits
+each song once, in section order; `navOrder` still overrides navigation.
+Rehab is reused from the existing catalog.
+
+2027 chart sources and limitations live in `tools/song-charts.py`. Draft
+sections with `unit: "changes"` render arrows: each cell is a chord change,
+not a measured bar. Default sections retain bar separators. Do not label
+source-only drafts recording-verified; check durations, full form, tempo,
+and ending against the chosen recording before promoting them to bar charts.

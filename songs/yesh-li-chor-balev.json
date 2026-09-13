@@ -1,0 +1,73 @@
+{
+  "title": "יש לי חור בלב בצורה שלך",
+  "artist": "ג׳ירפות",
+  "key": "G#m",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "rtl",
+  "chords": [
+    "C#m",
+    "D#m",
+    "G#m",
+    "F#"
+  ],
+  "sections": [
+    {
+      "name": "פתיחה — רצף ×4",
+      "unit": "changes",
+      "lines": [
+        [
+          "C#m",
+          "D#m",
+          "G#m"
+        ]
+      ]
+    },
+    {
+      "name": "שירה — משפט ראשון",
+      "unit": "changes",
+      "lines": [
+        [
+          "C#m",
+          "D#m",
+          "G#m"
+        ]
+      ]
+    },
+    {
+      "name": "שירה — משפט שני",
+      "unit": "changes",
+      "lines": [
+        [
+          "C#m",
+          "F#",
+          "G#m"
+        ]
+      ]
+    }
+  ],
+  "setlists": [
+    {
+      "name": "2027",
+      "position": 5
+    }
+  ],
+  "chartStatus": "Draft · needs rehearsal check",
+  "chartNote": "Draft — arrows show chord changes, not bar lengths. Corrected from Tab4U: G#m, starting on C#m; second vocal phrase uses F#. Public excerpt covers only intro and opening vocal phrases. Full form remains unverified.",
+  "sources": [
+    {
+      "label": "Tab4U — public excerpt",
+      "url": "https://www.tab4u.com/tabs/songs/67363_%D7%92%26%2339%3B%D7%99%D7%A8%D7%A4%D7%95%D7%AA_-_%D7%99%D7%A9_%D7%9C%D7%99_%D7%97%D7%95%D7%A8_%D7%91%D7%9C%D7%91.html?type=ukulele"
+    }
+  ],
+  "formSteps": [
+    "פתיחה",
+    "שירה — משפט 1",
+    "שירה — משפט 2",
+    "המשך — טרם אומת"
+  ],
+  "lyrics": null
+}

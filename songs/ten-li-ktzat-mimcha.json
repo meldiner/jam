@@ -1,0 +1,86 @@
+{
+  "title": "תן לי קצת ממך",
+  "artist": "יזהר אשדות וקורין אלאל",
+  "key": "Am",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "rtl",
+  "chords": [
+    "Am",
+    "E",
+    "F",
+    "G",
+    "D",
+    "C"
+  ],
+  "sections": [
+    {
+      "name": "פתיחה — ריף",
+      "unit": "changes",
+      "lines": [
+        [
+          "Am"
+        ]
+      ]
+    },
+    {
+      "name": "בית — שינויי אקורדים",
+      "unit": "changes",
+      "lines": [
+        [
+          "Am",
+          "E",
+          "F",
+          "G"
+        ],
+        [
+          "Am"
+        ]
+      ]
+    },
+    {
+      "name": "פזמון — חזרה ×2",
+      "unit": "changes",
+      "lines": [
+        [
+          "Am",
+          "D",
+          "F"
+        ],
+        [
+          "G",
+          "C",
+          "G",
+          "Am"
+        ]
+      ]
+    }
+  ],
+  "setlists": [
+    {
+      "name": "2027",
+      "position": 3
+    }
+  ],
+  "chartStatus": "Draft · needs rehearsal check",
+  "chartNote": "Draft — arrows show chord changes, not bar lengths. Izhar Ashdot & Corinne Allal. D major in the chorus. Riff rhythm, repeats and ending need checking.",
+  "sources": [
+    {
+      "label": "Tab4U",
+      "url": "https://www.tab4u.com/tabs/songs/1634_יזהר_אשדות_וקורין_אלאל_-_תן_לי_קצת_ממך.html?type=piano"
+    }
+  ],
+  "formSteps": [
+    "פתיחה",
+    "בית 1",
+    "פזמון ×2",
+    "מעבר",
+    "בית 2",
+    "פזמון",
+    "המשך / סיום לבדיקה"
+  ],
+  "lyrics": null
+}

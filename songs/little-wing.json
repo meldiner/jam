@@ -1,0 +1,96 @@
+{
+  "title": "Little Wing",
+  "artist": "The Jimi Hendrix Experience",
+  "key": "Ebm (Em guitar shapes)",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "Guitar intro — one cycle",
+  "ending": "Studio fade; agree a live ending",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "Em",
+    "G",
+    "Am",
+    "Bm",
+    "Bbm",
+    "C",
+    "Fadd9",
+    "D"
+  ],
+  "sections": [
+    {
+      "name": "Guitar shapes — main cycle",
+      "unit": "changes",
+      "lines": [
+        [
+          "Em",
+          "G",
+          "Am",
+          "Em"
+        ],
+        [
+          "Bm",
+          "Bbm",
+          "Am",
+          "C"
+        ],
+        [
+          "G",
+          "Fadd9",
+          "C",
+          "D"
+        ]
+      ]
+    },
+    {
+      "name": "Concert pitch — same cycle",
+      "unit": "changes",
+      "lines": [
+        [
+          "Ebm",
+          "Gb",
+          "Abm",
+          "Ebm"
+        ],
+        [
+          "Bbm",
+          "Am",
+          "Abm",
+          "B"
+        ],
+        [
+          "Gb",
+          "Eadd9",
+          "B",
+          "Db"
+        ]
+      ]
+    }
+  ],
+  "setlists": [
+    {
+      "name": "2027",
+      "position": 7
+    }
+  ],
+  "chartStatus": "Draft · needs rehearsal check",
+  "chartNote": "Draft — arrows show chord changes, not bar lengths. Hendrix studio version. Guitar shapes below: tune every string down ½ step (Eb Ab Db Gb Bb Eb). Concert-pitch row is for keys/bass. Passing voicings vary; rhythm and turnaround lengths need checking.",
+  "sources": [
+    {
+      "label": "Your Guitar Academy",
+      "url": "https://yourguitaracademy.com/courses/jimi-hendrix-songs/lessons/little-wing-guitar-lesson"
+    },
+    {
+      "label": "Applied Guitar Theory",
+      "url": "https://appliedguitartheory.com/lessons/jimi-hendrix-little-wing-intro-tab/"
+    }
+  ],
+  "formSteps": [
+    "Guitar intro",
+    "Verse 1",
+    "Verse 2",
+    "Guitar solo / fade"
+  ],
+  "lyrics": null
+}

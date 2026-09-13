@@ -570,3 +570,7 @@ body.fullscreen .hud { display: none; }
   /* HUD often unhelpful on touch — hide entirely. */
   .hud { display: none; }
 }
+
+/* Source and verification context stays visible while rehearsing. */
+.chart-note { font-size: clamp(11px, 1.1vw, 15px); color: var(--text-2); }
+.chart-note a { color: inherit; text-decoration: underline; }

@@ -34,31 +34,32 @@ async function init() {
   await route();
 }
 
-// Global song order, used by the picker and by arrow-key navigation.
-//
-// Source of truth (in order of precedence):
-//   1. state.index.navOrder — explicit array of slugs in songs/index.json
-//   2. show: N fields in each song — show songs sorted ascending, then
-//      non-show songs in their current index order.
-//
-// Configure by editing `show: N` values in tools/build-songs.py SONGS,
-// or by adding a `navOrder: [...]` array to songs/index.json.
-function applyNavOrder(index) {
-  const songs = index.songs;
-  if (Array.isArray(index.navOrder) && index.navOrder.length) {
-    const bySlug = new Map(songs.map(s => [s.slug, s]));
-    const ordered = index.navOrder.map(slug => bySlug.get(slug)).filter(Boolean);
-    const seen = new Set(ordered.map(s => s.slug));
-    for (const s of songs) if (!seen.has(s.slug)) ordered.push(s);
-    index.songs = ordered;
-    return;
+// Named setlists, with compatibility for the original show: N data.
+function memberships(song, index = state.index) {
+  const lists = [...(song.setlists || [])];
+  if (song.show) lists.push({ name: index.setlist || 'Show', position: song.show });
+  return lists;
+}
+
+function setlistGroups(index) {
+  const names = [...(index.setlists || [])];
+  for (const song of index.songs) {
+    for (const list of memberships(song, index)) {
+      if (!names.includes(list.name)) names.push(list.name);
+    }
   }
-  songs.sort((a, b) => {
-    if (a.show && b.show) return a.show - b.show;
-    if (a.show) return -1;
-    if (b.show) return 1;
-    return 0; // stable: keep original order for non-show
-  });
+  return names.map(name => ({ name, songs: index.songs
+    .filter(song => memberships(song, index).some(list => list.name === name))
+    .sort((a, b) => memberships(a, index).find(l => l.name === name).position
+      - memberships(b, index).find(l => l.name === name).position) }));
+}
+
+function applyNavOrder(index) {
+  const bySlug = new Map(index.songs.map(s => [s.slug, s]));
+  const slugs = Array.isArray(index.navOrder) && index.navOrder.length ? index.navOrder
+    : setlistGroups(index).flatMap(group => group.songs.map(s => s.slug));
+  index.songs = [...new Set([...slugs, ...bySlug.keys()])]
+    .map(slug => bySlug.get(slug)).filter(Boolean);
 }
 
 // ---------------- Routing ----------------
@@ -100,12 +101,11 @@ async function route() {
 // ---------------- Picker ----------------
 function renderPicker() {
   const songs = state.index.songs;
-  const setlistName = state.index.setlist || 'Show';
-  const showSongs = songs.filter(s => s.show).slice().sort((a, b) => a.show - b.show);
-  const otherSongs = songs.filter(s => !s.show);
+  const groups = setlistGroups(state.index);
+  const otherSongs = songs.filter(s => !memberships(s).length);
 
   const cardHTML = (s, badge) => `
-    <button class="song-card${s.show ? ' show-song' : ''}" data-slug="${attr(s.slug)}">
+    <button class="song-card${badge ? ' show-song' : ''}" data-slug="${attr(s.slug)}">
       ${badge ? `<div class="show-badge">${badge}</div>` : ''}
       <div class="title">${esc(s.title)}</div>
       <div class="artist">${esc(s.artist || '')}</div>
@@ -113,14 +113,14 @@ function renderPicker() {
     </button>
   `;
 
-  const showSection = showSongs.length ? `
+  const showSection = groups.filter(group => group.songs.length).map(group => `
     <section class="setlist-section">
-      <h2 class="setlist-h">🎤 ${esc(setlistName)} <span class="count">· ${showSongs.length} songs</span></h2>
+      <h2 class="setlist-h">🎤 ${esc(group.name)} <span class="count">· ${group.songs.length} songs</span></h2>
       <div class="grid">
-        ${showSongs.map(s => cardHTML(s, String(s.show))).join('')}
+        ${group.songs.map(s => cardHTML(s, String(memberships(s).find(l => l.name === group.name).position))).join('')}
       </div>
     </section>
-  ` : '';
+  `).join('');
 
   const otherSection = otherSongs.length ? `
     <section class="setlist-section">
@@ -149,6 +149,7 @@ function renderPicker() {
 
 function songMetaLine(s) {
   const parts = [];
+  if (s.chartStatus) parts.push(esc(s.chartStatus));
   if (s.key) parts.push(esc(s.key));
   if (s.bpm) parts.push(`${s.bpm} bpm`);
   if (s.timeSig) parts.push(esc(s.timeSig));
@@ -171,7 +172,7 @@ function renderSong() {
     <div class="song" dir="${song.dir === 'rtl' ? 'rtl' : 'ltr'}">
       <div class="song-head">
         <div class="title-block">
-          ${song.show ? `<span class="show-pill">🎤 #${song.show}</span>` : ''}
+          ${memberships(song).map(l => `<span class="show-pill">${esc(l.name)} #${l.position}</span>`).join('')}
           <span class="title">${esc(song.title)}</span>
           <span class="artist">— ${esc(song.artist || '')}</span>
         </div>
@@ -183,6 +184,7 @@ function renderSong() {
           ${song.opening && song.ending ? '<span class="dot">·</span>' : ''}
           ${song.ending ? `<span class="cue">■ ${esc(song.ending)}</span>` : ''}
         </div>
+        ${song.chartNote ? `<div class="chart-note" dir="auto">${esc(song.chartNote)} ${(song.sources || []).filter(source => /^https?:\/\//.test(source.url)).map(source => `<a href="${attr(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.label)}</a>`).join(' · ')}</div>` : ''}
         <div class="song-tools">
           <div class="view-toggle" aria-label="View">
             <button type="button" data-view="chart"  class="${state.view==='chart' ?'active':''}" aria-pressed="${state.view==='chart'}">Chart</button>
@@ -338,6 +340,10 @@ function renderChartView() {
 
   const sections = song.sections || [];
   const grid = document.getElementById('sectionsGrid');
+  if (!sections.length) {
+    grid.innerHTML = '<div class="lyrics-empty"><div class="big">Chart awaiting the selected recording.</div></div>';
+    return;
+  }
 
   // Font sizing: scale by the longest bar-line in any section.
   const maxBarsInLine = Math.max(1, ...sections.flatMap(s => (s.lines || []).map(l => l.length)));
@@ -349,8 +355,8 @@ function renderChartView() {
     block.className = 'sec' + (sec.colBreak ? ' col-break' : '');
     const lines = (sec.lines || []).map(line => `
       <div class="bars" dir="ltr" style="font-size:${barFont}">
-        <span class="sep">|</span>
-        ${line.map(b => `<span class="ch">${esc(b)}</span><span class="sep">|</span>`).join(' ')}
+        ${sec.unit === 'changes' ? '' : '<span class="sep">|</span>'}
+        ${line.map((b, i) => `<span class="ch">${esc(b)}</span>${sec.unit === 'changes' ? (i < line.length - 1 ? '<span class="sep">→</span>' : '') : '<span class="sep">|</span>'}`).join(' ')}
       </div>
     `).join('');
     block.innerHTML = `

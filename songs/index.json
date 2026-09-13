@@ -1,5 +1,9 @@
 {
   "setlist": "5/29/26",
+  "setlists": [
+    "2027",
+    "5/29/26"
+  ],
   "songs": [
     {
       "slug": "tzar-li-charlie",
@@ -137,6 +141,96 @@
       "show": 15
     },
     {
+      "slug": "little-wing",
+      "title": "Little Wing",
+      "artist": "The Jimi Hendrix Experience",
+      "key": "Ebm (Em guitar shapes)",
+      "bpm": null,
+      "timeSig": "4/4",
+      "setlists": [
+        {
+          "name": "2027",
+          "position": 7
+        }
+      ],
+      "chartStatus": "Draft · needs rehearsal check"
+    },
+    {
+      "slug": "milim-yafot-meele",
+      "title": "מילים יפות מאלה",
+      "artist": "הפרויקט של עידן רייכל",
+      "key": "F#m",
+      "bpm": null,
+      "timeSig": "4/4",
+      "setlists": [
+        {
+          "name": "2027",
+          "position": 1
+        }
+      ],
+      "chartStatus": "Draft · needs rehearsal check"
+    },
+    {
+      "slug": "somebody-told-me",
+      "title": "Somebody Told Me",
+      "artist": "The Killers",
+      "key": "Bbm",
+      "bpm": null,
+      "timeSig": "4/4",
+      "setlists": [
+        {
+          "name": "2027",
+          "position": 2
+        }
+      ],
+      "chartStatus": "Draft · needs rehearsal check"
+    },
+    {
+      "slug": "ten-li-ktzat-mimcha",
+      "title": "תן לי קצת ממך",
+      "artist": "יזהר אשדות וקורין אלאל",
+      "key": "Am",
+      "bpm": null,
+      "timeSig": "4/4",
+      "setlists": [
+        {
+          "name": "2027",
+          "position": 3
+        }
+      ],
+      "chartStatus": "Draft · needs rehearsal check"
+    },
+    {
+      "slug": "yesh-li-chor-balev",
+      "title": "יש לי חור בלב בצורה שלך",
+      "artist": "ג׳ירפות",
+      "key": "G#m",
+      "bpm": null,
+      "timeSig": "4/4",
+      "setlists": [
+        {
+          "name": "2027",
+          "position": 5
+        }
+      ],
+      "chartStatus": "Draft · needs rehearsal check"
+    },
+    {
+      "slug": "proud-mary",
+      "title": "Proud Mary",
+      "artist": "Ike & Tina Turner",
+      "key": "D",
+      "bpm": null,
+      "timeSig": "4/4",
+      "setlists": [
+        {
+          "name": "2027",
+          "position": 6
+        }
+      ],
+      "chartStatus": "Draft · needs rehearsal check"
+    },
+    {
       "slug": "one-way-or-another",
       "title": "One Way Or Another",
       "artist": "Blondie",
@@ -166,7 +260,13 @@
       "artist": "Amy Winehouse",
       "key": "C major",
       "bpm": 71,
-      "timeSig": "4/4"
+      "timeSig": "4/4",
+      "setlists": [
+        {
+          "name": "2027",
+          "position": 4
+        }
+      ]
     },
     {
       "slug": "everybody-hurts",

@@ -1,0 +1,106 @@
+{
+  "title": "מילים יפות מאלה",
+  "artist": "הפרויקט של עידן רייכל",
+  "key": "F#m",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "rtl",
+  "chords": [
+    "F#m",
+    "Cdim/Eb",
+    "D",
+    "F#m/C#",
+    "Bm",
+    "F#m/A",
+    "G#dim",
+    "C#",
+    "A",
+    "Bm/G#",
+    "F#m/E",
+    "C#sus4"
+  ],
+  "sections": [
+    {
+      "name": "פתיחה / בית / מעבר",
+      "unit": "changes",
+      "lines": [
+        [
+          "F#m",
+          "Cdim/Eb",
+          "D",
+          "F#m/C#"
+        ],
+        [
+          "Bm",
+          "F#m/A",
+          "G#dim",
+          "C#"
+        ],
+        [
+          "F#m"
+        ]
+      ]
+    },
+    {
+      "name": "פזמון",
+      "unit": "changes",
+      "lines": [
+        [
+          "D",
+          "A",
+          "Bm"
+        ],
+        [
+          "Bm/G#",
+          "F#m",
+          "F#m/E"
+        ],
+        [
+          "D",
+          "A",
+          "Bm"
+        ],
+        [
+          "C#sus4",
+          "D"
+        ],
+        [
+          "Bm/G#",
+          "C#",
+          "F#m"
+        ]
+      ]
+    }
+  ],
+  "setlists": [
+    {
+      "name": "2027",
+      "position": 1
+    }
+  ],
+  "chartStatus": "Draft · needs rehearsal check",
+  "chartNote": "Draft — arrows show chord changes, not bar lengths. Concert pitch, no capo. Sources disagree on passing chords; these follow Shironet. Full form and durations need checking.",
+  "sources": [
+    {
+      "label": "Shironet",
+      "url": "https://mshironet.mako.co.il/artist?lang=1&prfid=1333&type=chords&wrkid=13613"
+    },
+    {
+      "label": "GuitarArt",
+      "url": "https://www.guitarart.co.il/heb_accord/m/Milim_yafot_me_ele.pdf"
+    }
+  ],
+  "formSteps": [
+    "פתיחה ×2",
+    "בית 1",
+    "פזמון",
+    "מעבר",
+    "בית 2",
+    "פזמון / אלתור",
+    "סיום — לבדיקה"
+  ],
+  "lyrics": null
+}

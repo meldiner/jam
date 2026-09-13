@@ -322,6 +322,12 @@ def build_chart_sections(sections):
 SHOW_NAME = "5/29/26"
 
 SONGS = [
+    {"slug": "little-wing", "title": "Little Wing", "artist": "The Jimi Hendrix Experience", "slides": [], "skipParse": True, "setlists": [{"name": "2027", "position": 7}]},
+    {"slug": "milim-yafot-meele", "title": "מילים יפות מאלה", "artist": "הפרויקט של עידן רייכל", "dir": "rtl", "slides": [], "skipParse": True, "setlists": [{"name": "2027", "position": 1}]},
+    {"slug": "somebody-told-me", "title": "Somebody Told Me", "artist": "The Killers", "slides": [], "skipParse": True, "setlists": [{"name": "2027", "position": 2}]},
+    {"slug": "ten-li-ktzat-mimcha", "title": "תן לי קצת ממך", "artist": "יזהר אשדות וקורין אלאל", "dir": "rtl", "slides": [], "skipParse": True, "setlists": [{"name": "2027", "position": 3}]},
+    {"slug": "yesh-li-chor-balev", "title": "יש לי חור בלב בצורה שלך", "artist": "ג׳ירפות", "dir": "rtl", "slides": [], "skipParse": True, "setlists": [{"name": "2027", "position": 5}]},
+    {"slug": "proud-mary", "title": "Proud Mary", "artist": "Ike & Tina Turner", "slides": [], "skipParse": True, "setlists": [{"name": "2027", "position": 6}]},
     # ---- New songs not in the pptx (added for the show) ----
     # tzar-li-charlie and valerie are defined further below (user-edited entries).
     {"slug": "one-way-or-another", "title": "One Way Or Another", "artist": "Blondie",
@@ -340,6 +346,7 @@ SONGS = [
 
     {"slug": "rehab", "title": "Rehab", "artist": "Amy Winehouse",
      "slides": [5], "key": "C major", "bpm": 71,
+     "setlists": [{"name": "2027", "position": 4}],
      "opening": "Drums + bass riff", "ending": "End on C"},
 
     {"slug": "blues-cnaani", "title": "בלוז כנעני", "artist": "אהוד בנאי",
@@ -554,6 +561,9 @@ def build_song_json(song):
         "sections": [],
         "lyrics": None,
     }
+    for field in ("setlists", "chartStatus", "chartNote", "sources"):
+        if field in song:
+            out[field] = song[field]
     if song.get("show"):
         out["show"] = song["show"]
         amp_preset = amp_preset_image_for(song["slug"])
@@ -661,7 +671,7 @@ def amp_preset_image_for(slug):
 
 
 def write_index(all_songs):
-    idx = {"setlist": SHOW_NAME, "songs": []}
+    idx = {"setlist": SHOW_NAME, "setlists": ["2027", SHOW_NAME], "songs": []}
     entries = []
     # Keep vampire (pre-existing manual chart) and mark its show order.
     vampire_path = SONGS_DIR / f"{VAMPIRE_SLUG}.json"
@@ -695,6 +705,9 @@ def write_index(all_songs):
         }
         if song.get("show"):
             entry["show"] = song["show"]
+        for field in ("setlists", "chartStatus"):
+            if field in data:
+                entry[field] = data[field]
         entries.append(entry)
     idx["songs"] = sorted(
         entries,

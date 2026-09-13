@@ -1,0 +1,144 @@
+{
+  "title": "Somebody Told Me",
+  "artist": "The Killers",
+  "key": "Bbm",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "Bbm",
+    "Gb",
+    "Ab",
+    "F",
+    "Db",
+    "Ebm"
+  ],
+  "sections": [
+    {
+      "name": "Intro — source sequence",
+      "unit": "changes",
+      "lines": [
+        [
+          "Bbm",
+          "Gb",
+          "Ab",
+          "Bbm"
+        ],
+        [
+          "Bbm",
+          "Gb",
+          "Ab",
+          "Bbm"
+        ],
+        [
+          "Bbm",
+          "Gb",
+          "Ab",
+          "Gb"
+        ],
+        [
+          "Bbm",
+          "Gb",
+          "Bbm"
+        ]
+      ]
+    },
+    {
+      "name": "Verse — main changes",
+      "unit": "changes",
+      "lines": [
+        [
+          "Bbm",
+          "Gb",
+          "Ab",
+          "Gb"
+        ],
+        [
+          "Bbm"
+        ]
+      ]
+    },
+    {
+      "name": "Pre-chorus",
+      "unit": "changes",
+      "lines": [
+        [
+          "Gb",
+          "Ab",
+          "Bbm"
+        ],
+        [
+          "Gb",
+          "Ab",
+          "Gb"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus — repeat cycle",
+      "unit": "changes",
+      "lines": [
+        [
+          "Bbm",
+          "Gb",
+          "Ab",
+          "F"
+        ]
+      ]
+    },
+    {
+      "name": "Bridge — verify",
+      "unit": "changes",
+      "lines": [
+        [
+          "Gb",
+          "Ab",
+          "Bbm"
+        ],
+        [
+          "Db",
+          "Ebm",
+          "Gb"
+        ],
+        [
+          "Bbm",
+          "Gb",
+          "F"
+        ]
+      ]
+    }
+  ],
+  "setlists": [
+    {
+      "name": "2027",
+      "position": 2
+    }
+  ],
+  "chartStatus": "Draft · needs rehearsal check",
+  "chartNote": "Draft — arrows show chord changes, not bar lengths. Source key Bbm. Verse/bridge transcriptions differ; repeats, rhythm and ending are unverified.",
+  "sources": [
+    {
+      "label": "UkuTabs",
+      "url": "https://ukutabs.com/t/the-killers/somebody-told-me/"
+    },
+    {
+      "label": "GuitarTabsExplorer",
+      "url": "https://www.guitartabsexplorer.com/killers/somebody-told-me-chords"
+    }
+  ],
+  "formSteps": [
+    "Intro",
+    "Verse 1",
+    "Pre-chorus",
+    "Chorus",
+    "Verse 2",
+    "Pre-chorus",
+    "Chorus",
+    "Bridge",
+    "Chorus / outro"
+  ],
+  "lyrics": null
+}
