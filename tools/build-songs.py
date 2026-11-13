@@ -322,6 +322,8 @@ def build_chart_sections(sections):
 SHOW_NAME = "5/29/26"
 
 SONGS = [
+    {"slug": "dont-stop-me-now", "title": "Don't Stop Me Now", "artist": "Queen", "slides": [], "skipParse": True},
+    {"slug": "al-titpashti-li", "title": "אל תתפשטי לי", "artist": "החברים של נטאשה", "dir": "rtl", "slides": [], "skipParse": True},
     {"slug": "little-wing", "title": "Little Wing", "artist": "The Jimi Hendrix Experience", "slides": [], "skipParse": True, "setlists": [{"name": "2027", "position": 7}]},
     {"slug": "milim-yafot-meele", "title": "מילים יפות מאלה", "artist": "הפרויקט של עידן רייכל", "dir": "rtl", "slides": [], "skipParse": True, "setlists": [{"name": "2027", "position": 1}]},
     {"slug": "somebody-told-me", "title": "Somebody Told Me", "artist": "The Killers", "slides": [], "skipParse": True, "setlists": [{"name": "2027", "position": 2}]},
@@ -484,8 +486,8 @@ SONGS = [
      "slides": [46], "dir": "rtl", "skipParse": True,
      "opening": "פסנתר ושירה, כניסה של כולם אחרי 'אור הירח'"},
 
-    {"slug": "mehapes-tshuva", "title": "מחפש תשובה", "artist": "",
-     "slides": [47], "dir": "rtl", "skipParse": True,
+    {"slug": "mehapes-tshuva", "title": "מחפש תשובה", "artist": "היהודים",
+     "slides": [], "dir": "rtl", "skipParse": True,
      "opening": "כולם יחד"},
 
     {"slug": "lama-lo-amart-li", "title": "למה לא אמרת לי", "artist": "",
@@ -526,6 +528,23 @@ VAMPIRE_SLUG = "vampire"
 
 
 # -------------------- Build --------------------
+
+# Latest rehearsal selection, November 8, 2026. Keep older named lists intact.
+CURRENT_REHEARSAL = "Jam · November 2026"
+TENTATIVE_REHEARSAL = "Jam · Tentative"
+REHEARSAL_SLUGS = [
+    "somebody-told-me", "milim-yafot-meele", "yesh-li-chor-balev",
+    "mehapes-tshuva", "dont-stop-me-now", "al-titpashti-li",
+]
+for song in SONGS:
+    if song["slug"] in REHEARSAL_SLUGS:
+        song.setdefault("setlists", []).append({
+            "name": CURRENT_REHEARSAL,
+            "position": REHEARSAL_SLUGS.index(song["slug"]) + 1,
+        })
+    elif song["slug"] == "ten-li-ktzat-mimcha":
+        song.setdefault("setlists", []).append({"name": TENTATIVE_REHEARSAL, "position": 1})
+
 
 def slide_lines_for(song):
     return join_slides(song["slides"])
@@ -671,7 +690,7 @@ def amp_preset_image_for(slug):
 
 
 def write_index(all_songs):
-    idx = {"setlist": SHOW_NAME, "setlists": ["2027", SHOW_NAME], "songs": []}
+    idx = {"setlist": SHOW_NAME, "setlists": [CURRENT_REHEARSAL, TENTATIVE_REHEARSAL, "2027", SHOW_NAME], "songs": []}
     entries = []
     # Keep vampire (pre-existing manual chart) and mark its show order.
     vampire_path = SONGS_DIR / f"{VAMPIRE_SLUG}.json"

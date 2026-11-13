@@ -1,6 +1,8 @@
 {
   "setlist": "5/29/26",
   "setlists": [
+    "Jam · November 2026",
+    "Jam · Tentative",
     "2027",
     "5/29/26"
   ],
@@ -141,6 +143,36 @@
       "show": 15
     },
     {
+      "slug": "dont-stop-me-now",
+      "title": "Don't Stop Me Now",
+      "artist": "Queen",
+      "key": "F",
+      "bpm": null,
+      "timeSig": "4/4",
+      "setlists": [
+        {
+          "name": "Jam · November 2026",
+          "position": 5
+        }
+      ],
+      "chartStatus": "Draft · needs rehearsal check"
+    },
+    {
+      "slug": "al-titpashti-li",
+      "title": "אל תתפשטי לי",
+      "artist": "החברים של נטאשה",
+      "key": "Dm",
+      "bpm": null,
+      "timeSig": "4/4",
+      "setlists": [
+        {
+          "name": "Jam · November 2026",
+          "position": 6
+        }
+      ],
+      "chartStatus": "Draft · needs rehearsal check"
+    },
+    {
       "slug": "little-wing",
       "title": "Little Wing",
       "artist": "The Jimi Hendrix Experience",
@@ -166,6 +198,10 @@
         {
           "name": "2027",
           "position": 1
+        },
+        {
+          "name": "Jam · November 2026",
+          "position": 2
         }
       ],
       "chartStatus": "Draft · needs rehearsal check"
@@ -181,6 +217,10 @@
         {
           "name": "2027",
           "position": 2
+        },
+        {
+          "name": "Jam · November 2026",
+          "position": 1
         }
       ],
       "chartStatus": "Draft · needs rehearsal check"
@@ -196,6 +236,10 @@
         {
           "name": "2027",
           "position": 3
+        },
+        {
+          "name": "Jam · Tentative",
+          "position": 1
         }
       ],
       "chartStatus": "Draft · needs rehearsal check"
@@ -211,6 +255,10 @@
         {
           "name": "2027",
           "position": 5
+        },
+        {
+          "name": "Jam · November 2026",
+          "position": 3
         }
       ],
       "chartStatus": "Draft · needs rehearsal check"
@@ -503,10 +551,17 @@
     {
       "slug": "mehapes-tshuva",
       "title": "מחפש תשובה",
-      "artist": "",
-      "key": "",
+      "artist": "היהודים",
+      "key": "Cm (source version)",
       "bpm": null,
-      "timeSig": ""
+      "timeSig": "4/4",
+      "setlists": [
+        {
+          "name": "Jam · November 2026",
+          "position": 4
+        }
+      ],
+      "chartStatus": "Draft · needs rehearsal check"
     },
     {
       "slug": "lama-lo-amart-li",

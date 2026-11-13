@@ -1,0 +1,120 @@
+{
+  "title": "Don't Stop Me Now",
+  "artist": "Queen",
+  "key": "F",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "ltr",
+  "chords": [
+    "F",
+    "Am",
+    "Dm",
+    "Gm",
+    "C",
+    "F7",
+    "Bb",
+    "D7",
+    "Gm7",
+    "C7",
+    "Eb"
+  ],
+  "sections": [
+    {
+      "name": "Verse — core cycle",
+      "unit": "changes",
+      "lines": [
+        [
+          "F",
+          "Am",
+          "Dm"
+        ],
+        [
+          "Gm",
+          "C"
+        ]
+      ]
+    },
+    {
+      "name": "Pre-chorus — main changes",
+      "unit": "changes",
+      "lines": [
+        [
+          "F7",
+          "Bb",
+          "Gm"
+        ],
+        [
+          "D7",
+          "Gm",
+          "C"
+        ]
+      ]
+    },
+    {
+      "name": "Chorus — main changes",
+      "unit": "changes",
+      "lines": [
+        [
+          "F",
+          "Gm",
+          "Am",
+          "Dm"
+        ],
+        [
+          "Gm",
+          "C"
+        ],
+        [
+          "Gm",
+          "D7"
+        ]
+      ]
+    },
+    {
+      "name": "Refrain / turnaround",
+      "unit": "changes",
+      "lines": [
+        [
+          "Gm",
+          "Dm",
+          "C",
+          "Gm7"
+        ],
+        [
+          "C7",
+          "Eb"
+        ]
+      ]
+    }
+  ],
+  "setlists": [
+    {
+      "name": "Jam · November 2026",
+      "position": 5
+    }
+  ],
+  "chartStatus": "Draft · needs rehearsal check",
+  "chartNote": "Draft — arrows show chord changes, not bar lengths. Compact harmonic guide in F, not a complete piano arrangement. Intro, solo, turnarounds, durations and ending still need checking against the chosen recording.",
+  "sources": [
+    {
+      "label": "UkuTabs — chord sheet",
+      "url": "https://ukutabs.com/q/queen/dont-stop-me-now/"
+    },
+    {
+      "label": "Hooktheory — harmonic reference",
+      "url": "https://www.hooktheory.com/theorytab/view/queen/dont-stop-me-now"
+    }
+  ],
+  "formSteps": [
+    "Intro — source link",
+    "Verse",
+    "Pre-chorus",
+    "Chorus",
+    "Break / solo — verify",
+    "Final chorus / outro"
+  ],
+  "lyrics": null
+}

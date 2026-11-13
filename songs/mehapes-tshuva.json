@@ -1,17 +1,94 @@
 {
   "title": "מחפש תשובה",
-  "artist": "",
-  "key": "",
+  "artist": "היהודים",
+  "key": "Cm (source version)",
   "bpm": null,
-  "timeSig": "",
+  "timeSig": "4/4",
   "opening": "כולם יחד",
   "ending": "",
   "form": "",
   "dir": "rtl",
-  "chords": [],
-  "sections": [],
-  "slideImages": [
-    "slides/mehapes-tshuva.png"
+  "chords": [
+    "Cm",
+    "Ab",
+    "Fm",
+    "Gm",
+    "Fm7",
+    "Bb"
+  ],
+  "sections": [
+    {
+      "name": "פתיחה / בית — מחזור עיקרי",
+      "unit": "changes",
+      "lines": [
+        [
+          "Cm",
+          "Ab",
+          "Fm",
+          "Gm9"
+        ]
+      ]
+    },
+    {
+      "name": "לקראת הפזמון",
+      "unit": "changes",
+      "lines": [
+        [
+          "Ab",
+          "Cm",
+          "Bb"
+        ]
+      ]
+    },
+    {
+      "name": "פזמון — משפטים עיקריים",
+      "unit": "changes",
+      "lines": [
+        [
+          "Fm7",
+          "Gm",
+          "Ab",
+          "Bb"
+        ],
+        [
+          "Fm7",
+          "Gm",
+          "Cm"
+        ]
+      ]
+    },
+    {
+      "name": "פזמון — סיום חלופי",
+      "unit": "changes",
+      "lines": [
+        [
+          "Fm7",
+          "Gm",
+          "Ab"
+        ]
+      ]
+    }
+  ],
+  "setlists": [
+    {
+      "name": "Jam · November 2026",
+      "position": 4
+    }
+  ],
+  "chartStatus": "Draft · needs rehearsal check",
+  "chartNote": "Draft — arrows show chord changes, not bar lengths. Source uses Cm; other transcriptions use different keys. Compact main changes only. Confirm band key, bridge, repetitions and ending at rehearsal.",
+  "sources": [
+    {
+      "label": "Unichord — chord sheet",
+      "url": "https://unichord.co.il/shirim/מחפש-תשובה-היהודים/"
+    }
+  ],
+  "formSteps": [
+    "פתיחה / בית",
+    "לקראת הפזמון",
+    "פזמון",
+    "גשר / חזרות — לבדיקה",
+    "סיום — לתאם"
   ],
   "lyrics": null
 }

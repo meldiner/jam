@@ -1110,3 +1110,37 @@ CHARTS['proud-mary']['opening'] = 'Slow D groove; follow vocal cue into fast sec
 CHARTS['little-wing']['opening'] = 'Guitar intro — one cycle'
 CHARTS['little-wing']['ending'] = 'Studio fade; agree a live ending'
 CHARTS['little-wing']['chartChords'] = ['Em', 'G', 'Am', 'Bm', 'Bbm', 'C', 'Fadd9', 'D']
+
+
+# November 2026 rehearsal additions: compact chord-only references, not copies
+# of full lyric sheets or recording-verified transcriptions. Follow source links
+# for the complete publisher-hosted sheets. No lyrics are added here.
+CHARTS.update({
+    'mehapes-tshuva': _draft_2027('Cm (source version)', [
+        ('Unichord — chord sheet', 'https://unichord.co.il/shirim/מחפש-תשובה-היהודים/'),
+    ], 'Source uses Cm; other transcriptions use different keys. Compact main changes only. Confirm band key, bridge, repetitions and ending at rehearsal.', [
+        ('פתיחה / בית — מחזור עיקרי', [['Cm', 'Ab', 'Fm', 'Gm9']]),
+        ('לקראת הפזמון', [['Ab', 'Cm', 'Bb']]),
+        ('פזמון — משפטים עיקריים', [['Fm7', 'Gm', 'Ab', 'Bb'], ['Fm7', 'Gm', 'Cm']]),
+        ('פזמון — סיום חלופי', [['Fm7', 'Gm', 'Ab']]),
+    ], ['פתיחה / בית', 'לקראת הפזמון', 'פזמון', 'גשר / חזרות — לבדיקה', 'סיום — לתאם']),
+    'al-titpashti-li': _draft_2027('Dm', [
+        ('Shironet — chord sheet', 'https://mshironet.mako.co.il/artist?lang=1&prfid=338&type=chords&wrkid=288'),
+        ('Unichord — chord sheet', 'https://unichord.co.il/shirim/אל-תתפשטי-לי-החברים-של-נטאשה/'),
+    ], 'Dm source version. Compact section cycles, without lyrics. Repetitions, intro and live ending need a band check.', [
+        ('בית — מחזור עיקרי', [['Dm', 'Bb', 'Gm', 'A']]),
+        ('בית — המשך', [['F', 'Bb', 'Gm', 'Dm'], ['Bb', 'F', 'Gm', 'A']]),
+        ('פזמון — מחזור / סגירה', [['Bb', 'Gm'], ['C']]),
+    ], ['פתיחה — לתאם', 'בית', 'פזמון', 'בית / פזמון — חזרות', 'סיום — לתאם']),
+    'dont-stop-me-now': _draft_2027('F', [
+        ('UkuTabs — chord sheet', 'https://ukutabs.com/q/queen/dont-stop-me-now/'),
+        ('Hooktheory — harmonic reference', 'https://www.hooktheory.com/theorytab/view/queen/dont-stop-me-now'),
+    ], 'Compact harmonic guide in F, not a complete piano arrangement. Intro, solo, turnarounds, durations and ending still need checking against the chosen recording.', [
+        ('Verse — core cycle', [['F', 'Am', 'Dm'], ['Gm', 'C']]),
+        ('Pre-chorus — main changes', [['F7', 'Bb', 'Gm'], ['D7', 'Gm', 'C']]),
+        ('Chorus — main changes', [['F', 'Gm', 'Am', 'Dm'], ['Gm', 'C'], ['Gm', 'D7']]),
+        ('Refrain / turnaround', [['Gm', 'Dm', 'C', 'Gm7'], ['C7', 'Eb']]),
+    ], ['Intro — source link', 'Verse', 'Pre-chorus', 'Chorus', 'Break / solo — verify', 'Final chorus / outro']),
+})
+# Gm9 is shown in the section text; the diagram row uses a familiar Gm shape.
+CHARTS['mehapes-tshuva']['chartChords'] = ['Cm', 'Ab', 'Fm', 'Gm', 'Fm7', 'Bb']

@@ -1,0 +1,90 @@
+{
+  "title": "אל תתפשטי לי",
+  "artist": "החברים של נטאשה",
+  "key": "Dm",
+  "bpm": null,
+  "timeSig": "4/4",
+  "opening": "",
+  "ending": "",
+  "form": "",
+  "dir": "rtl",
+  "chords": [
+    "Dm",
+    "Bb",
+    "Gm",
+    "A",
+    "F",
+    "C"
+  ],
+  "sections": [
+    {
+      "name": "בית — מחזור עיקרי",
+      "unit": "changes",
+      "lines": [
+        [
+          "Dm",
+          "Bb",
+          "Gm",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "בית — המשך",
+      "unit": "changes",
+      "lines": [
+        [
+          "F",
+          "Bb",
+          "Gm",
+          "Dm"
+        ],
+        [
+          "Bb",
+          "F",
+          "Gm",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "פזמון — מחזור / סגירה",
+      "unit": "changes",
+      "lines": [
+        [
+          "Bb",
+          "Gm"
+        ],
+        [
+          "C"
+        ]
+      ]
+    }
+  ],
+  "setlists": [
+    {
+      "name": "Jam · November 2026",
+      "position": 6
+    }
+  ],
+  "chartStatus": "Draft · needs rehearsal check",
+  "chartNote": "Draft — arrows show chord changes, not bar lengths. Dm source version. Compact section cycles, without lyrics. Repetitions, intro and live ending need a band check.",
+  "sources": [
+    {
+      "label": "Shironet — chord sheet",
+      "url": "https://mshironet.mako.co.il/artist?lang=1&prfid=338&type=chords&wrkid=288"
+    },
+    {
+      "label": "Unichord — chord sheet",
+      "url": "https://unichord.co.il/shirim/אל-תתפשטי-לי-החברים-של-נטאשה/"
+    }
+  ],
+  "formSteps": [
+    "פתיחה — לתאם",
+    "בית",
+    "פזמון",
+    "בית / פזמון — חזרות",
+    "סיום — לתאם"
+  ],
+  "lyrics": null
+}

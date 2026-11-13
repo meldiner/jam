@@ -221,3 +221,11 @@ sections with `unit: "changes"` render arrows: each cell is a chord change,
 not a measured bar. Default sections retain bar separators. Do not label
 source-only drafts recording-verified; check durations, full form, tempo,
 and ending against the chosen recording before promoting them to bar charts.
+
+## Latest rehearsal selection (November 2026)
+
+`Jam · November 2026` now appears before the older lists with the six latest
+rehearsal songs. `Jam · Tentative` keeps תן לי קצת ממך separate. Existing 2027
+and 2026 memberships are preserved. `tools/check-rehearsal.py` checks ordering,
+source-linked draft data and catalog integrity. See
+`docs/rehearsal-november-2026.md` for source and readiness limitations.
