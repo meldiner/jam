@@ -14,7 +14,11 @@
     "Gm",
     "A",
     "F",
-    "C"
+    "C",
+    "Bbmaj7",
+    "A7",
+    "Gbmaj7",
+    "G"
   ],
   "sections": [
     {
@@ -53,10 +57,14 @@
       "unit": "changes",
       "lines": [
         [
-          "Bb",
-          "Gm"
+          "Bbmaj7",
+          "A7",
+          "Bbmaj7",
+          "A7"
         ],
         [
+          "Gbmaj7",
+          "G",
           "C"
         ]
       ]
